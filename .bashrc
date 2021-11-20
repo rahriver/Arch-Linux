@@ -17,8 +17,7 @@ PS1='[\u@\h \W]\$ '
 
 alias p="sudo pacman"
 alias g="git clone"
-alias km1="sudo /sbin/modprobe tun && sudo openconnect c2.kmak.us:443" # VPN Server 1
-alias km2="sudo /sbin/modprobe tun && sudo openconnect c1.kmak.us:443" # VPN Server 2
+
 alias sdn="sudo shutdown now"
 alias r="ranger"
 alias ccat="highlight --out-format=ansi" # Cat files with syntax highlighting
@@ -27,7 +26,7 @@ alias yta="youtube-dl --add-metadata -xic" # Download only audio
 alias c="clear"
 alias cp="cp -iv"
 
-export PATH=/home/anabrus/anaconda/pkg/anaconda/opt/anaconda/bin:$PATH
+
 export PATH="$HOME/.scripts:$PATH"
 
 

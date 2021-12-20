@@ -21,8 +21,6 @@ alias vwm='vim ~/.config/i3/config'
 alias c='clear'
 alias sdn='sudo shutdown now'
 alias sdr='sudo reboot now'
-alias km1='sudo /sbin/modprobe tun && sudo openconnect c1.kmak.us:443'
-alias km2='sudo /sbin/modprobe tun && sudo openconnect c2.kmak.us:443'
 alias vimrc='vim ~/.vimrc'
 
 # Username Hostname Style

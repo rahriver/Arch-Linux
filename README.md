@@ -1,4 +1,4 @@
-#Arch Linux Configurations
+# Arch Linux Configurations
 These are all of my arch configurations
 There are config files for:
 - lf

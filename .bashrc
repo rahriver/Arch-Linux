@@ -1,4 +1,3 @@
-  GNU nano 5.9                                                                                                                                        /home/anabrus/.bashrc                                                                                                                                                  
 #    _             _       ____            _
 #   / \   _ __ ___| |__   | __ )  __ _ ___| |__  _ __ ___
 #  / _ \ | '__/ __| '_ \  |  _ \ / _` / __| '_ \| '__/ __|
@@ -9,39 +8,24 @@
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
-shopt -s autocd
-# Infinite bash history
+
+# Command Histroy
 HISTSIZE= HISTFILESIZE=
+
+# Aliases
 alias ls='ls --color=auto'
+alias v='vim'
+alias sv='sudo vim'
+alias p='sudo pacman'
+alias vsh='vim ~/.bashrc'
+alias vwm='vim ~/.config/i3/config'
+alias c='clear'
+alias sdn='sudo shutdown now'
+alias sdr='sudo reboot now'
+alias vimrc='vim ~/.vimrc'
+
+# Username Hostname Style
 PS1='[\u@\h \W]\$ '
 
-alias p="sudo pacman"
-alias g="git clone"
-
-alias sdn="sudo shutdown now"
-alias r="ranger"
-alias ccat="highlight --out-format=ansi" # Cat files with syntax highlighting
-alias yt="youtube-dl --add-metadata -ic" # Download video link
-alias yta="youtube-dl --add-metadata -xic" # Download only audio
-alias c="clear"
-alias cp="cp -iv"
-
-
-export PATH="$HOME/.scripts:$PATH"
-
-
-complete -c man which
-complete -cf sudo
-# Import colorscheme from 'wal' asynchronously
-# &   # Run the process in the background.
-# ( ) # Hide shell job control messages.
-# Not supported in the "fish" shell.
-(cat ~/.cache/wal/sequences &)
-
-# Alternative (blocks terminal for 0-3ms)
-cat ~/.cache/wal/sequences
-
-# To add support for TTYs this line can be optionally added.
-source ~/.cache/wal/colors-tty.sh
-#
-
+# PATH
+export PATH=$PATH:/etc/firewallsetup/

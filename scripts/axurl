@@ -1,0 +1,3 @@
+#!/bin/sh
+
+while read url; do axel -c $url; done < ~/.config/scripts/url.txt

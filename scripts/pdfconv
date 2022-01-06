@@ -1,0 +1,8 @@
+#!/bin/sh
+
+echo "Absolute Path To Your PDF File: "
+read input
+echo "Name of Your Output File: "
+read name
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook \
+-dNOPAUSE -dQUIET -dBATCH -sOutputFile=$name.pdf $input

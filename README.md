@@ -1,7 +1,7 @@
 # Arch Linux Configurations
 These are all of my arch configurations.
 
-I have config files for :
+I have config file for :
 - lf
 - ncmpcpp
 - dunst (notify-send ui alternative)

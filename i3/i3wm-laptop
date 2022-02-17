@@ -1,6 +1,6 @@
 # <<--------- General Settings --------->>
 
-font pango:monospace 10
+font pango:Roboto Regular 11
 floating_modifier $mod
 set         $term --no-startup-id st
 set         $mod Mod4
@@ -30,21 +30,22 @@ bindsym $mod+Shift+Right    move right
 
 # <<--------- Backlight --------->>
 
-bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
-bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
+set $refresh_i3status killall -SIGUSR1 i3status
+bindsym XF86MonBrightnessUp exec /home/core/.config/scripts/brightup
+bindsym XF86MonBrightnessDown exec /home/core/.config/scripts/brightdown
 
 # <<--------- Workspaces --------->>
 
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
-set $ws5 "5" 
-set $ws6 "6"
-set $ws7 "7"
-set $ws8 "8"
-set $ws9 "9"
-set $ws10 "10"
+set $ws1 "1: "
+set $ws2 "2: "
+set $ws3 "3: "
+set $ws4 "4: "
+set $ws5 "5: " 
+set $ws6 "6: "
+set $ws7 "7: "
+set $ws8 "8: "
+set $ws9 "9: "
+set $ws10 "10: "
 
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
@@ -78,9 +79,17 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
-# bar {
-#      status_command i3status
-# }
+# <<--------- i3 Status Bar --------->>
+
+# <<---- Colors ---->>
+
+bar {
+     # status_command i3blocks -c /home/core/.config/i3blocks/i3blocks.conf
+     status_command i3status -c /home/core/.config/i3status/i3status.conf
+     i3bar_command i3bar --transparency
+     position top
+}
+
 
 # <<--------- Assign Programs To Workspaces -------->>
 
@@ -102,16 +111,17 @@ for_window [instance="dropterm"]		move scratchpad
 
 # <<--------- Startup & Scripts --------->>
 
-exec_always         --no-startup-id $HOME/.config/polybar/launch.sh
+#exec_always         --no-startup-id $HOME/.config/polybar/launch.sh
 #exec                nvidia-settings --load-config-only
 exec                xset r rate 300 70
 exec_always         --no-startup-id numlockx on
 exec_always         /usr/bin/dunst
 exec_always         /home/core/.config/scripts/dator
 exec_always 		picom --experimental-backends -b
-exec                --no-startup-id $term -n dropterm -e tmux
+exec                --no-startup-id $term -n dropterm
 exec_always         "setxkbmap -model pc104 -layout us,ir -variant ,, -option grp:ctrl_shift_toggle"
-exec_always         feh --bg-fill ~/Downloads/2341740.jpg
+exec_always         /home/core/.config/scripts/layout && $refresh_i3status
+exec_always         feh --bg-fill ~/Pictures/Wallpapers/253.jpg
 exec --no-startup-id ~/.config/scripts/touch-on_off devonoff
 bindsym $mod+t exec --no-startup-id ~/.config/scripts/touch-on_off devonoff
 
@@ -140,15 +150,15 @@ bindsym $mod+t exec --no-startup-id ~/.config/scripts/touch-on_off devonoff
 
 bindsym Print               exec flameshot gui
 bindsym $mod+w			    exec --no-startup-id brave
-#bindsym $mod+shift+w	    exec --no-startup-id qutebrowser
-bindsym $mod+l 			    exec --no-startup-id dolphin
-#bindsym $mod+shift+l 	    exec --no-startup-id nautilus
+bindsym $mod+shift+w	    exec --no-startup-id qutebrowser
+bindsym $mod+l 			    exec --no-startup-id thunar
+bindsym $mod+shift+l 	    exec --no-startup-id nautilus
 bindsym $mod+o			    exec --no-startup-id obsidian
 bindsym $mod+shift+Return   exec --no-startup-id terminator
 bindsym $mod+z			    exec --no-startup-id zotero
 bindsym $mod+g 			    exec telegram-desktop -g 78x24+50+20
 #bindsym $mod+F12		    exec i3-input -F 'exec goldendict %s' -P 'Word: '
-#bindsym $mod+p 			    exec sxiv -t /home/core/Stuff/Pictures/Wallpapers/*
+bindsym $mod+p 			    exec sxiv -t /home/core/Pictures/Wallpapers/*
 bindsym $mod+s			    scratchpad show; [instance="dropterm"] move position center
 bindsym $mod+Return 	    exec $term
 bindsym $mod+u 			    exec $term -t "dropurl" -e nvim ~/.config/scripts/url.txt 
@@ -159,7 +169,7 @@ bindsym $mod+c			    exec $term -t "dropcalc" -f mono:pixelsize=24 -e R --quiet
 #bindsym $mod+shift+g 	    exec $term -t "dropgrammar" -e nvim ~/Documents/Notes/Grammar/Grammar.tex
 #bindsym $mod+F4			    exec $term -t "dropdict" -e nvim ~/Documents/Notes/Words/dictionary.wiki
 bindsym $mod+v			    exec $term -e lf
-bindsym $mod+m			    exec $term -e ncmpcpp
+#bindsym $mod+m			    exec $term -e ncmpcpp
 bindsym $mod+semicolon	    layout toggle split
 bindsym $mod+backslash	    split h
 bindsym $mod+slash	        split v
@@ -167,7 +177,7 @@ bindsym $mod+Shift+r        restart
 bindsym $mod+f		        fullscreen toggle
 bindsym $mod+q              kill
 bindsym $mod+d              exec rofi -show run
-bindsym $mod+shift+x	    exec /home/cicada/.config/scripts/lock	
+bindsym $mod+shift+x	    exec /home/core/.config/scripts/lock
 
 # <<--------- Window Resize --------->>
 
@@ -208,4 +218,3 @@ mode "$mode_system" {
 	bindsym Escape mode "default"
 }
 bindsym $mod+F1 mode "$mode_system"
-

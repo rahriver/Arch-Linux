@@ -1,8 +1,0 @@
-#!/bin/sh
-echo "Absolute Path to Your File: "
-read file
-echo "Name of Your Output File Without Extension: "
-read out
-ffmpeg -i $file -q:a 0 -map a /home/core/Stuff/Videos/'Extracted Audios'/$out.mp3
-notify-send "Audio Has Been Extracted!"
-

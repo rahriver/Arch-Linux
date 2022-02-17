@@ -18,19 +18,19 @@
 
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #20006eff
+background = #331e1e1e
 background-alt = #bf1e1e1e
 ;foreground = ${xrdb:color7:#222}
 foreground = #ffffff
 foreground-alt = #ffffff
-primary = #0099ff
+primary = #1b9fc6
 secondary = #ffffff
 alert = #bd2c40
 
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 20
+height = 25
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0.0
@@ -39,8 +39,8 @@ fixed-center = false
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 4
-line-color = #f00
+line-size = 2
+line-color = #1b9gc6
 
 border-size = 0
 border-color = #00000000
@@ -51,16 +51,18 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = JetBrains Mono:pixelsize=12;1
+font-0 = Roboto:pixelsize=13;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 font-3 = Font Awesome 5 Free:pixelsize=12;2
 font-4 = Font Awesome 5 Free Solid:pixelsize=12;2
 font-5 = Font Awesome 5 Brands:pixelsize=12;2
 
-modules-left = i3 xwindow 
-modules-center = mpd
-modules-right = systray filesystem pulseaudio xkeyboard date wlan powermenu 
+modules-left = i3
+modules-center = xwindow
+modules-right = filesystem pulseaudio xkeyboard memory cpu wlan date powermenu
+
+separator = | 
 
 tray-position = right
 tray-padding = 2
@@ -88,17 +90,17 @@ label = %title:0:30:...%
 type = internal/xkeyboard
 blacklist-0 = num lock
 
-format-prefix = " "
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-format-prefix-underline = #6a0dad
+format-prefix-underline = ${colors.secondary}
 
 label-layout = %layout%
-label-layout-underline = #6a0dad 
+label-layout-underline = ${colors.secondary}
 
 label-indicator-padding = 2
 label-indicator-margin = 1
-label-indicator-background = #6a0dad
-label-indicator-underline = #6a0dad
+label-indicator-background = ${colors.secondary}
+label-indicator-underline = ${colors.secondary}
 
 [module/filesystem]
 type = internal/fs
@@ -106,9 +108,28 @@ interval = 25
 
 mount-0 = /
 
-label-mounted =  %free%
+label-mounted = %free%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
+
+[module/bspwm]
+type = internal/bspwm
+
+label-focused = %index%
+label-focused-background = ${colors.background-alt}
+label-focused-underline= ${colors.primary}
+label-focused-padding = 2
+
+label-occupied = %index%
+label-occupied-padding = 2
+
+label-urgent = %index%!
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 2
+
+label-empty = %index%
+label-empty-foreground = ${colors.foreground-alt}
+label-empty-padding = 2
 
 ; Separator in between workspaces
 ; label-separator = |
@@ -122,39 +143,28 @@ wrapping-scroll = false
 ; Only show workspaces on the same output as the bar
 ;pin-workspaces = true
 
-ws-icon-0 = 1; 1
-ws-icon-1 = 2; 2
-ws-icon-2 = 3; 3
-ws-icon-3 = 4; 4
-ws-icon-4 = 5; 5
-ws-icon-5 = 6; 6
-ws-icon-6 = 7; 7
-ws-icon-7 = 8; 8
-ws-icon-8 = 9; 9
-ws-icon-9 = 10; 10
-
 label-mode-padding = 2
-label-mode-foreground = #8b29d1 
-label-mode-background = #8b29d1
+label-mode-foreground = #000
+label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
-label-focused = %icon%
+label-focused = %index%
 label-focused-background = ${colors.background-alt}
-label-focused-underline= #8b29d1
+label-focused-underline= ${colors.primary}
 label-focused-padding = 2
 
 ; unfocused = Inactive workspace on any monitor
-label-unfocused = %icon%
+label-unfocused = %index%
 label-unfocused-padding = 2
 
 ; visible = Active workspace on unfocused monitor
-label-visible = %icon%
+label-visible = %index%
 label-visible-background = ${self.label-focused-background}
 label-visible-underline = ${self.label-focused-underline}
 label-visible-padding = ${self.label-focused-padding}
 
 ; urgent = Workspace with urgency hint set
-label-urgent = %icon%
+label-urgent = %index%
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
 
@@ -200,7 +210,7 @@ card = intel_backlight
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = " "
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #f90000
 label = %percentage:2%%
@@ -208,7 +218,7 @@ label = %percentage:2%%
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = " "
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #4bffdc
 label = %percentage_used%%
@@ -241,7 +251,7 @@ interface = eno1
 interval = 3.0
 
 format-connected-underline = #55aa55
-format-connected-prefix = " "
+format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected = %local_ip%
 
@@ -254,21 +264,24 @@ format-disconnected =
 [module/date]
 type = internal/date
 interval = 1
+
 date =
 date-alt = " %Y-%m-%d"
+
 time = %H:%M
 time-alt = %H:%M:%S
-format-prefix = 
-format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #15afd6
-label = %date% %time%
 
+format-prefix = 
+format-prefix-foreground = ${colors.foreground-alt}
+format-underline = #0a6cf5
+
+label = %date% %time%
 
 [module/pulseaudio]
 type = internal/pulseaudio
 
 format-volume = <label-volume> <bar-volume>
-label-volume =  %percentage%%
+label-volume = VOL %percentage%%
 label-volume-foreground = ${root.foreground}
 
 label-muted = 🔇 muted
@@ -378,7 +391,7 @@ expand-right = true
 
 format-spacing = 1
 
-label-open = 
+label-open = 
 label-open-foreground = ${colors.secondary}
 label-close =  cancel
 label-close-foreground = ${colors.secondary}

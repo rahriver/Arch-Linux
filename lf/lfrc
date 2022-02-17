@@ -1,5 +1,3 @@
-# Luke's lf settings
-
 # Basic vars
 set shell bash
 set shellopts '-eu'

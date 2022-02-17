@@ -1,0 +1,10 @@
+#!/bin/sh
+
+echo "Enter Your Document Name: "
+read name 
+notify-send "LaTeX Document Created!"
+cd ~/Documents/Notes/
+mkdir "$name"
+cp ~/Documents/Notes/Templates/LT.tex  ~/Documents/Notes/"$name"/"$name.tex"
+vim ~/Documents/Notes/"$name"/"$name.tex"
+

@@ -1,0 +1,37 @@
+#!/bin/bash
+
+# Required parameters:
+# @raycast.schemaVersion 1
+# @raycast.title My Code
+# @raycast.mode silent
+
+# Optional parameters:
+# @raycast.icon ./images/ray-so.png
+# @raycast.argument1 { "type": "text", "placeholder": "Title", "optional": true }
+
+# Documentation:
+# @raycast.description Create beautiful images of your code with https://ray.so
+# @raycast.author Thomas Paul Mann
+# @raycast.authorURL https://github.com/thomaspaulmann
+
+# Customization:
+# Set colors. Available options: candy, breeze, midnight or sunset
+COLORS="breeze" 
+BACKGROUND="true"
+DARK_MODE="true"
+PADDING="32"
+LANGUAGE="python"
+
+# Main:
+
+if [[ -z "$1" ]]
+then 
+	TITLE="My Code"
+else
+	TITLE=$(php -r "echo urlencode(\"$1\");")
+fi
+
+CODE=$(xsel --clipboard --output | base64)
+# Urlencode any + symbols in the base64 encoded string
+CODE=${CODE//+/%2B}
+xdg-open "https://ray.so/?colors=$COLORS&background=$BACKGROUND&darkMode=$DARK_MODE&padding=$PADDING&title=$TITLE&code=$CODE&language=$LANGUAGE"

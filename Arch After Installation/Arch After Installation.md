@@ -4,10 +4,11 @@
 
 ---
 # Kernel Missing Modules
+```
 paru mkinitcpio-firmware
 paru aic94xx-firmware
 paru wd719x-firmware
-
+```
 ---
 # Install Everything
 `git clone https://aur.archlinux.org/paru.git`

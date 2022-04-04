@@ -1,0 +1,6 @@
+@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+@theme "/usr/share/rofi/themes/DarkBlue.rasi"
+@theme "flamingo.rasi"
+@theme "sidetab.rasi"
+@theme "slate.rasi"
+@theme "onedark.rasi"

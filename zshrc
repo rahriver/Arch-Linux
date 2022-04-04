@@ -1,7 +1,7 @@
 # <<--------- Visuals --------->>
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-ZSH_THEME="duellj"
+ZSH_THEME="funky"
 
 # <<--------- General Settings --------->>
 
@@ -20,27 +20,26 @@ export LANG=en_US.UTF-8
 # <<--------- Aliases --------->>
 
 alias v="nvim"
+alias lf="lfub"
+alias nb="newsboat"
 alias sv="sudo nvim"
 alias sdn="sudo shutdown now"
+alias py="python"
+alias jp="ipython"
 alias c="clear"
 alias vsh="nvim ~/.zshrc"
 alias vwm="nvim ~/.config/i3/config"
-alias vimrc="nvim ~/.vimrc"
-alias nvrc="nvim ~/.config/nvim/init.vim"
+alias vimrc="nvim ~/.config/nvim/init.vim"
 alias p="sudo pacman"
 alias ax="axel -a -c"
 alias statis="python ~/.config/scripts/statis.py"
-alias mus="ncmpcpp"
 alias yt="youtube-dl --add-metadata -i" # Download video link
 alias yta="yt -x -f bestaudio/best" # Download Audio only
 alias ytv="youtube-viewer"
 alias SS="sudo systemctl"
 alias bib="doi2bib"
-alias cal="cal 2021"
 alias night="redshift -P -O 2500"
-alias y="yay"
 alias nf="neofetch"
-alias notes="cd ~/Documents/Notes"
 alias cp="cpg -g"
 alias pbpaste="xsel --clipboard --output"
 alias pbcopy="xsel --clipboard --input"
@@ -51,4 +50,4 @@ alias cb="cd .."
 export PATH=$PATH:/etc/firewallsetup/
 export PATH=$PATH:/home/core/.config/scripts
 export BIB=/home/core/Documents/Notes/biblo.bib
-
+export XDG_RUNTIME_DIR=/run/user/$(id -u)

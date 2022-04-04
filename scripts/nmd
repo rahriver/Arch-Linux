@@ -1,9 +1,0 @@
-#!/bin/sh
-
-echo "Enter Your Document Name: "
-read name
-notify-send "Markdown Document Created!"
-cd ~/Documents/Notes/
-mkdir "$name"
-cp ~/Documents/Notes/Templates/mark.md ~/Documents/Notes/"$name"/"$name.md"
-vim ~/Documents/Notes/"$name"/"$name.md"

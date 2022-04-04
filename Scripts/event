@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo $(expr '(' $(date -d 2022/03/17 +%s) - $(date +%s) + 86399 ')' / 86400) " Days Until Artemis Launch!" | notify-pipe
+

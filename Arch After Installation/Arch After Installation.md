@@ -47,6 +47,10 @@ paru ttf-unifont
 ```
 paru lf
 ```
+## Colored `ls`
+```
+sudo pacman -S lsd
+```
 ## Thunar
 ```
 sudo pacman -S thunar thunar-archive-plugin thunar-volman ffmpegthumbnailer tumbler raw-thumbnailer

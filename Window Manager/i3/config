@@ -10,10 +10,16 @@ exec        --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec        xrdb -merge ~/.Xresources
 exec        --no-startup-id nm-applet
 set         $refresh_i3status killall -SIGUSR1 i3status
-bindsym     XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym     XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-bindsym     XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-bindsym     XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+bindsym     XF86AudioRaiseVolume exec /home/core/.config/scripts/changevolume up
+bindsym     XF86AudioLowerVolume exec /home/core/.config/scripts/changevolume down
+bindsym     XF86AudioMute exec /home/core/.config/scripts/changevolume mute
+
+# <<--------- Old Volume Control --------->>
+
+# bindsym     XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
+# bindsym     XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+# bindsym     XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+# bindsym     XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # <<--------- Focus Control --------->>
 
@@ -31,16 +37,16 @@ bindsym $mod+Shift+Right    move right
 
 # <<--------- Workspaces --------->>
 
-set $ws1 "1: "
-set $ws2 "2: "
-set $ws3 "3: "
-set $ws4 "4: "
-set $ws5 "5: " 
-set $ws6 "6: "
-set $ws7 "7: "
-set $ws8 "8: "
+set $ws1 "1: "
+set $ws2 "2: "
+set $ws3 "3: "
+set $ws4 "4: "
+set $ws5 "5: " 
+set $ws6 "6: "
+set $ws7 "7: "
+set $ws8 "8: "
 set $ws9 "9: "
-set $ws10 "10: "
+set $ws10 "10: "
 
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
@@ -123,8 +129,7 @@ exec                --no-startup-id $term -n dropterm
 exec                --no-startup-id $term -n dropvpn 
 exec_always         "setxkbmap -model pc104 -layout us,ir -variant ,, -option grp:ctrl_shift_toggle"
 exec_always         /home/core/.config/scripts/layout && $refresh_i3status
-exec_always         feh --bg-fill ~/Media/Pictures/Walls/4.png
-# exec_always         wal -R
+exec_always         feh --bg-fill ~/Media/Pictures/Wallpapers/1373.jpg
 
 # <<--------- Bindings --------->>
 
@@ -151,12 +156,10 @@ exec_always         feh --bg-fill ~/Media/Pictures/Walls/4.png
 
 bindsym Print               exec flameshot gui
 bindsym $mod+w			    exec --no-startup-id brave
-bindsym $mod+shift+w	    exec --no-startup-id qutebrowser
+bindsym $mod+shift+w		exec --no-startup-id firefox
 bindsym $mod+l 			    exec --no-startup-id thunar
-bindsym $mod+shift+l 	    exec --no-startup-id nautilus
 bindsym $mod+o			    exec --no-startup-id obsidian
 bindsym $mod+k			    exec --no-startup-id anki
-bindsym $mod+shift+Return   exec --no-startup-id cool-retro-term
 bindsym $mod+z			    exec --no-startup-id zotero
 bindsym $mod+g 			    exec telegram-desktop -g 78x24+50+20
 bindsym $mod+shift+s        exec $screencast
@@ -164,15 +167,11 @@ bindsym $mod+F12		    exec i3-input -F 'exec goldendict %s' -P 'Word: '
 bindsym $mod+p 			    exec sxiv -t /home/core/Media/Pictures/Wallpapers/*
 bindsym $mod+s			    scratchpad show; [instance="dropterm"] move position center
 bindsym $mod+shift+v		scratchpad show; [instance="dropvpn"] move position center
-bindsym $mod+Return 	    exec terminator
+bindsym $mod+Return 	    exec kitty
 bindsym $mod+u 			    exec $term -t "dropurl" -e nvim ~/.config/scripts/url.txt 
 bindsym $mod+b			    exec $term -t "dropbiblo" -e nvim ~/Documents/Notes/Templates/biblo.bib
 bindsym $mod+c			    exec $term -t "dropcalc" -f mono:pixelsize=24 -e R --quiet
-bindsym $mod+t			    exec $term -t "droptodo" -e nvim ~/Documents/Notes/todo/Todo.wiki
-bindsym $mod+shift+q 	    exec $term -t "dropquote" -e nvim ~/Documents/Obsidian/Broadest\ Education/1\ -\ Inbox/quotivation.md
-bindsym $mod+shift+g 	    exec $term -t "dropgrammar" -e nvim ~/Documents/Notes/Grammar/Grammar.tex
-bindsym $mod+F4			    exec $term -t "dropdict" -e nvim ~/Documents/Obsidian/Broadest\ Education/9\ -\ Anki/Dictionary.md
-bindsym $mod+v			    exec $term -e /home/core/.config/scripts/lfub
+bindsym $mod+v			    exec kitty -e /home/core/.config/scripts/lfub
 bindsym $mod+n			    exec $term -e newsboat
 # bindsym $mod+m			    exec $term -e ncmpcpp
 bindsym $mod+m			    exec --no-startup-id rhythmbox
@@ -219,7 +218,7 @@ mode "$mode_system" {
 	bindsym e exec --no-startup-id i3-msg exit, mode "default" 
 	bindsym r exec --no-startup-id systemctl reboot, mode "default"
 	bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"
-	bindsym s exec --no-startup-id systemctl suspend, mode "default"
+	bindsym s exec --no-startup-id sudo systemctl suspend, mode "default"
 	bindsym Return mode "default"
 	bindsym Escape mode "default"
 }

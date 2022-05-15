@@ -61,6 +61,7 @@ sudo pacman -S thunar thunar-archive-plugin thunar-volman ffmpegthumbnailer tumb
 ```
 sudo pacman -S libmtp mtpfs gmtp gvfs-gphoto2 gvfs-mtp
 paru jmtpfs
+sudo pacman -S fzf
 ```
 
 ---
@@ -70,6 +71,7 @@ sudo pacman -S zsh zsh-completions
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/Aloxaf/fzf-tab ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-tab
 ```
 
 ---

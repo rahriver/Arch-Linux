@@ -1,15 +1,20 @@
-call plug#begin()
+call plug#begin("~/.config/nvim/plugged/")
+Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
 Plug 'vim-pandoc/vim-pandoc'
+Plug 'roxma/vim-hug-neovim-rpc'
+Plug 'williamboman/nvim-lsp-installer'
+Plug 'neovim/nvim-lspconfig'
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'patstockwell/vim-monokai-tasty'
 Plug 'tell-k/vim-autopep8'
-Plug 'itchyny/lightline.vim'
-Plug 'tanvirtin/monokai.nvim'
 Plug 'tpope/vim-markdown'
-Plug 'wfxr/minimap.vim'
-Plug 'glepnir/dashboard-nvim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'preservim/nerdtree'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'pangloss/vim-javascript'
-Plug 'crusoexia/vim-monokai'
 Plug 'tpope/vim-surround'
+Plug 'airblade/vim-rooter'
 Plug 'tmsvg/pear-tree'
 Plug 'dkarter/bullets.vim'
 Plug 'frazrepo/vim-rainbow'
@@ -18,19 +23,14 @@ Plug 'preservim/tagbar'
 Plug 'kyoz/purify', { 'rtp': 'vim' }
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'Yggdroot/indentLine'
 Plug 'voldikss/vim-floaterm'
 Plug 'norcalli/nvim-colorizer.lua'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 Plug 'ryanoasis/vim-devicons'
-Plug 'crusoexia/vim-javascript-lib'
-Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'morhetz/gruvbox'
 Plug 'ap/vim-css-color'
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
 Plug 'dracula/vim'
 Plug 'alvan/vim-closetag'
 Plug 'vimwiki/vimwiki'
@@ -40,6 +40,14 @@ Plug 'bioSyntax/bioSyntax-vim'
 call plug#end()
 
 " <<--------- General Settings --------->>
+
+" Cursor color
+highlight Cursor guifg=white guibg=black
+highlight iCursor guifg=white guibg=steelblue
+set guicursor=n-v-c:block-Cursor
+set guicursor+=i:ver100-iCursor
+set guicursor+=n-v-c:blinkon0
+set guicursor+=i:blinkwait10
 
 let mapleader = " "
 syntax on
@@ -74,50 +82,20 @@ set encoding=UTF-8
 set incsearch
 set showcmd
 
-" Ctrl + S Save
-nnoremap <silent><c-s> :<c-u>update<cr>
-vnoremap <silent><c-s> <c-c>:update<cr>gv
-inoremap <silent><c-s> <c-o>:update<cr>
-
 " <<--------- Plugins Config --------->>
 
 let g:goyo_width = 60
 let g:limelight_default_coefficient = 0.7
 let g:limelight_conceal_ctermfg = 'gray'
 
-" Gruvbox Config
-"let g:gruvbox_transparent_bg = 1
-"let g:gruvbox_underline = 1
-"let g:gruvbox_undercurl = 1
-"let g:gruvbox_bold = 1
-"let g:gruvbox_italic = 1
-"colorscheme gruvbox
-
 " Transparency
-"hi! Normal ctermbg=NONE guibg=NONE
-"hi! NonText ctermbg=NONE guibg=NONE
+" hi! Normal ctermbg=NONE guibg=NONE
+" hi! NonText ctermbg=NONE guibg=NONE
 
-
-" Minimap
-let g:minimap_width = 10
-let g:minimap_auto_start = 1
-let g:minimap_auto_start_win_enter = 1
-
-colorscheme challenger_deep
-let g:monokai_term_italic = 1
-let g:monokai_gui_italic = 1
-
-" Vim-Javascript
-let g:javascript_plugin_jsdoc = 1
-let g:javascript_plugin_ngdoc = 1
-let g:javascript_plugin_flow = 1
+" colorscheme gotham
 
 " Live-Latex-Preview
 let g:livepreview_previewer = 'zathura'
-
-" Coc
-inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
-source $HOME/.config/nvim/plug-config/coc.vim
 
 " Colorizer
 lua require'colorizer'.setup()
@@ -129,14 +107,13 @@ let g:rainbow_active = 1
 if !has('gui_running')
   set t_Co=256
 endif
-
-let g:lightline = { 'colorscheme': 'powerline', }
+let g:lightline = { 'colorscheme': 'molokai', }
 
 " Vim-Bullets
 let g:bullets_enabled_file_types = [ 'markdown', 'text', 'tex', 'rmarkdown',]
 
 " Dashboard
-let g:dashboard_default_executive ='telescope'
+let g:dashboard_default_executive ='fzf'
 
 " Vim-Markdown
 let g:markdown_fenced_languages = ['html', 'python', 'bash=sh']
@@ -154,29 +131,28 @@ autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python' shellescap
 " Compile Markdown
 autocmd Filetype markdown map <F8> :!pandoc<space><C-r>%<space>-o<space><C-r>%.pdf<Enter><Enter>
 autocmd Filetype rmd map <F8> :!echo<space>"require(rmarkdown);<space>render('<c-r>%')"<space>\|<space>R<space>--vanilla<enter>
-autocmd Filetype tex map <F8> :! pdflatex %<CR><CR>
+autocmd Filetype tex map <F8> :! xelatex %<CR><CR>
 
 " Autopep8
 autocmd FileType python noremap <buffer> <F10> :call Autopep8()<CR>
 
-" Maps For Plugins
+" Map For Plugins
 map <F12> :PlugInstall<CR>
-map <leader>t :TagbarToggle<CR>
-map <leader>p :LLPStartPreview<CR>
+map <leader>h :TagbarToggle<CR>
 map <leader>m :InstantMarkdownPreview
 map <leader>g :Goyo<CR>
 map <leader>l :Limelight!!<CR>
 map <leader>n :NERDTreeToggle<CR>
 map <leader>b :vsp<space>$BIB<CR>
-map <leader>s :set spelllang=en_us<CR>
-map <leader>c :Copilot disable<CR>
+let g:floaterm_keymap_new = '<Leader>ft'
+let g:floaterm_keymap_toggle = '<Leader>t'
 
 " Changing Window
-nnoremap <C-h> :wincmd h<CR>
 nnoremap <C-c> <Esc>
-nnoremap <C-j> :wincmd j<CR>
-nnoremap <C-k> :wincmd k<CR>
-nnoremap <C-l> :wincmd l<CR>
+nnoremap <C-LEFT> :wincmd h<CR>
+nnoremap <C-DOWN> :wincmd j<CR>
+nnoremap <C-UP> :wincmd k<CR>
+nnoremap <C-RIGHT> :wincmd l<CR>
 
 " Adding Line
 nnoremap <leader>o o<Esc>0"_D
@@ -189,9 +165,51 @@ vnoremap K :m '<-2<CR>gv=gv
 " Save file
 nnoremap zz :update<cr>
 
+" Close without save
+nnoremap qq :q!<cr>
+
 " Save and Close
 nnoremap zq :wq<cr>
 
-" Escape
-inoremap jj <ESC>
-inoremap kk <ESC>
+" Workspaces
+map <leader>w :source ~/00\ -\ Documents/40\ -\ Programming/10\ -\ R/Studio.R<CR>
+
+" air-line
+let g:airline_powerline_fonts = 1
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+
+" unicode symbols
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.whitespace = 'Ξ'
+
+" airline symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ''
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+
+" Indent Line
+let g:indentLine_char = ':'
+
+" Monokai Tasty
+let g:vim_monokai_tasty_italic = 1
+colorscheme vim-monokai-tasty
+let g:airline_theme='monokai_tasty'

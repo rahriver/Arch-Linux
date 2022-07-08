@@ -1,5 +1,0 @@
-export EDITOR="nvim"
-export VIDEO="mpv"
-export BROWSER="brave"
-export IMAGE="sxiv"
-export PATH=$PATH:/home/core/.local/bin

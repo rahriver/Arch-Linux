@@ -20,7 +20,7 @@ paru lf ttf-unifont polybar siji-git jmtpfs picom-git conky
 ---
 ## Pacman Packages
 ```
-sudo pacman -S i3 xorg xorg-xinit zsh zsh-completions  libmtp mtpfs gmtp gvfs-gphoto2 gvfs-mtp thunar thunar-archive-plugin thunar-volman ffmpegthumbnailer tumbler raw-thumbnailer xorg-fonts-misc ttf-jetbrains-mono ttf-roboto dunst
+sudo pacman -S i3 xorg xorg-xinit zsh zsh-completions pulseaudio pulseaudio-equalizer pulseaudio-jack pavucontrol bluez libmtp mtpfs gmtp gvfs-gphoto2 gvfs-mtp thunar thunar-archive-plugin thunar-volman ffmpegthumbnailer tumbler raw-thumbnailer xorg-fonts-misc ttf-jetbrains-mono ttf-roboto dunst
 ```
 ---
 # AUR Helper (Paru)

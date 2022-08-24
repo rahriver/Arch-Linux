@@ -3,10 +3,10 @@
 echo "Enter Your Document Name: "
 read name
 notify-send "Markdown Document Created!"
-cd /home/core/Documents/Obsidian/Broadest\ Education/1\ -\ Inbox/
-touch "$name"
-cp ~/Documents/Notes/Templates/note.md /home/core/Documents/Obsidian/Broadest\ Education/1\ -\ Inbox/"$name.md"
-nvim /home/core/Documents/Obsidian/Broadest\ Education/1\ -\ Inbox/"$name.md"
+mkdir /home/core/Documents/Notes/$name
+cd /home/core/Documents/Notes/$name
+touch "$name.md"
+nvim /home/core/Documents/Notes/$name/"$name.md"
 
 
 

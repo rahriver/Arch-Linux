@@ -1,0 +1,8 @@
+#!/bin/sh
+
+echo "Enter The Command Name: "
+read command
+touch ~/"$command".txt
+man $command >> ~/"$command".txt & pandoc ~/"$command".txt -o ~/"$command".pdf
+zathura ~/"$command".pdf && rm ~/"$command".pdf ~/"$command".txt
+

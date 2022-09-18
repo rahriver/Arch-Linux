@@ -4,9 +4,9 @@ echo "Enter Your Presentation Name: "
 read name 
 notify-send "Presentation Created!"
 
-mkdir ~/Documents/60\ -\ Notes/"$name"
-cd ~/Documents/60\ -\ Notes/"$name"
+mkdir ~/Documents/Notes/"$name"
+cd ~/Documents/Notes/"$name"
 
-cp ~/Documents/60\ -\ Notes/Templates/presentation.tex  ~/Documents/60\ -\ Notes/"$name"/"$name.tex"
-nvim ~/Documents/60\ -\ Notes/"$name"/"$name.tex"
+cp ~/Documents/Notes/Templates/presentation.tex  ~/Documents/Notes/"$name"/"$name.tex"
+nvim ~/Documents/Notes/"$name"/"$name.tex"
 

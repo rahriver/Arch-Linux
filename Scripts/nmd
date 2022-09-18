@@ -3,8 +3,8 @@
 echo "Enter Your Document Name: "
 read name
 notify-send "Markdown Document Created!"
-mkdir /home/core/Documents/Notes/$name
-cd /home/core/Documents/Notes/$name
+mkdir /home/core/Documents/Notes/"$name"
+cd /home/core/Documents/Notes/"$name"
 touch "$name.md"
 nvim /home/core/Documents/Notes/$name/"$name.md"
 

@@ -2,6 +2,7 @@
 source ~/.config/nvim/plugins.vim
 source ~/.config/nvim/plugin-configs/coc.vim
 source ~/.config/nvim/plugin-configs/fzf.vim
+source ~/.config/nvim/plugin-configs/codi.vim
 source ~/.config/nvim/plugin-configs/vimtex.vim
 source ~/.config/nvim/plugin-configs/embark.vim
 source ~/.config/nvim/plugin-configs/latexpr.vim
@@ -14,19 +15,19 @@ source ~/.config/nvim/plugin-configs/nerdtree.vim
 source ~/.config/nvim/plugin-configs/rooter.vim
 
 " <<--------- General Settings --------->>
-colorscheme hybrid
+colorscheme tokyonight-night
 
 " Transparency
 " hi! Normal ctermbg=NONE guibg=NONE
 " hi! NonText ctermbg=NONE guibg=NONE
 
 " Cursor color
-" highlight Cursor guifg=white guibg=black
-" highlight iCursor guifg=white guibg=steelblue
-" set guicursor=n-v-c:block-Cursor
-" set guicursor+=i:ver100-iCursor
-" set guicursor+=n-v-c:blinkon0
-" set guicursor+=i:blinkwait10
+highlight Cursor guifg=white guibg=black
+highlight iCursor guifg=white guibg=steelblue
+set guicursor=n-v-c:block-Cursor
+set guicursor+=i:ver100-iCursor
+set guicursor+=n-v-c:blinkon0
+set guicursor+=i:blinkwait10
 
 let mapleader = " "
 syntax on

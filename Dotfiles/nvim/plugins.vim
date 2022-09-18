@@ -1,9 +1,14 @@
 call plug#begin("~/.config/nvim/plugged/")
 Plug 'jalvesaq/Nvim-R', { 'for': 'r', 'branch': 'stable'}
 Plug 'ryanoasis/vim-devicons'
+Plug 'EdenEast/nightfox.nvim'
+Plug 'shaunsingh/nyoom.nvim'
+Plug 'martinsione/darkplus.nvim'
+Plug 'metakirby5/codi.vim'
 Plug 'honza/vim-snippets'
 Plug 'junegunn/gv.vim'
 Plug 'tpope/vim-rhubarb'
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'tpope/vim-fugitive'
 Plug 'tanvirtin/monokai.nvim'
 Plug 'dracula/vim', { 'as': 'dracula' }

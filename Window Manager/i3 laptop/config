@@ -1,34 +1,40 @@
 # <<--------- General Settings --------->>
-font pango:Roboto Regular 11
+font pango:Inconsolata Condensed Black 12
 floating_modifier $mod
-set         $term --no-startup-id st
+set         $term --no-startup-id kitty
 set         $alt  --no-startup-id st
 set         $mod Mod4
-set         $screencast bash ~/.config/scripts/cast
+set         $screencast bash ~/.config/scripts/record_vid
 exec        --no-startup-id dex --autostart --environment i3
 exec        --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec        xrdb -merge ~/.Xresources
 exec        --no-startup-id nm-applet
 set         $refresh_i3status killall -SIGUSR1 i3status
-bindsym     XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym     XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-bindsym     XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-bindsym     XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+bindsym     XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
+bindsym     XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
+bindsym     XF86AudioMute        exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+bindsym     XF86AudioMicMute     exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # <<--------- Backlight --------->>
-set         $refresh_i3status killall -SIGUSR1 i3status
-bindsym     XF86MonBrightnessUp exec /home/core/.config/scripts/brightup
-bindsym     XF86MonBrightnessDown exec /home/core/.config/scripts/brightdown
+set         $refresh_i3status       killall -SIGUSR1 i3status
+bindsym     XF86MonBrightnessUp     exec /home/core/.config/scripts/brightup
+bindsym     XF86MonBrightnessDown   exec /home/core/.config/scripts/brightdown
 
 # <<--------- Touchpad --------->>
 bindsym     $mod+shift+t exec /home/core/.config/scripts/touchpad_toggle
 exec        synclient TouchpadOff=1
 
 # <<--------- Media Control --------->>
-bindsym     XF86AudioNext exec playerctl --player rhythmbox next
-bindsym     XF86AudioPrev exec playerctl --player rhythmbox previous
-bindsym     XF86AudioStop exec playerctl --player rhythmbox stop
-bindsym     XF86AudioPlay exec playerctl --player rhythmbox play-pause
+bindsym     XF86AudioNext exec --no-startup-id mpc next
+bindsym     XF86AudioPrev exec --no-startup-id mpc prev
+bindsym     XF86AudioStop exec --no-startup-id mpc stop
+bindsym     XF86AudioPlay exec --no-startup-id mpc toggle
+
+# <<--------- Playerctl --------->>
+# bindsym     XF86AudioNext exec playerctl --player mpd next
+# bindsym     XF86AudioPrev exec playerctl --player mpd previous
+# bindsym     XF86AudioStop exec playerctl --player mpd stop
+# bindsym     XF86AudioPlay exec playerctl --player mpd play-pause
 
 # <<--------- Focus Control --------->>
 bindsym $mod+Shift+space    floating toggle
@@ -121,21 +127,34 @@ for_window [class="Brave-browser"]		move to workspace $ws1
 for_window [class="Rhythmbox"]          move to workspace $ws8
 for_window [class="CPod"]               move to workspace $ws9
 for_window [class="Zotero"]             move to workspace $ws3
+for_window [class="TeXstudio"]          move to workspace $ws2
+for_window [class="Spotify"]            move to workspace $ws9
+ 
+for_window [title="Music Player"]       position center
+for_window [title="Music Player"]       floating enable
+for_window [title="Music Player"]       resize set 1000 800
+
+
 for_window [class="TelegramDesktop"]	position center
 for_window [class="TelegramDesktop"]	floating enable
+
 for_window [title="OBS*"]				move to workspace $ws9
+
 for_window [title="dropcalc"]			floating enable
 for_window [title="dropcalc"]			resize set 800 300
 for_window [title="dropcalc"]			move position center
-for_window [title="dropdict"]			floating enable
+
 for_window [title="dropideas"]          floating enable
-for_window [title="dropque"]           floating enable
+for_window [title="dropideas"]          resize set 800 600
+for_window [title="dropideas"]          move position center
+
+for_window [title="dropque"]            floating enable
 for_window [title="dropurl"]			floating enable
+
 for_window [instance="dropterm"]		floating enable
 for_window [instance="dropterm"]        resize set 800 600
 for_window [instance="dropterm"]        move position center
 for_window [instance="dropterm"]		move scratchpad
-
 
 # <<--------- Startup & Scripts --------->>
 # exec_always         --no-startup-id numlockx on
@@ -145,11 +164,10 @@ exec_always         /home/core/.config/scripts/layout && $refresh_i3status
 exec_always         /home/core/.config/scripts/event
 exec_always         /home/core/.config/scripts/dator
 exec_always         /usr/bin/dunst
-exec_always 		picom --experimental-backends -b
+exec_always 		picom
 exec_always         "setxkbmap -model pc104 -layout us,ir -variant ,, -option grp:ctrl_shift_toggle"
-exec_always         feh --bg-fill ~/Media/Pictures/Wallpapers/88.png
-exec                --no-startup-id $term -n dropterm
-exec                --no-startup-id conky
+exec_always         feh --bg-fill ~/Media/Pictures/Wallpapers/291.png
+exec                --no-startup-id $alt -n dropterm
 exec                xset r rate 300 70
 
 # <<--------- Bindings --------->>
@@ -161,16 +179,16 @@ bindsym $mod+shift+l 		exec --no-startup-id nautilus
 bindsym $mod+o			    exec --no-startup-id obsidian
 bindsym $mod+g 			    exec --no-startup-id telegram-desktop -g 78x24+50+20
 bindsym $mod+z			    exec --no-startup-id zotero
-bindsym $mod+m			    exec --no-startup-id rhythmbox
-bindsym $mod+n			    exec --no-startup-id cpod
+bindsym $mod+m			    exec --no-startup-id $term -e ncmpcpp
+bindsym $mod+shift+m	    exec --no-startup-id rhythmbox
 bindsym $mod+F12		    exec i3-input -F 'exec goldendict %s' -P 'Word: '
 bindsym $mod+p 			    exec sxiv -t /home/core/Media/Pictures/Wallpapers/*
 bindsym $mod+s			    scratchpad show; [instance="dropterm"] move position center
-bindsym $mod+i              exec $alt -t "dropideas" -e nvim ~/Temp/MEGA/Article/Old/Ideas/Ideas.wiki
-bindsym $mod+j              exec $alt -t "dropdict" -e nvim ~/Temp/MEGA/TOEFL/Vocabulary/Academic.wiki
+bindsym $mod+i              exec $term -T "dropideas" -e nvim ~/Temp/MEGA/Article/Wiki/Ideas.wiki
+bindsym $mod+j              exec zathura ~/Temp/MEGA/Article/Lipid\ Based/LSNL.pdf; exec $term -e nvim ~/Temp/MEGA/Article/Lipid\ Based/LSNL.tex
 bindsym $mod+c			    exec $alt -t "dropcalc" -f mono:pixelsize=24 -e R --quiet
-bindsym $mod+u			    exec $alt -t "dropurl" -e nvim ~/.config/scripts/url.txt
-bindsym $mod+b			    exec $alt -t "dropque" -e nvim ~/Documents/Notes/Que/que.wiki
+bindsym $mod+u			    exec $term -T "dropurl" -e nvim ~/.config/scripts/url.txt
+bindsym $mod+b			    exec $term -T "dropque" -e nvim ~/Documents/Notes/Que/que.wiki
 bindsym $mod+v			    exec $term -e /home/core/.config/scripts/lfub
 bindsym $mod+shift+s        exec $screencast
 bindsym $mod+d              exec rofi -show run -show-icons
@@ -212,11 +230,11 @@ bindsym $mod+Shift+d		gaps inner current set 0; gaps outer current set 0
 # <<--------- System Power Control --------->>
 set $mode_system System (e) logout, (r) reboot, (s) sleep, (Shift+s) shutdown
 mode "$mode_system" {
-	bindsym e exec --no-startup-id i3-msg exit, mode "default" 
-	bindsym r exec --no-startup-id systemctl reboot, mode "default"
+	bindsym e       exec --no-startup-id i3-msg exit, mode "default" 
+	bindsym r       exec --no-startup-id systemctl reboot, mode "default"
 	bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"
-	bindsym s exec --no-startup-id systemctl suspend, mode "default"
-	bindsym Return mode "default"
-	bindsym Escape mode "default"
+	bindsym s       exec --no-startup-id systemctl suspend, mode "default"
+	bindsym Return  mode "default"
+	bindsym Escape  mode "default"
 }
 bindsym $mod+F1 mode "$mode_system"

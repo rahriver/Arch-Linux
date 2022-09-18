@@ -1,0 +1,107 @@
+[module/browser]
+type = custom/text
+content = 
+content-foreground = #38ea4a
+click-left = brave
+click-right = firefox
+
+[module/youtube]
+type = custom/text
+content = 
+content-foreground = #ff0000
+click-left = brave 'https://youtube.com/'
+
+[module/telegram]
+type = custom/text
+content = 
+content-foreground = ${colors.secondary}
+click-left = telegram-desktop
+
+[module/github]
+type = custom/text
+content = 
+click-left = brave 'https://github.com/'
+
+[module/linkedin]
+type = custom/text
+content = 
+content-foreground = #1ce0ff
+click-left = firefox 'https://www.linkedin.com/feed/'
+
+[module/gmail]
+type = custom/text
+content = 
+content-foreground = #ff0000
+click-left = brave 'https://gmail.com/'
+
+[module/pubmed]
+type = custom/text
+content = 
+content-foreground = #f24fd7
+click-left = brave 'https://pubmed.ncbi.nlm.nih.gov'
+
+[module/music]
+type = custom/script
+interval = 1
+label = %output%
+exec = ~/.config/polybar/music
+
+[module/glava]
+type = custom/script
+exec = ~/.config/polybar/glava_toggle interactive
+click-left = ~/.config/polybar/glava_toggle toggle
+format-background = #FFFFFFF
+format-foreground = #FFFFFFF
+tail = true
+interval = 1
+
+[module/update]
+type = custom/script
+exec = paru -Qu | wc -l
+interval = 21600
+label = %output%
+format-prefix = " "
+
+[module/polypomo]
+type = custom/script
+exec = ~/.config/polybar/polypomo
+tail = true
+label = %output%
+click-left = ~/.config/polybar/polypomo toggle
+click-right = ~/.config/polybar/polypomo end
+click-middle = ~/.config/polybar/polypomo lock
+scroll-up = ~/.config/polybar/polypomo time +60
+scroll-down = ~/.config/polybar/polypomo time -60
+
+[module/news]
+type = custom/script
+exec = newsboat -x print-unread | awk '{print $1}'
+click-left = kitty -e newsboat
+interval = 10
+label = %output%
+format-prefix = " "
+
+[module/night]
+type = custom/script
+exec = echo ""
+click-left = redshift -P -O 2500
+click-right = redshift -x
+
+[module/conky]
+type = custom/script
+exec = echo ""
+click-left = conky
+click-right = killall conky
+
+[module/spotify]
+type = custom/script
+interval = 1
+format-prefix = " "
+format-foreground = #1db954
+format = <label>
+exec = python /home/core/.config/polybar/spotify_status.py -f '{artist}: {song}'
+format-underline = #1db954
+;control players (optional)
+click-left = playerctl --player=spotify play-pause 
+click-right = playerctl --player=spotify next 
+click-middle = playerctl --player=spotify previous 

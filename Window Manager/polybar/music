@@ -1,0 +1,17 @@
+#!/bin/bash
+
+player_status=$(playerctl --player ncmpcpp status 2> /dev/null)
+# stats= 
+
+if [[ $? -eq 0 ]]; then
+    metadata="$(playerctl --player ncmpcpp metadata artist) - $(playerctl --player ncmpcpp metadata title)  $(playerctl --player ncmpcpp metadata -f "{{emoji(status)}}")"
+fi
+
+# Foreground color formatting tags are optional
+if [[ $player_status = "Playing" ]]; then
+    echo "%{F#FFFFFF}$metadata%{F-}"
+elif [[ $player_status = "Paused" ]]; then
+    echo "%{F#999}$metadata%{F-}"
+else
+    echo ""
+fi

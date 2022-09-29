@@ -13,14 +13,20 @@ https://user-images.githubusercontent.com/89016694/185075794-b9d004ae-582f-4bd4-
 
 # Dotfiles
 
-- lf (with preview mode)
-- ncmpcpp
-- conky
-- markdown, rmarkdown, latex, compiling notes in terminal
-- scripts for extracting audio with ffmpeg or reducing pdf size
-- cava
-- glava
-- playerctl
-- newsboat
-- polybar (Modules)
-- dunst (notify-send ui alternative)
+- Lf (with preview mode)
+- Ncmpcpp
+- Conky
+- Markdown, rmarkdown, latex, compiling notes in terminal
+- Scripts for extracting audio, reducing pdf size, screen record, and etc
+- Cava
+- Glava
+- Playerctl
+- Newsboat
+- Polybar (Modules)
+  - Pomodoro
+  - TODOS
+  - News
+  - Redshift (Night)
+  - Conky Toggle
+  - Glava Toggle
+- Dunst (notify-send ui alternative)

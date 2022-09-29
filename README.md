@@ -16,6 +16,7 @@ https://user-images.githubusercontent.com/89016694/185075794-b9d004ae-582f-4bd4-
 - Lf (with preview mode)
 - Ncmpcpp
 - Conky
+- Dunst (notify-send ui alternative)
 - Markdown, rmarkdown, latex, compiling notes in terminal
 - Scripts for extracting audio, reducing pdf size, screen record, and etc
 - Cava
@@ -29,4 +30,3 @@ https://user-images.githubusercontent.com/89016694/185075794-b9d004ae-582f-4bd4-
   - Redshift (Night)
   - Conky Toggle
   - Glava Toggle
-- Dunst (notify-send ui alternative)

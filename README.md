@@ -1,6 +1,7 @@
 # My Arch Linux RICE
 ## Preview
 
+![desk-alt](https://user-images.githubusercontent.com/89016694/193119363-38c3d203-d66a-42f5-b9c9-6ea76e3924be.png)
 ![desktop](https://user-images.githubusercontent.com/89016694/185077146-ce217857-338b-46e4-b00f-abbbede21a80.png)
 ![lf](https://user-images.githubusercontent.com/89016694/185077200-83d655a3-c856-4f16-8182-765022adef02.png)
 ![terminals](https://user-images.githubusercontent.com/89016694/185077252-48d602f8-034f-4249-8443-db26678deec0.png)

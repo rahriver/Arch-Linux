@@ -130,15 +130,13 @@ for_window [class="Zotero"]             move to workspace $ws3
 for_window [class="TeXstudio"]          move to workspace $ws2
 for_window [class="Spotify"]            move to workspace $ws9
  
-for_window [title="Music Player"]       position center
-for_window [title="Music Player"]       floating enable
-for_window [title="Music Player"]       resize set 1000 800
+for_window [title="NCMPCPP"]       position center
+for_window [title="NCMPCPP"]       floating enable
+for_window [title="NCMPCPP"]       resize set 1000 800
 
 
 for_window [class="TelegramDesktop"]	position center
 for_window [class="TelegramDesktop"]	floating enable
-
-for_window [title="OBS*"]				move to workspace $ws9
 
 for_window [title="dropcalc"]			floating enable
 for_window [title="dropcalc"]			resize set 800 300
@@ -147,6 +145,11 @@ for_window [title="dropcalc"]			move position center
 for_window [title="dropideas"]          floating enable
 for_window [title="dropideas"]          resize set 800 600
 for_window [title="dropideas"]          move position center
+
+
+for_window [title="dropTODO"]          floating enable
+for_window [title="dropTODO"]          resize set 800 600
+for_window [title="dropTODO"]          move position center
 
 for_window [title="dropque"]            floating enable
 for_window [title="dropurl"]			floating enable
@@ -166,9 +169,10 @@ exec_always         /home/core/.config/scripts/dator
 exec_always         /usr/bin/dunst
 exec_always 		picom
 exec_always         "setxkbmap -model pc104 -layout us,ir -variant ,, -option grp:ctrl_shift_toggle"
-exec_always         feh --bg-fill ~/Media/Pictures/Wallpapers/291.png
+exec_always         feh --bg-fill ~/Media/Pictures/Wallpapers/315.png
 exec                --no-startup-id $alt -n dropterm
 exec                xset r rate 300 70
+exec                mpd
 
 # <<--------- Bindings --------->>
 bindsym Print               exec --no-startup-id flameshot gui
@@ -180,6 +184,7 @@ bindsym $mod+o			    exec --no-startup-id obsidian
 bindsym $mod+g 			    exec --no-startup-id telegram-desktop -g 78x24+50+20
 bindsym $mod+z			    exec --no-startup-id zotero
 bindsym $mod+m			    exec --no-startup-id $term -e ncmpcpp
+bindsym $mod+n			    exec $term -e view_notes
 bindsym $mod+shift+m	    exec --no-startup-id rhythmbox
 bindsym $mod+F12		    exec i3-input -F 'exec goldendict %s' -P 'Word: '
 bindsym $mod+p 			    exec sxiv -t /home/core/Media/Pictures/Wallpapers/*
@@ -189,7 +194,8 @@ bindsym $mod+j              exec zathura ~/Temp/MEGA/Article/Lipid\ Based/LSNL.p
 bindsym $mod+c			    exec $alt -t "dropcalc" -f mono:pixelsize=24 -e R --quiet
 bindsym $mod+u			    exec $term -T "dropurl" -e nvim ~/.config/scripts/url.txt
 bindsym $mod+b			    exec $term -T "dropque" -e nvim ~/Documents/Notes/Que/que.wiki
-bindsym $mod+v			    exec $term -e /home/core/.config/scripts/lfub
+bindsym $mod+v			    exec terminator -e /home/core/.config/scripts/lfub
+bindsym $mod+t			    exec $term -T "dropTODO" -e nvim /home/core/Documents/Notes/Todos/Todo.wiki
 bindsym $mod+shift+s        exec $screencast
 bindsym $mod+d              exec rofi -show run -show-icons
 bindsym $mod+shift+x	    exec /home/core/.config/scripts/lock

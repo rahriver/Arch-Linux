@@ -52,6 +52,8 @@ alias cb="cd .."
 alias conac="conda activate"
 alias condac="conda deactivate"
 alias extract="tar -xvf"
+alias nn="Library"
+alias cards="nvim ~/Documents/Notes/flash/deck.csv"
 
 # <<--------- PATH --------->>
 export PATH=$PATH:/home/core/.config/scripts

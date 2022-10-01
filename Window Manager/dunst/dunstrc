@@ -184,15 +184,15 @@ context = ctrl+shift+period
 [urgency_low]
 # IMPORTANT: colors have to be defined in quotation marks.
 # Otherwise the "#" and following would be interpreted as a comment.
-background = "#6c12ea"
+background = "#007fff"
 foreground = "#cacee6" 
-frame_color = "#6c12ea" 
+frame_color = "#007fff" 
 timeout = 8
 
 [urgency_normal]
-background = "#6c12ea"
+background = "#007fff"
 foreground = "#cacee6" 
-frame_color = "#6c12ea" 
+frame_color = "#007fff" 
 timeout = 10
 icon = "~/.config/dunst/bell.png"
 

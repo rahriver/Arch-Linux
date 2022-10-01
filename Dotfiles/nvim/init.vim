@@ -15,7 +15,9 @@ source ~/.config/nvim/plugin-configs/nerdtree.vim
 source ~/.config/nvim/plugin-configs/rooter.vim
 
 " <<--------- General Settings --------->>
-colorscheme tokyonight-night
+colorscheme cyberpunk
+" autocmd FileType vimwiki :colorscheme dawnfox
+" autocmd FileType vimwiki :AirlineTheme atomic
 
 " Transparency
 " hi! Normal ctermbg=NONE guibg=NONE
@@ -93,6 +95,7 @@ map <C-g> :Buffers<CR>
 inoremap <C-f> <Esc><Esc>:BLines<CR>
 let g:tex_flavor = 'tex'
 let g:floaterm_keymap_toggle = '<C-t>'
+let g:cyberpunk_cursorline="default"
 
 " Navigation
 nnoremap <silent>  <leader>= :bNext<CR>

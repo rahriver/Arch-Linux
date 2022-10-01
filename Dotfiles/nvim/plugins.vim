@@ -1,5 +1,8 @@
 call plug#begin("~/.config/nvim/plugged/")
 Plug 'jalvesaq/Nvim-R', { 'for': 'r', 'branch': 'stable'}
+Plug 'thedenisnikulin/vim-cyberpunk'
+Plug 'catppuccin/nvim', {'as': 'catppuccin'}
+Plug 'shaunsingh/oxocarbon.nvim', { 'do': './install.sh' }
 Plug 'ryanoasis/vim-devicons'
 Plug 'EdenEast/nightfox.nvim'
 Plug 'shaunsingh/nyoom.nvim'

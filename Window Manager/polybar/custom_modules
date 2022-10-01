@@ -50,8 +50,7 @@ exec = ~/.config/polybar/music
 type = custom/script
 exec = ~/.config/polybar/glava_toggle interactive
 click-left = ~/.config/polybar/glava_toggle toggle
-format-background = #FFFFFFF
-format-foreground = #FFFFFFF
+format-foreground = #FFFFFF
 tail = true
 interval = 1
 
@@ -79,19 +78,24 @@ exec = newsboat -x print-unread | awk '{print $1}'
 click-left = kitty -e newsboat
 interval = 10
 label = %output%
-format-prefix = " "
+format-prefix = "📬 "
 
 [module/night]
 type = custom/script
-exec = echo ""
+exec = echo "🌙"
 click-left = redshift -P -O 2500
 click-right = redshift -x
 
 [module/conky]
 type = custom/script
-exec = echo ""
+exec = echo "⚙️"
 click-left = conky
 click-right = killall conky
+
+[module/TODOS]
+type = custom/script
+exec = echo "📌 $(awk '(NR>2)' /home/core/Documents/Notes/Todos/TODO.wiki | wc -l)"
+click-left = dunstify -u low --replace=69 -i "TODOS" "$(cat /home/core/Documents/Notes/Todos/TODO.wiki)"
 
 [module/spotify]
 type = custom/script

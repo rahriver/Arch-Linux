@@ -337,11 +337,11 @@ def parse_args():
     # Display - main loop showing status
     parser.add_argument("--worktime",
                         type=int,
-                        default=25 * 60,
+                        default=30 * 60,
                         help="Default work timer time in seconds")
     parser.add_argument("--breaktime",
                         type=int,
-                        default=3 * 60,
+                        default=5 * 60,
                         help="Default break timer time in seconds")
     parser.add_argument("--saveto",
                         type=pathlib.Path,

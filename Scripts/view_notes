@@ -1,0 +1,15 @@
+#!/bin/sh
+
+EXTENSION="md"
+
+view_note() {
+    note=$(find ~/Documents/Notes/ -type f -name "*.*" | fzf --preview 'bat --color=always {}')
+    if [ -z "$note" ]; then
+        echo "Empty Library"
+    else
+        nvim "$note"
+        view_note
+    fi
+}
+
+view_note

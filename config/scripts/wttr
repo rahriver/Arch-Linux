@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+
+def get_weather(location):
+    import requests
+    url = "http://wttr.in/{}".format(location)
+    r = requests.get(url)
+    return r.text
+
+print(get_weather("Tehran"))

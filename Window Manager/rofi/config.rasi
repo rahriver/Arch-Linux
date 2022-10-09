@@ -1,8 +1,0 @@
-@theme "sidetab.rasi"
-@theme "onedark.rasi"
-@theme "slate.rasi"
-@theme "flamingo.rasi"
-@theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"
-@theme "/usr/share/rofi/themes/Adapta-Nokto.rasi"
-@theme "/usr/share/rofi/themes/blue.rasi"
-@theme "/usr/share/rofi/themes/Indego.rasi"

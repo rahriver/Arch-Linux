@@ -1,4 +1,0 @@
-#!/bin/sh
-
-read notification
-notify-send "$notification" "$@"

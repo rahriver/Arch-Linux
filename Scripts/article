@@ -1,2 +1,0 @@
-#!/bin/sh
-cd ~/Temp/MEGA/Article/Main/ && nvim SMNP.tex

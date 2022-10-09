@@ -1,9 +1,0 @@
-#!/bin/sh
-
-echo "Enter Your Python Project Name: "
-read name
-notify-send "Python File Created!"
-cd ~/Documents/Programming/Python/
-mkdir "$name"
-touch ~/Documents/Programming/Python/"$name"/"$name.py"
-nvim ~/Documents/Programming/Python/"$name.py"

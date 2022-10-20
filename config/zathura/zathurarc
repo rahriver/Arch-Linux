@@ -1,4 +1,3 @@
-set adjust-open "best-fit"
 set pages-per-row 1
 set scroll-page-aware "true"
 set scroll-full-overlap 0.01
@@ -13,4 +12,4 @@ unmap f
 map f toggle_fullscreen
 map [fullscreen] f toggle_fullscreen
 map p print
-map n toggle_statusbar
+map b toggle_statusbar

@@ -92,4 +92,3 @@ augroup lexical
 augroup END
 let g:lexical#spell = 1
 let g:lexical#spellfile = ['~/.vim/spell/en.utf-8.add',]
-

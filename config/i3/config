@@ -129,10 +129,11 @@ for_window [class="CPod"]               move to workspace $ws9
 for_window [class="Zotero"]             move to workspace $ws3
 for_window [class="TeXstudio"]          move to workspace $ws2
 for_window [class="Spotify"]            move to workspace $ws9
- 
+
 for_window [instance="ncmpcpp"]         move position center
 for_window [instance="ncmpcpp"]         floating enable
 for_window [instance="ncmpcpp"]         resize set 1000 800
+for_window [instance="ncmpcpp"]         move scratchpad
 
 for_window [instance="newsboat"]        move position center
 for_window [instance="newsboat"]        floating enable
@@ -161,14 +162,6 @@ for_window [title="dropideas"]          floating enable
 for_window [title="dropideas"]          resize set 800 600
 for_window [title="dropideas"]          move position center
 
-# for_window [title="dropTODO"]           floating enable
-# for_window [title="dropTODO"]           resize set 800 600
-# for_window [title="dropTODO"]           move position center
-
-# for_window [title="dropque"]            floating enable
-# for_window [title="dropque"]            resize set 800 600
-# for_window [title="dropque"]            move position center
-
 for_window [title="dropurl"]			floating enable
 for_window [title="dropurl"]			move position center
 for_window [title="dropurl"]			resize set 800 600
@@ -178,45 +171,48 @@ for_window [instance="dropterm"]        resize set 800 600
 for_window [instance="dropterm"]        move position center
 for_window [instance="dropterm"]		move scratchpad
 
+for_window [instance="dayplan"]	       floating enable
+for_window [instance="dayplan"]        resize set 800 600
+for_window [instance="dayplan"]        move position center
+
 # <<--------- Startup & Scripts --------->>
 # exec_always         --no-startup-id numlockx on
-exec_always         --no-startup-id $HOME/.config/dunst/wal_dunst.sh
-exec_always         --no-startup-id /home/core/.config/polybar/launch.sh
-exec_always         /home/core/.config/scripts/layout && $refresh_i3status
-exec_always         /home/core/.config/scripts/event
-exec                /home/core/.config/scripts/dator
-exec_always         /usr/bin/dunst
-exec_always 		picom --experimental-backends
-exec_always         "setxkbmap -model pc104 -layout us,ir -variant ,, -option grp:ctrl_shift_toggle"
 # exec_always         feh --bg-fill ~/Media/Pictures/Wallpapers/325.png
-exec_always         xwallpaper --zoom ~/Media/Pictures/Wallpapers/325.png
-exec                --no-startup-id $term --class dropterm
+# exec_always         xwallpaper --zoom ~/Media/Pictures/Wallpapers/325.png
+# exec_always         /home/core/.config/scripts/layout && $refresh_i3status
+exec_always         "setxkbmap -model pc104 -layout us,ir -variant ,, -option grp:ctrl_shift_toggle"
+exec_always 		picom --experimental-backends
+exec                /home/core/.config/scripts/dayplan
 exec                xset r rate 300 70
 exec                mpd
+exec_always         --no-startup-id $HOME/.config/dunst/wal_dunst.sh
+exec_always         --no-startup-id /home/core/.config/polybar/launch.sh
+exec_always         --no-startup-id /usr/bin/dunst
+exec                --no-startup-id $term --class ncmpcpp -e ncmpcpp
+exec                --no-startup-id $term --class dropterm
+exec                --no-startup-id $term --class dayplan -e nvim ~/Documents/Notes/Dayplan/$(date +%Y-%m-%d).md
 
 # <<--------- Bindings --------->>
 bindsym Print               exec --no-startup-id flameshot gui
 bindsym $mod+w			    exec --no-startup-id brave
 bindsym $mod+shift+w	    exec --no-startup-id qutebrowser
-bindsym $mod+l 			    exec --no-startup-id pcmanfm
-bindsym $mod+shift+l 	    exec --no-startup-id thunar
+bindsym $mod+l 			    exec --no-startup-id thunar
 bindsym $mod+o			    exec --no-startup-id obsidian
 bindsym $mod+g 			    exec --no-startup-id telegram-desktop -g 78x24+50+20
 bindsym $mod+z			    exec --no-startup-id zotero
-bindsym $mod+m			    exec --no-startup-id $term --class ncmpcpp -e ncmpcpp
 bindsym $mod+k			    exec $term --class "Kanban" -e taskell ~/Documents/Notes/KanTodo.md
-bindsym $mod+shift+m	    exec --no-startup-id rhythmbox
-# bindsym $mod+F12		    exec i3-input -F 'exec goldendict %s' -P 'Word: '
-# bindsym $mod+F12		    exec i3-input -F "exec $term -e notify-send '$(dict %s)'" -P 'Word: '
+bindsym $mod+F12		    exec i3-input -F 'exec goldendict %s' -P 'Word: '
 bindsym $mod+p 			    exec find /home/core/Media/Pictures/Wallpapers/ -type f | shuf | sxiv -
-bindsym $mod+s			    scratchpad show; [class="dropterm"] move position center
+bindsym $mod+s			    [class="dropterm"] scratchpad show; move position center
 bindsym $mod+i              exec $term -T "dropideas" -e nvim ~/Temp/MEGA/Article/Wiki/Ideas.wiki
+bindsym $mod+t              exec $term --class dayplan -e nvim ~/Documents/Notes/Dayplan/$(date +%Y-%m-%d).md
 bindsym $mod+c			    exec $term --class "dropcalc" -e R --quiet
-bindsym $mod+u			    exec $term -T "dropurl" -e nvim ~/.config/scripts/url.txt
+bindsym $mod+m			    [class="ncmpcpp"] scratchpad show; move position center
 bindsym $mod+v			    exec $term -e ~/.config/scripts/lfub
 bindsym $mod+n			    exec $term --class "Noter" -e noter view
 bindsym $mod+shift+s        exec $screencast
-bindsym $mod+d              exec rofi -show run -show-icons
+bindsym $mod+d              exec rofi -show drun -show-icons
+bindsym $mod+shift+e        exec rofi -show emoji -modi emoji
 bindsym $mod+shift+x	    exec /home/core/.config/scripts/lock
 bindsym $mod+Return 	    exec $term
 bindsym $mod+Shift+Return   exec $alt
@@ -247,12 +243,12 @@ bindsym $mod+r mode "default"
 # <<--------- Gap & Appearance --------->>
 gaps inner 10
 gaps outer 10
-for_window [class="^.*"]    border pixel 1
-for_window [title="^.*"]    border pixel 1
+for_window [class="^.*"]    border pixel 0
+for_window [title="^.*"]    border pixel 0
 bindsym $mod+Shift+minus	gaps inner current plus 5
 bindsym $mod+Shift+plus		gaps inner current minus 5
 bindsym $mod+Shift+d		gaps inner current set 0; gaps outer current set 0
-client.focused #FF0000 #CC0000 #ffffff #000000     #000000
+# client.focused #FF0000 #CC0000 #ffffff #000000     #000000
 
 # <<--------- System Power Control --------->>
 set $mode_system System (e) logout, (r) reboot, (s) sleep, (Shift+s) shutdown

@@ -5,7 +5,7 @@ NOTES_DIR="/home/core/Documents/Notes"
 # Set the editor to use
 EDITOR="nvim"
 # Set the file extension for the notes
-EXTENSION="md"
+EXTENSION="*"
 
 # <<--------- Choosing Templates --------->>
 Basic() {

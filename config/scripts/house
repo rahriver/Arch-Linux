@@ -1,0 +1,9 @@
+#!/bin/sh
+echo 'Season: '
+read season
+echo 'Episode: '
+read episode
+
+axel -a -c -o ~/Media/Videos/Series/House/"House.M.D.S$season.720p.Bluray.E$episode.mkv" http://dls2.top-movies2filmha.tk/DonyayeSerial/series/House.M.D/S$season/720p.BluRay/House.M.D.S${season}E${episode}.720p.BluRay.PaHe.DonyayeSerial.mkv
+
+

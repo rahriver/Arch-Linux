@@ -1,4 +1,0 @@
-#!/bin/sh
-
-# setxkbmap -model pc104 -layout us,ir -variant ,, -option grp:ctrl_shift_toggle && xkblayout-state print "%n" > ~/.config/layout
-setxkbmap -model pc104 -layout us,ir -variant ,, -option grp:ctrl_shift_toggle && xkb-switch | awk '{print $0}' > ~/.config/layout 

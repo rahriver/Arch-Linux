@@ -1,0 +1,10 @@
+#!/bin/sh
+
+FILENAME=$(date +%Y-%m-%d).md
+DIR="/home/core/Documents/Notes/Dayplan/"
+TEMPLATE="/home/core/Documents/Notes/Templates/Dayplan.md"
+
+# create a file named with the current date, in the directory
+if [ ! -f $DIR$FILENAME ]; then
+    cp $TEMPLATE $DIR$FILENAME
+fi

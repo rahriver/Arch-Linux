@@ -21,4 +21,4 @@
 /* Smoothing factor, override from `smooth_parameters.glsl` */
 #request setsmoothfactor 0.015
 
-#define OUTLINE #ff2b4b
+#define OUTLINE #00b6ff

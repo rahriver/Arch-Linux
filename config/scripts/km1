@@ -1,0 +1,1 @@
+sudo /sbin/modprobe tun && sudo openconnect c1.kmak.us:443

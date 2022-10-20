@@ -1,1 +1,10 @@
-@theme "/usr/share/rofi/themes/launchpad.rasi"
+
+configuration {
+  display-drun: "Applications:";
+  display-window: "Windows:";
+  drun-display-format: "{name}";
+  font: "JetBrainsMono Nerd Font Medium 10";
+  modi: "window,run,drun,emoji,calc";
+}
+
+@theme "/usr/share/rofi/themes/simple-tokyonight.rasi"

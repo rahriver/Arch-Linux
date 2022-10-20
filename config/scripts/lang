@@ -1,7 +1,7 @@
 #!/bin/sh
 
 main() {
-    if [ "$1" = "-g" ] && [ "$2" = "-w" ]; then
+    if [ "$1" = "-g" ] && [ "$2" = "-s" ]; then
         dict -d fd-deu-eng $3 | awk '(NR>4)'
 
     elif [ "$1" = "-g" ] && [ "$2" = "-f" ]; then
@@ -10,7 +10,7 @@ main() {
             dict -d fd-deu-eng $word | awk '(NR>4)' >> $3_out.txt
         done < $3
 
-    elif [ "$1" = "-d" ] && [ "$2" = "-w" ]; then
+    elif [ "$1" = "-d" ] && [ "$2" = "-s" ]; then
         dict -d wn $3 | awk '(NR>4)'
 
     elif [ "$1" = "-d" ] && [ "$2" = "-f" ]; then
@@ -19,7 +19,7 @@ main() {
             dict -d wn $word | awk '(NR>4)' >> $3_out.txt
         done < $3
 
-    elif [ "$1" = "-t" ] && [ "$2" = "-w" ]; then
+    elif [ "$1" = "-t" ] && [ "$2" = "-s" ]; then
         dict -d moby-thesaurus $3 | awk '(NR>4)'
 
     elif [ "$1" = "-t" ] && [ "$2" = "-f" ]; then
@@ -28,19 +28,17 @@ main() {
             dict -d moby-thesaurus $word | awk '(NR>4)' >> $3_out.txt
         done < $3
 
-    elif [ "$1" = "-e" ]; then
+    elif [ "$1" = "-e" ] && [ "$2" = "-s" ]; then
         dict -d elements $2 | awk '(NR>4)'
 
     elif [ "$1" = "-h" ]; then
-        echo "Usage: $0 [-g|-d|-t] [-w|-f] [word|file]"
+        echo "Usage: $0 [-g|-d|-t] [-s|-f] [word|file]"
         echo "  -g: German-English dictionary"
         echo "  -d: English dictionary"
         echo "  -t: English thesaurus"
         echo "  -e: Look up the definition of a chemical element"
-        echo "  -w: single word"
-        echo "  -f: file with words"
-        echo "  word: word to look up"
-        echo "  file: file with words to look up"
+        echo "  -s: Single object"
+        echo "  -f: File with words"
     fi
 }
 

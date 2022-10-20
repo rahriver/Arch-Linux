@@ -15,11 +15,7 @@ source ~/.config/nvim/plugin-configs/nerdtree.vim
 source ~/.config/nvim/plugin-configs/rooter.vim
 
 " <<--------- General Settings --------->>
-" colorscheme wal
-" colorscheme nightfox
-colorscheme tokyonight-night
-autocmd FileType markdown :Goyo
-
+colorscheme terafox
 " Transparency
 " hi! Normal ctermbg=NONE guibg=NONE
 " hi! NonText ctermbg=NONE guibg=NONE

@@ -1,10 +1,18 @@
 #!/bin/sh
 
-FILENAME=$(date +%Y-%m-%d).md
+FILENAME=$(date +%Y-%m-%d).wiki
 DIR="/home/core/Documents/Notes/Dayplan/"
+INDEX="/home/core/Documents/Notes/Dayplan/Dayplans.wiki"
 TEMPLATE="/home/core/Documents/Notes/Templates/Dayplan.md"
 
 # create a file named with the current date, in the directory
 if [ ! -f $DIR$FILENAME ]; then
     cp $TEMPLATE $DIR$FILENAME
+fi
+
+DATE="[[$(date +%Y-%m-%d)]]"
+
+# if the file doesn't contain the date, add it
+if ! grep -q "$(date +%Y-%m-%d)" "$INDEX" ; then
+    sed -i "1i $DATE" $INDEX
 fi

@@ -1,6 +1,7 @@
 call plug#begin("~/.config/nvim/plugged/")
 Plug 'jalvesaq/Nvim-R', { 'for': 'r', 'branch': 'stable'}
-Plug 'thedenisnikulin/vim-cyberpunk'
+Plug 'sainnhe/everforest'
+Plug 'mhinz/vim-startify'
 Plug 'dylanaraps/wal.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 Plug 'catppuccin/nvim', {'as': 'catppuccin'}
@@ -16,7 +17,6 @@ Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'tpope/vim-fugitive'
 Plug 'tanvirtin/monokai.nvim'
 Plug 'nvim-lua/plenary.nvim'
-Plug 'mhinz/vim-startify'
 Plug 'arzg/vim-colors-xcode'
 Plug 'embark-theme/vim', { 'as': 'embark', 'branch': 'main' }
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}

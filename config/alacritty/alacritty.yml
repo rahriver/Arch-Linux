@@ -146,7 +146,7 @@ font:
   #
   # Thin strokes are suitable for retina displays, but for non-retina screens
   # it is recommended to set `use_thin_strokes` to `false`.
-  use_thin_strokes: false
+  # use_thin_strokes: false
 
   # Use built-in font for box drawing characters.
   #
@@ -849,27 +849,27 @@ mouse:
 # BEGIN ACE
 colors:
   primary:
-    background: '#110410'
-    foreground: '#abb8bd'
+    background: '#0d0c0c'
+    foreground: '#cbc6c9'
   cursor:
-    text:       '#110410'
-    cursor:     '#abb8bd'
+    text:       '#0d0c0c'
+    cursor:     '#cbc6c9'
   normal:
-    black:      '#110410'
-    red:        '#2F3348'
-    green:      '#394759'
-    yellow:     '#3E4E62'
-    blue:       '#485A67'
-    magenta:    '#A65324'
-    cyan:       '#D9C73B'
-    white:      '#abb8bd'
+    black:      '#0d0c0c'
+    red:        '#955134'
+    green:      '#8D7063'
+    yellow:     '#AE8B75'
+    blue:       '#7B7889'
+    magenta:    '#867D8A'
+    cyan:       '#8D8896'
+    white:      '#cbc6c9'
   bright:
-    black:      '#778084'
-    red:        '#2F3348'
-    green:      '#394759'
-    yellow:     '#3E4E62'
-    blue:       '#485A67'
-    magenta:    '#A65324'
-    cyan:       '#D9C73B'
-    white:      '#abb8bd'
+    black:      '#8e8a8c'
+    red:        '#955134'
+    green:      '#8D7063'
+    yellow:     '#AE8B75'
+    blue:       '#7B7889'
+    magenta:    '#867D8A'
+    cyan:       '#8D8896'
+    white:      '#cbc6c9'
 # END ACE

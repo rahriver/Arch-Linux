@@ -2,6 +2,7 @@
 source ~/.config/nvim/plugins.vim
 source ~/.config/nvim/plugin-configs/coc.vim
 source ~/.config/nvim/plugin-configs/fzf.vim
+source ~/.config/nvim/plugin-configs/dashboard.vim
 source ~/.config/nvim/plugin-configs/markpreview.vim
 source ~/.config/nvim/plugin-configs/codi.vim
 source ~/.config/nvim/plugin-configs/vimtex.vim
@@ -15,7 +16,7 @@ source ~/.config/nvim/plugin-configs/nerdtree.vim
 source ~/.config/nvim/plugin-configs/rooter.vim
 
 " <<--------- General Settings --------->>
-colorscheme terafox
+colorscheme everforest
 " Transparency
 " hi! Normal ctermbg=NONE guibg=NONE
 " hi! NonText ctermbg=NONE guibg=NONE

@@ -2,7 +2,7 @@
 floating_modifier  $mod
 font               pango:Inconsolata Condensed Black 12
 set                $term --no-startup-id kitty
-set                $alt  --no-startup-id alacritty
+set                $alt  --no-startup-id cool-retro-term
 set                $mod Mod4
 set                $screencast bash ~/.config/scripts/record_vid
 exec               --no-startup-id dex --autostart --environment i3
@@ -190,7 +190,6 @@ exec_always         --no-startup-id /home/core/.config/polybar/launch.sh
 exec_always         --no-startup-id /usr/bin/dunst
 exec                --no-startup-id $term --class ncmpcpp -e ncmpcpp
 exec                --no-startup-id $term --class dropterm
-exec                --no-startup-id $term --class dayplan -e nvim ~/Documents/Notes/Dayplan/$(date +%Y-%m-%d).md
 
 # <<--------- Bindings --------->>
 bindsym Print               exec --no-startup-id flameshot gui
@@ -202,13 +201,13 @@ bindsym $mod+g 			    exec --no-startup-id telegram-desktop -g 78x24+50+20
 bindsym $mod+z			    exec --no-startup-id zotero
 bindsym $mod+k			    exec $term --class "Kanban" -e taskell ~/Documents/Notes/KanTodo.md
 bindsym $mod+F12		    exec i3-input -F 'exec goldendict %s' -P 'Word: '
-bindsym $mod+p 			    exec find /home/core/Media/Pictures/Wallpapers/ -type f | shuf | sxiv -
+bindsym $mod+p 			    exec ls -v -r ~/Media/Pictures/Wallpapers/*.png | sxiv -t -b -
 bindsym $mod+s			    [class="dropterm"] scratchpad show; move position center
 bindsym $mod+i              exec $term -T "dropideas" -e nvim ~/Temp/MEGA/Article/Wiki/Ideas.wiki
-bindsym $mod+t              exec $term --class dayplan -e nvim ~/Documents/Notes/Dayplan/$(date +%Y-%m-%d).md
+bindsym $mod+t              exec $term --class dayplan -e nvim ~/Documents/Notes/Dayplan/$(date +%Y-%m-%d).wiki
 bindsym $mod+c			    exec $term --class "dropcalc" -e R --quiet
 bindsym $mod+m			    [class="ncmpcpp"] scratchpad show; move position center
-bindsym $mod+v			    exec $term -e ~/.config/scripts/lfub
+bindsym $mod+shift+l	    exec $term -e ~/.config/scripts/lfub
 bindsym $mod+n			    exec $term --class "Noter" -e noter view
 bindsym $mod+shift+s        exec $screencast
 bindsym $mod+d              exec rofi -show drun -show-icons

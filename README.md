@@ -1,6 +1,9 @@
 # My Arch Linux RICE
 ## Preview
 
+![image](https://user-images.githubusercontent.com/89016694/205252524-98c5e128-2ec3-4725-9def-d14c8c65edbc.png)
+![image (1)](https://user-images.githubusercontent.com/89016694/205252536-941b4e54-0987-4356-ad34-eae06465449d.png)
+![combine_images (2)](https://user-images.githubusercontent.com/89016694/205252605-3f7bb8a7-8a89-4a1e-8fed-d4210890fafe.png)
 ![RICE](https://user-images.githubusercontent.com/89016694/195922934-abb8cd18-2936-40df-84a8-7c5d650d2f50.jpg)
 
 # Dotfiles

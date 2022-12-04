@@ -7,4 +7,9 @@ configuration {
   modi: "window,run,drun,emoji,calc";
 }
 
-@theme "/usr/share/rofi/themes/simple-tokyonight.rasi"
+/* Light theme. */
+/* @import "~/.cache/wal/colors-rofi-light" */
+
+/* Dark theme. */
+@import "~/.cache/wal/colors-rofi-dark"
+

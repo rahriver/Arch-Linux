@@ -1593,3 +1593,243 @@ Oct 22 13:22 : player: played "Radiohead/2003 - Hail To The Thief/14. A Wolf At 
 Oct 23 20:31 : player: played "The Strokes/2020 - The New Abnormal/01 The Adults Are Talking.mp3"
 Oct 23 22:29 : player: played "The Strokes/2020 - The New Abnormal/02 Selfless.mp3"
 Oct 23 22:33 : player: played "The Strokes/2020 - The New Abnormal/03 Brooklyn Bridge to Chorus.mp3"
+Oct 26 16:32 : player: played "Gorillaz/2022 - New/Cracker Island ft. Thundercat.mp3"
+Oct 27 00:01 : player: played "The Smile/The Smile - Colours Fly.mp3"
+Oct 27 09:16 : player: played "The Smile/The Smile - Colours Fly.mp3"
+Oct 27 09:17 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1276] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Oct 27 09:17 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Oct 27 09:25 : player: played "The Smile/The Smile - Bending hectic.mp3"
+Oct 27 21:03 : player: played "Uncomfortably Beautiful/Baby Blue   Badfinger.mp3"
+Oct 30 23:22 : player: played "Binaural Beats/Binaural Beat 40 Hz Gamma.mp3"
+Oct 31 12:19 : player: played "The Strokes/2020 - The New Abnormal/06 At the Door.mp3"
+Oct 31 21:00 : player: played "Radiohead/2016 - A Moon Shaped Pool/05. Ful Stop.mp3"
+Nov 01 22:24 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Nov 01 22:24 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Nov 01 22:24 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Nov 01 22:24 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Nov 01 22:31 : player: played "Gorillaz/2014 - Everyday Robots (Special Edition) [Mastered for iTunes]/07 You & Me.m4a"
+Nov 01 22:32 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Nov 01 22:32 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Nov 01 22:37 : player: played "Gorillaz/2014 - Everyday Robots (Special Edition) [Mastered for iTunes]/08 Hollow Ponds.m4a"
+Nov 01 22:57 : player: played "Radiohead/2016 - A Moon Shaped Pool/03. Decks Dark.mp3"
+Nov 01 23:02 : player: played "Totally Enormous Extinct Dinosaurs/Totally Enormous Extinct Dinosaurs - Blood In The Snow.mp3"
+Nov 02 14:56 : player: played "Neon/Aviad Zinemanas — Density Wave.mp3"
+Nov 02 14:56 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1276] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Nov 02 14:56 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Nov 02 14:56 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1276] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Nov 02 14:56 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Nov 02 15:00 : player: played "Uncomfortably Beautiful/Ghosts   Japan.mp3"
+Nov 02 15:48 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1276] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Nov 02 15:48 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Nov 03 00:01 : player: played "Totally Enormous Extinct Dinosaurs/Totally Enormous Extinct Dinosaurs - “Crosswalk”.mp3"
+Nov 05 12:29 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1276] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Nov 05 12:29 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Nov 05 12:29 : player: played "Totally Enormous Extinct Dinosaurs/Totally Enormous Extinct Dinosaurs - Blood In The Snow.mp3"
+Nov 05 12:34 : player: played "Totally Enormous Extinct Dinosaurs/Totally Enormous Extinct Dinosaurs - “Crosswalk”.mp3"
+Nov 05 12:38 : player: played "Totally Enormous Extinct Dinosaurs/Totally Enormous Extinct Dinosaurs - _Forever_.mp3"
+Nov 05 12:43 : player: played "Totally Enormous Extinct Dinosaurs/Totally Enormous Extinct Dinosaurs - Into The Light.mp3"
+Nov 05 12:48 : player: played "Totally Enormous Extinct Dinosaurs/Totally Enormous Extinct Dinosaurs - Never Seen You Dance (Official Video).mp3"
+Nov 05 12:55 : player: played "Totally Enormous Extinct Dinosaurs/Totally Enormous Extinct Dinosaurs - Radical.mp3"
+Nov 05 12:59 : player: played "Totally Enormous Extinct Dinosaurs/Totally Enormous Extinct Dinosaurs - “The Sleeper”.mp3"
+Nov 05 13:04 : player: played "Totally Enormous Extinct Dinosaurs/Totally Enormous Extinct Dinosaurs - _When the Lights Go_.mp3"
+Nov 05 13:08 : player: played "Totally Enormous Extinct Dinosaurs/Totally Enormous Extinct Dinosaurs – Promises.mp3"
+Nov 05 13:13 : player: played "Totally Enormous Extinct Dinosaurs/Totally Enormous Extinct Dinosaurs - Garden.mp3"
+Nov 05 13:33 : player: played "Radiohead/2006 - The Eraser/01 - The Eraser.mp3"
+Nov 05 13:38 : player: played "Radiohead/2006 - The Eraser/03 - The Clock.mp3"
+Nov 05 14:22 : player: played "Radiohead/2006 - The Eraser/09 - Cymbal Rush.mp3"
+Nov 05 15:47 : update: removing Radiohead/Atoms For Peace/2013 - AMOK/Magic Beanz   Atoms For Peace.mp3
+Nov 05 15:47 : update: removing Radiohead/Atoms For Peace/2013 - AMOK/09. Amok.mp3
+Nov 05 15:47 : update: removing Radiohead/Atoms For Peace/2013 - AMOK/08. Reverse Running.mp3
+Nov 05 15:47 : update: removing Radiohead/Atoms For Peace/2013 - AMOK/07. Judge Jury Executioner.mp3
+Nov 05 15:47 : update: removing Radiohead/Atoms For Peace/2013 - AMOK/06. Stuck Together Pieces.mp3
+Nov 05 15:47 : update: removing Radiohead/Atoms For Peace/2013 - AMOK/05. Unless.mp3
+Nov 05 15:47 : update: removing Radiohead/Atoms For Peace/2013 - AMOK/04. Dropped.mp3
+Nov 05 15:47 : update: removing Radiohead/Atoms For Peace/2013 - AMOK/03. Ingenue.mp3
+Nov 05 15:47 : update: removing Radiohead/Atoms For Peace/2013 - AMOK/02. Default.mp3
+Nov 05 15:47 : update: removing Radiohead/Atoms For Peace/2013 - AMOK/01. Before Your Very Eyes.mp3
+Nov 05 15:48 : update: added Uncomfortably Beautiful/Fall Guys Theme But It's Synthwave [AUDIO].mp3
+Nov 06 23:30 : player: played "Radiohead/2001 - Amnesiac/06. Knives Out.mp3"
+Nov 06 23:40 : player: played "Radiohead/2001 - Amnesiac/08. Dollars & Cents.mp3"
+Nov 08 18:19 : player: played "Gorillaz/2017 - Garage Palace (feat. Little Simz)/1 - Garage Palace (feat. Little Simz).mp3"
+Nov 08 19:02 : player: played "Tame Impala/2015 - Currents/05. Eventually.mp3"
+Nov 08 21:31 : player: played "Gorillaz/2017 - Garage Palace (feat. Little Simz)/1 - Garage Palace (feat. Little Simz).mp3"
+Nov 08 21:58 : player: played "Muse/2006 - Starlight (CDS) UK/01. Starlight.mp3"
+Nov 08 22:22 : player: played "Muse/2006 - Crying Shame/Muse – Crying Shame.mp3"
+Nov 08 22:28 : player: played "Muse/2009 - The Resistance (Limited Edition Digipak) UK/02. Resistance.mp3"
+Nov 09 19:33 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1276] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Nov 09 19:33 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Nov 09 19:41 : player: played "Totally Enormous Extinct Dinosaurs/Totally Enormous Extinct Dinosaurs - Radical.mp3"
+Nov 09 19:41 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1276] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Nov 09 19:41 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Nov 09 21:55 : player: played "Totally Enormous Extinct Dinosaurs/Totally Enormous Extinct Dinosaurs - _Forever_.mp3"
+Nov 10 14:51 : player: played "Totally Enormous Extinct Dinosaurs/Totally Enormous Extinct Dinosaurs - Never Seen You Dance (Official Video).mp3"
+Nov 10 18:57 : player: played "Binaural Beats/Binaural Beat 40 Hz Gamma.mp3"
+Nov 10 20:40 : player: played "Tame Impala/2015 - Currents/01. Let It Happen.mp3"
+Nov 10 23:35 : player: played "Binaural Beats/Binaural Beat 40 Hz Gamma.mp3"
+Nov 11 23:39 : player: played "Tool/Tool - 2006 - 10000 Days/05. The Pot.mp3"
+Nov 12 13:23 : player: played "Tool/Tool - 2006 - 10000 Days/05. The Pot.mp3"
+Nov 12 14:00 : player: played "Muse/2006 - Black Holes And Revelations (UK)/07. Assassin.mp3"
+Nov 12 14:05 : player: played "Muse/2006 - Black Holes And Revelations (UK)/10. Hoodoo.mp3"
+Nov 12 14:09 : player: played "Muse/2006 - Black Holes And Revelations (UK)/08. Exo-Politics.mp3"
+Nov 12 14:16 : player: played "Muse/2006 - Black Holes And Revelations (UK)/04. Map Of The Problematique.mp3"
+Nov 12 14:20 : player: played "Muse/2006 - Black Holes And Revelations (UK)/02. Starlight.mp3"
+Nov 12 14:25 : player: played "Muse/2006 - Black Holes And Revelations (UK)/01. Take A Bow.mp3"
+Nov 12 14:30 : player: played "Muse/2003 - Absolution (UK)/06. Falling Away With You.mp3"
+Nov 12 14:35 : player: played "Muse/2001 - Origin Of Symmetry (UK)/09. Darkshines.mp3"
+Nov 12 14:40 : player: played "Muse/2001 - Origin Of Symmetry (UK)/11. Megalomania.mp3"
+Nov 12 20:40 : player: played "Aphex Twin/1994 - Selected Ambient Works Volume II/1-03 Rhubarb.mp3"
+Nov 12 22:52 : player: played "Aphex Twin/1994 - Selected Ambient Works Volume II/1-04 Grass.mp3"
+Nov 12 22:56 : player: played "Aphex Twin/1994 - Selected Ambient Works Volume II/1-05 Mold.mp3"
+Nov 12 23:10 : update: added Uncomfortably Beautiful/Mr Robot - Main Theme.mp3
+Nov 12 23:10 : player: played "Aphex Twin/1994 - Selected Ambient Works Volume II/1-07 Blur.mp3"
+Nov 12 23:15 : player: played "Uncomfortably Beautiful/Mr Robot - Main Theme.mp3"
+Nov 13 22:04 : player: played "Aphex Twin/2001 - Drukqs/1-02 Vordhosbn.mp3"
+Nov 16 14:49 : player: played "Aphex Twin/2001 - Drukqs/2-09 Taking Control.mp3"
+Nov 16 20:18 : update: added Atoms For Peace/2013 - AMOK/01. Before Your Very Eyes.mp3
+Nov 16 20:18 : update: added Atoms For Peace/2013 - AMOK/08. Reverse Running.mp3
+Nov 16 20:18 : update: added Atoms For Peace/2013 - AMOK/03. Ingenue.mp3
+Nov 16 20:18 : update: added Atoms For Peace/2013 - AMOK/07. Judge Jury Executioner.mp3
+Nov 16 20:18 : update: added Atoms For Peace/2013 - AMOK/06. Stuck Together Pieces.mp3
+Nov 16 20:18 : update: added Atoms For Peace/2013 - AMOK/Magic Beanz   Atoms For Peace.mp3
+Nov 16 20:18 : update: added Atoms For Peace/2013 - AMOK/02. Default.mp3
+Nov 16 20:18 : update: added Atoms For Peace/2013 - AMOK/05. Unless.mp3
+Nov 16 20:18 : update: added Atoms For Peace/2013 - AMOK/04. Dropped.mp3
+Nov 16 20:18 : update: added Atoms For Peace/2013 - AMOK/09. Amok.mp3
+Nov 16 20:18 : update: added /Thom Yorke - YouWouldn'tLikeMeWhenI'mAngry.mp3
+Nov 16 20:18 : update: added /Radiohead – Ill Wind.mp3
+Nov 16 20:18 : update: added Radiohead/2014 - Tomorrows Modern Boxes/2014 - Tomorrow's Modern Boxes/Thom Yorke - YouWouldn'tLikeMeWhenI'mAngry.mp3
+Nov 16 20:19 : update: added Radiohead/2016 - A Moon Shaped Pool/Radiohead – Ill Wind.mp3
+Nov 16 22:08 : player: played "Gorillaz/2005 - Demon Days/2005 - Demon Days (Japanese Limited Edition)/13 - Fire Coming Out Of The Monkey's Head.mp3"
+Nov 16 22:11 : player: played "Gorillaz/2005 - Demon Days/2005 - Demon Days (Japanese Limited Edition)/09 - November Has Come.mp3"
+Nov 17 12:29 : player: played "Muse/2009 - The Resistance (Limited Edition Digipak) UK/09. Exogenesis Symphony Part 1 (Overture).mp3"
+Nov 17 13:04 : player: played "Tame Impala/2015 - Currents/01. Let It Happen.mp3"
+Nov 17 13:13 : player: played "Tame Impala/2020 - The Slow Rush/12. One More Hour.mp3"
+Nov 17 13:17 : player: played "Uncomfortably Beautiful/Tame Impala - Powerlines.mp3"
+Nov 17 13:17 : player: played "Uncomfortably Beautiful/Tame Impala - Powerlines.mp3"
+Nov 17 13:21 : player: played "Tame Impala/2015 - Currents/Taxi s Here   Tame Impala.mp3"
+Nov 17 13:26 : player: played "Tame Impala/2015 - Currents/03. The Moment.mp3"
+Nov 17 13:30 : player: played "Tame Impala/2015 - Currents/04. Yes I'm Changing.mp3"
+Nov 17 13:34 : player: played "Tame Impala/2015 - Currents/07. The Less I Know The Better.mp3"
+Nov 17 13:38 : player: played "Tame Impala/2015 - Currents/08. Past Life.mp3"
+Nov 17 13:40 : player: played "Tame Impala/2015 - Currents/09. Disciples.mp3"
+Nov 17 13:44 : player: played "Tame Impala/2015 - Currents/10. 'Cause I'm A Man.mp3"
+Nov 17 13:48 : player: played "Tame Impala/2015 - Currents/11. Reality In Motion.mp3"
+Nov 17 13:51 : player: played "Tame Impala/2015 - Currents/12. LoveParanoia.mp3"
+Nov 17 13:57 : player: played "Tame Impala/2015 - Currents/13. New Person, Same Old Mistakes.mp3"
+Nov 17 18:04 : player: played "Tame Impala/2020 - The Slow Rush/01. One More Year.mp3"
+Nov 17 18:07 : player: played "Tame Impala/2020 - The Slow Rush/02. Instant Destiny.mp3"
+Nov 17 18:11 : player: played "Tame Impala/2020 - The Slow Rush/03. Borderline.mp3"
+Nov 17 18:17 : player: played "Tame Impala/2020 - The Slow Rush/04. Posthumous Forgiveness.mp3"
+Nov 17 18:23 : player: played "Tame Impala/2020 - The Slow Rush/05. Breathe Deeper.mp3"
+Nov 17 18:28 : player: played "Tame Impala/2020 - The Slow Rush/06. Tomorrow's Dust.mp3"
+Nov 17 18:33 : player: played "Tame Impala/2020 - The Slow Rush/07. On Track.mp3"
+Nov 17 18:38 : player: played "Tame Impala/2020 - The Slow Rush/08. Lost In Yesterday.mp3"
+Nov 17 18:42 : player: played "Tame Impala/2020 - The Slow Rush/09. Is It True.mp3"
+Nov 17 18:46 : player: played "Tame Impala/2020 - The Slow Rush/10. It Might Be Time.mp3"
+Nov 17 19:11 : player: played "Tame Impala/2020 - The Slow Rush/11. Glimmer.mp3"
+Nov 17 19:42 : player: played "Tame Impala/2020 - The Slow Rush/12. One More Hour.mp3"
+Nov 17 19:46 : player: played "Tame Impala/2020 - The Slow Rush/02. Instant Destiny.mp3"
+Nov 17 19:54 : player: played "Tame Impala/2020 - The Slow Rush/03. Borderline.mp3"
+Nov 17 23:22 : player: played "Squarepusher/Squarepusher - Tundra 4.mp3"
+Nov 18 23:51 : player: played "Binaural Beats/Binaural Beat 40 Hz Gamma.mp3"
+Nov 19 12:16 : player: played "Muse/2003 - Absolution (UK)/08. Hysteria.mp3"
+Nov 20 11:58 : player: played "Muse/2003 - Absolution (UK)/08. Hysteria.mp3"
+Nov 20 23:37 : player: played "Aphex Twin/2014 - Syro/05. 180db_.mp3"
+Nov 20 23:42 : player: played "David Bowie/1970 - The Man Who Sold The World (1984 US)/08. The Man Who Sold The World.mp3"
+Nov 20 23:51 : player: played "Fleet Foxes/Fleet Foxes - Featherweight.mp3"
+Nov 20 23:54 : player: played "Fleet Foxes/2008 - Fleet Foxes/CD 1 - Album/01 - Sun It Rises.mp3"
+Nov 20 23:57 : player: played "Fleet Foxes/2008 - Fleet Foxes/CD 1 - Album/02 - White Winter Hymnal.mp3"
+Nov 21 00:02 : player: played "Fleet Foxes/2008 - Fleet Foxes/CD 1 - Album/03 - Ragged Wood.mp3"
+Nov 21 00:05 : player: played "Fleet Foxes/2008 - Fleet Foxes/CD 1 - Album/04 - Tiger Mountain Peasant Song.mp3"
+Nov 21 00:09 : player: played "Fleet Foxes/2008 - Fleet Foxes/CD 1 - Album/05 - Quiet Houses.mp3"
+Nov 21 00:12 : player: played "Fleet Foxes/2008 - Fleet Foxes/CD 1 - Album/06 - He Doesn't Know Why.mp3"
+Nov 21 00:15 : player: played "Fleet Foxes/2008 - Fleet Foxes/CD 1 - Album/07 - Heard Them Stirring.mp3"
+Nov 21 01:22 : player: played "Gorillaz/2017 - Sleeping Powder/Gorillaz - Sleeping Powder.mp3"
+Nov 22 22:50 : player: played "Muse/2018 - Simulation Theory (Super Deluxe)/02. The Dark Side.mp3"
+Nov 22 22:54 : player: played "Muse/2018 - Simulation Theory (Super Deluxe)/03. Pressure.mp3"
+Nov 22 22:58 : player: played "Muse/2018 - Simulation Theory (Super Deluxe)/05. Break it to Me.mp3"
+Nov 22 23:01 : player: played "Muse/2018 - Simulation Theory (Super Deluxe)/09. Blockades.mp3"
+Nov 22 23:19 : player: played "Muse/2018 - Simulation Theory (Super Deluxe)/10. Dig Down.mp3"
+Nov 22 23:24 : player: played "Muse/2018 - Simulation Theory (Super Deluxe)/11. The Void.mp3"
+Nov 22 23:29 : player: played "Muse/2018 - Simulation Theory (Super Deluxe)/11. The Void.mp3"
+Nov 22 23:34 : player: played "Muse/2018 - Simulation Theory (Super Deluxe)/13. The Dark Side (Alternate Reality Version).mp3"
+Nov 22 23:39 : player: played "Muse/2018 - Simulation Theory (Super Deluxe)/17. Something Human (Acoustic Version).mp3"
+Nov 22 23:46 : player: played "Muse/2015 - Drones/08 - Defector.mp3"
+Nov 24 22:06 : player: played "Uncomfortably Beautiful/Tame Impala - Powerlines.mp3"
+Nov 24 22:07 : exception: Failed to decode /home/core/Media/Music/Radiohead – Ill Wind.mp3; Failed to open '/home/core/Media/Music/Radiohead – Ill Wind.mp3': No such file or directory
+Nov 24 22:07 : player: played "Radiohead – Ill Wind.mp3"
+Nov 24 22:11 : player: played "Radiohead/2016 - A Moon Shaped Pool/Radiohead – Ill Wind.mp3"
+Nov 25 01:41 : player: played "Radiohead/2016 - A Moon Shaped Pool/03. Decks Dark.mp3"
+Nov 25 10:49 : player: played "Radiohead/2011 - The King of Limbs/04. Feral.mp3"
+Nov 25 10:54 : player: played "Radiohead/2011 - The King of Limbs/03. Little by Little.mp3"
+Nov 25 12:33 : player: played "Aphex Twin/2014 - Syro/03. produk 29.mp3"
+Nov 25 20:20 : player: played "Aphex Twin/2014 - Syro/03. produk 29.mp3"
+Nov 25 22:17 : player: played "The Smile/06 - Speech Bubbles.mp3"
+Nov 26 15:50 : player: played "Tame Impala/2015 - Currents/01. Let It Happen.mp3"
+Nov 26 15:51 : player: played "Tame Impala/2015 - Currents/02. Nangs.mp3"
+Nov 26 15:56 : player: played "Tame Impala/2015 - Currents/03. The Moment.mp3"
+Nov 26 16:00 : player: played "Tame Impala/2015 - Currents/04. Yes I'm Changing.mp3"
+Nov 26 16:05 : player: played "Tame Impala/2015 - Currents/05. Eventually.mp3"
+Nov 26 16:06 : player: played "Tame Impala/2015 - Currents/06. Gossip.mp3"
+Nov 26 16:10 : player: played "Tame Impala/2015 - Currents/07. The Less I Know The Better.mp3"
+Nov 26 16:14 : player: played "Tame Impala/2015 - Currents/08. Past Life.mp3"
+Nov 26 16:15 : player: played "Tame Impala/2015 - Currents/09. Disciples.mp3"
+Nov 26 16:19 : player: played "Tame Impala/2015 - Currents/10. 'Cause I'm A Man.mp3"
+Nov 26 16:24 : player: played "Tame Impala/2015 - Currents/11. Reality In Motion.mp3"
+Nov 26 16:27 : player: played "Tame Impala/2015 - Currents/12. LoveParanoia.mp3"
+Nov 26 16:33 : player: played "Tame Impala/2015 - Currents/13. New Person, Same Old Mistakes.mp3"
+Nov 26 18:33 : player: played "Binaural Beats/Binaural Beat 40 Hz Gamma.mp3"
+Nov 27 12:24 : player: played "Muse/2018 - Simulation Theory (Super Deluxe)/05. Break it to Me.mp3"
+Nov 27 17:51 : player: played "Uncomfortably Beautiful/Mr Robot - Main Theme.mp3"
+Nov 27 17:56 : player: played "Uncomfortably Beautiful/Mr Robot - Main Theme.mp3"
+Nov 27 22:27 : player: played "Gorillaz/2020 - Song Machine, Season One Strange Timez (Deluxe)/12. Opium (feat. EARTHGANG).mp3"
+Nov 27 23:32 : player: played "Radiohead/2014 - Tomorrows Modern Boxes/2014 - Tomorrow's Modern Boxes/08 Nose Grows Some.mp3"
+Nov 28 15:42 : update: added Uncomfortably Beautiful/Ultraista - Harmony.mp3
+Nov 28 21:56 : player: played "Uncomfortably Beautiful/Ultraista - Harmony.mp3"
+Nov 28 21:59 : player: played "Uncomfortably Beautiful/Ultraista - Harmony.mp3"
+Nov 30 23:15 : player: played "Uncomfortably Beautiful/Ultraista - Harmony.mp3"
+Dec 01 18:05 : player: played "Uncomfortably Beautiful/Ultraista - Harmony.mp3"
+Dec 01 19:27 : player: played "Tame Impala/2015 - Currents/05. Eventually.mp3"
+Dec 01 19:28 : player: played "Tame Impala/2015 - Currents/06. Gossip.mp3"
+Dec 01 19:39 : player: played "The Strokes/2020 - The New Abnormal/02 Selfless.mp3"
+Dec 01 19:59 : player: played "The Strokes/2020 - The New Abnormal/03 Brooklyn Bridge to Chorus.mp3"
+Dec 01 20:04 : player: played "The Strokes/2020 - The New Abnormal/04 Bad Decisions.mp3"
+Dec 01 20:09 : player: played "Gorillaz/2018 - The Now Now/04. Kansas.mp3"
+Dec 01 23:26 : player: played "Uncomfortably Beautiful/Ultraista - Harmony.mp3"
+Dec 01 23:37 : player: played "Uncomfortably Beautiful/The Perfect Girl    Mareux.mp3"
+Dec 01 23:40 : player: played "Uncomfortably Beautiful/The Perfect Girl    Mareux.mp3"
+Dec 01 23:40 : exception: Not playing
+Dec 01 23:45 : player: played "Uncomfortably Beautiful/Ultraista - Harmony.mp3"
+Dec 02 11:26 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Dec 02 11:26 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Dec 02 11:27 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Dec 02 11:27 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Dec 02 11:34 : player: played "Gorillaz/2014 - Everyday Robots (Special Edition) [Mastered for iTunes]/07 You & Me.m4a"
+Dec 02 11:36 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Dec 02 11:36 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Dec 02 11:37 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1276] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Dec 02 11:37 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Dec 02 11:37 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1276] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Dec 02 11:37 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Dec 02 11:43 : player: played "Atoms For Peace/2013 - AMOK/02. Default.mp3"
+Dec 02 11:48 : player: played "Atoms For Peace/2013 - AMOK/03. Ingenue.mp3"
+Dec 02 11:53 : player: played "Atoms For Peace/2013 - AMOK/04. Dropped.mp3"
+Dec 02 11:57 : player: played "Atoms For Peace/2013 - AMOK/05. Unless.mp3"
+Dec 02 12:03 : player: played "Atoms For Peace/2013 - AMOK/06. Stuck Together Pieces.mp3"
+Dec 02 12:06 : player: played "Atoms For Peace/2013 - AMOK/07. Judge Jury Executioner.mp3"
+Dec 02 12:11 : player: played "Atoms For Peace/2013 - AMOK/08. Reverse Running.mp3"
+Dec 02 15:35 : player: played "Binaural Beats/Binaural Beat 40 Hz Gamma.mp3"
+Dec 03 13:45 : player: played "Binaural Beats/Binaural Beat 40 Hz Gamma.mp3"
+Dec 03 21:16 : player: played "Gorillaz/2017 - Humanz (Deluxe Edition)/CD 1/07. Submission (Feat. Danny Brown & Kelela).mp3"
+Dec 03 21:16 : player: played "Gorillaz/2017 - Humanz (Deluxe Edition)/CD 1/07. Submission (Feat. Danny Brown & Kelela).mp3"
+Dec 03 21:16 : exception: Not playing
+Dec 03 22:13 : player: played "Tame Impala/2015 - Currents/02. Nangs.mp3"

@@ -16,6 +16,8 @@
 - Cava
 - Glava
 - Playerctl
+- Zathura-Pywal
+- Mpd
 - Newsboat
 - Polybar (Modules)
   - Pomodoro

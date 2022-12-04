@@ -1,11 +1,16 @@
 call plug#begin("~/.config/nvim/plugged/")
+Plug 'reedes/vim-litecorrect'
 Plug 'jalvesaq/Nvim-R', { 'for': 'r', 'branch': 'stable'}
 Plug 'sainnhe/everforest'
+Plug 'kamykn/popup-menu.nvim'
+Plug 'https://github.com/dracula/vim.git'
 Plug 'mhinz/vim-startify'
 Plug 'dylanaraps/wal.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 Plug 'ryanoasis/vim-devicons'
+Plug 'godlygeek/tabular'
+Plug 'preservim/vim-markdown'
 Plug 'EdenEast/nightfox.nvim'
 Plug 'shaunsingh/nyoom.nvim'
 Plug 'martinsione/darkplus.nvim'

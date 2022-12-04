@@ -15,11 +15,25 @@ source ~/.config/nvim/plugin-configs/goyo.vim
 source ~/.config/nvim/plugin-configs/nerdtree.vim
 source ~/.config/nvim/plugin-configs/rooter.vim
 
+augroup litecorrect
+  autocmd!
+  autocmd FileType markdown,mkd call litecorrect#init()
+  autocmd FileType textile call litecorrect#init()
+augroup END
+
 " <<--------- General Settings --------->>
-colorscheme everforest
+" colorscheme wal
+colorscheme tokyonight-night
+" colorscheme monokai_soda
 " Transparency
 " hi! Normal ctermbg=NONE guibg=NONE
 " hi! NonText ctermbg=NONE guibg=NONE
+
+" Navigate through paragraphs
+nnoremap j gj
+nnoremap k gk
+nnoremap <Up> gk
+nnoremap <Down> gj
 
 " Cursor color
 highlight Cursor guifg=white guibg=black
@@ -38,7 +52,6 @@ set smartcase
 set tabstop=4
 set noerrorbells
 set scrolloff=8
-set termguicolors
 set mouse+=a
 set splitright
 set splitbelow
@@ -56,16 +69,23 @@ set clipboard=unnamedplus
 set smartindent
 set hls is
 set laststatus=2
-set cursorline
+" set cursorline
 set encoding=UTF-8
 set incsearch
 set showcmd
+" set termguicolors
 
 " <<--------- Bindings --------->>
 " Disable Plugins For File Formats
 autocmd FileType vimwiki,tex :Copilot disable
 autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
+
+" Spellcheck
+autocmd FileType vimwiki :set spell
+autocmd FileType markdown :set spell
+
+let g:vimwiki_global_ext = 1
 
 " Workspaces
 map <leader>w :source ~/Documents/Projects/R/Workspace.R<CR>
@@ -124,3 +144,5 @@ augroup python_syntax_extra
   autocmd!
   autocmd! Syntax python :syn keyword Keyword self cls
 augroup END
+
+set dictionary+=/usr/share/dict/words

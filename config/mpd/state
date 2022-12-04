@@ -1,4 +1,4 @@
-sw_volume: 100
+sw_volume: 98
 audio_device_state:1:My Pulse Output
 audio_device_state:1:my_fifo
 state: stop
@@ -11,6 +11,107 @@ crossfade: 2
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Tame Impala/2015 - Currents/05. Eventually.mp3
-1:Tame Impala/2015 - Currents/06. Gossip.mp3
+0:Tame Impala/2015 - Currents/02. Nangs.mp3
+1:Binaural Beats/Binaural Beat 40 Hz Gamma.mp3
+2:Muse/2003 - Absolution (UK)/08. Hysteria.mp3
+3:Aphex Twin/2014 - Syro/04. 4 bit 9d api+e+6.mp3
+4:David Bowie/1970 - The Man Who Sold The World (1984 US)/09. The Supermen.mp3
+5:Fleet Foxes/Fleet Foxes - Featherweight.mp3
+6:Fleet Foxes/2008 - Fleet Foxes/CD 1 - Album/01 - Sun It Rises.mp3
+7:Fleet Foxes/2008 - Fleet Foxes/CD 1 - Album/02 - White Winter Hymnal.mp3
+8:Fleet Foxes/2008 - Fleet Foxes/CD 1 - Album/03 - Ragged Wood.mp3
+9:Fleet Foxes/2008 - Fleet Foxes/CD 1 - Album/04 - Tiger Mountain Peasant Song.mp3
+10:Fleet Foxes/2008 - Fleet Foxes/CD 1 - Album/05 - Quiet Houses.mp3
+11:Fleet Foxes/2008 - Fleet Foxes/CD 1 - Album/06 - He Doesn't Know Why.mp3
+12:Fleet Foxes/2008 - Fleet Foxes/CD 1 - Album/07 - Heard Them Stirring.mp3
+13:Fleet Foxes/2008 - Fleet Foxes/CD 1 - Album/08 - Your Protector.mp3
+14:Fleet Foxes/2008 - Fleet Foxes/CD 1 - Album/09 - Meadowlarks.mp3
+15:Fleet Foxes/2008 - Fleet Foxes/CD 1 - Album/10 - Blue Ridge Mountains.mp3
+16:Fleet Foxes/2008 - Fleet Foxes/CD 1 - Album/11 - Oliver James.mp3
+17:Fleet Foxes/2008 - Fleet Foxes/CD 2 -  Limited Edition Bonus Tracks - 2008/01 - Sun Giant.mp3
+18:Fleet Foxes/2008 - Fleet Foxes/CD 2 -  Limited Edition Bonus Tracks - 2008/02 - Drops In The River.mp3
+19:Fleet Foxes/2008 - Fleet Foxes/CD 2 -  Limited Edition Bonus Tracks - 2008/03 - English House.mp3
+20:Fleet Foxes/2008 - Fleet Foxes/CD 2 -  Limited Edition Bonus Tracks - 2008/04 - Mykonos (Alternate Version).mp3
+21:Fleet Foxes/2008 - Fleet Foxes/CD 2 -  Limited Edition Bonus Tracks - 2008/05 - Isles.mp3
+22:Fleet Foxes/2008 - Fleet Foxes/CD 2 - Japan - Limited Edition Bonus Tracks - 2009/01 - Sun Giant.mp3
+23:Fleet Foxes/2008 - Fleet Foxes/CD 2 - Japan - Limited Edition Bonus Tracks - 2009/02 - Drops In The River.mp3
+24:Fleet Foxes/2008 - Fleet Foxes/CD 2 - Japan - Limited Edition Bonus Tracks - 2009/03 - English House.mp3
+25:Fleet Foxes/2008 - Fleet Foxes/CD 2 - Japan - Limited Edition Bonus Tracks - 2009/04 - Mykonos.mp3
+26:Fleet Foxes/2008 - Fleet Foxes/CD 2 - Japan - Limited Edition Bonus Tracks - 2009/05 - Innocent Son.mp3
+27:Fleet Foxes/2008 - Fleet Foxes/CD 2 - Japan - Limited Edition Bonus Tracks - 2009/06 - False Knight On The Road.mp3
+28:Fleet Foxes/2011 - Helplessness Blues/01 - Fleet Foxes - Montezuma.mp3
+29:Fleet Foxes/2011 - Helplessness Blues/02 - Fleet Foxes - Bedouin Dress.mp3
+30:Fleet Foxes/2011 - Helplessness Blues/03 - Fleet Foxes - Sim Sala Bim.mp3
+31:Fleet Foxes/2011 - Helplessness Blues/04 - Fleet Foxes - Battery Kinzie.mp3
+32:Fleet Foxes/2011 - Helplessness Blues/05 - Fleet Foxes - The Plains _ Bitter Dancer.mp3
+33:Fleet Foxes/2011 - Helplessness Blues/06 - Fleet Foxes - Helplessness Blues.mp3
+34:Fleet Foxes/2011 - Helplessness Blues/07 - Fleet Foxes - The Cascades.mp3
+35:Fleet Foxes/2011 - Helplessness Blues/08 - Fleet Foxes - Lorelai.mp3
+36:Fleet Foxes/2011 - Helplessness Blues/09 - Fleet Foxes - Someone You'd Admire.mp3
+37:Fleet Foxes/2011 - Helplessness Blues/10 - Fleet Foxes - The Shrine _ An Argument.mp3
+38:Fleet Foxes/2011 - Helplessness Blues/11 - Fleet Foxes - Blue Spotted Tail.mp3
+39:Fleet Foxes/2011 - Helplessness Blues/12 - Fleet Foxes - Grown Ocean.mp3
+40:Fleet Foxes/2017 - Crack-Up/01. I Am All That I Need - Arroyo Seco - Thumbprint Scar.mp3
+41:Fleet Foxes/2017 - Crack-Up/02. Cassius, -.mp3
+42:Fleet Foxes/2017 - Crack-Up/03. - Naiads, Cassadies.mp3
+43:Fleet Foxes/2017 - Crack-Up/04. Kept Woman.mp3
+44:Fleet Foxes/2017 - Crack-Up/05. Third Of May - Odaigahara.mp3
+45:Fleet Foxes/2017 - Crack-Up/06. If You Need To, Keep Time On Me.mp3
+46:Fleet Foxes/2017 - Crack-Up/07. Mearcstapa.mp3
+47:Fleet Foxes/2017 - Crack-Up/08. On Another Ocean (January  June).mp3
+48:Fleet Foxes/2017 - Crack-Up/09. Fool's Errand.mp3
+49:Fleet Foxes/2017 - Crack-Up/10. I Should See Memphis.mp3
+50:Fleet Foxes/2017 - Crack-Up/11. Crack-Up.mp3
+51:Fleet Foxes/2008 - Fleet Foxes/CD 1 - Album/08 - Your Protector.mp3
+52:Fleet Foxes/2008 - Fleet Foxes/CD 1 - Album/09 - Meadowlarks.mp3
+53:Fleet Foxes/2008 - Fleet Foxes/CD 1 - Album/10 - Blue Ridge Mountains.mp3
+54:Fleet Foxes/2008 - Fleet Foxes/CD 1 - Album/11 - Oliver James.mp3
+55:Fleet Foxes/2008 - Fleet Foxes/CD 2 -  Limited Edition Bonus Tracks - 2008/01 - Sun Giant.mp3
+56:Fleet Foxes/2008 - Fleet Foxes/CD 2 -  Limited Edition Bonus Tracks - 2008/02 - Drops In The River.mp3
+57:Fleet Foxes/2008 - Fleet Foxes/CD 2 -  Limited Edition Bonus Tracks - 2008/03 - English House.mp3
+58:Fleet Foxes/2008 - Fleet Foxes/CD 2 -  Limited Edition Bonus Tracks - 2008/04 - Mykonos (Alternate Version).mp3
+59:Fleet Foxes/2008 - Fleet Foxes/CD 2 -  Limited Edition Bonus Tracks - 2008/05 - Isles.mp3
+60:Fleet Foxes/2008 - Fleet Foxes/CD 2 - Japan - Limited Edition Bonus Tracks - 2009/01 - Sun Giant.mp3
+61:Fleet Foxes/2008 - Fleet Foxes/CD 2 - Japan - Limited Edition Bonus Tracks - 2009/02 - Drops In The River.mp3
+62:Fleet Foxes/2008 - Fleet Foxes/CD 2 - Japan - Limited Edition Bonus Tracks - 2009/03 - English House.mp3
+63:Fleet Foxes/2008 - Fleet Foxes/CD 2 - Japan - Limited Edition Bonus Tracks - 2009/04 - Mykonos.mp3
+64:Fleet Foxes/2008 - Fleet Foxes/CD 2 - Japan - Limited Edition Bonus Tracks - 2009/05 - Innocent Son.mp3
+65:Fleet Foxes/2008 - Fleet Foxes/CD 2 - Japan - Limited Edition Bonus Tracks - 2009/06 - False Knight On The Road.mp3
+66:Fleet Foxes/2011 - Helplessness Blues/01 - Fleet Foxes - Montezuma.mp3
+67:Fleet Foxes/2011 - Helplessness Blues/02 - Fleet Foxes - Bedouin Dress.mp3
+68:Fleet Foxes/2011 - Helplessness Blues/03 - Fleet Foxes - Sim Sala Bim.mp3
+69:Fleet Foxes/2011 - Helplessness Blues/04 - Fleet Foxes - Battery Kinzie.mp3
+70:Fleet Foxes/2011 - Helplessness Blues/05 - Fleet Foxes - The Plains _ Bitter Dancer.mp3
+71:Fleet Foxes/2011 - Helplessness Blues/06 - Fleet Foxes - Helplessness Blues.mp3
+72:Fleet Foxes/2011 - Helplessness Blues/07 - Fleet Foxes - The Cascades.mp3
+73:Fleet Foxes/2011 - Helplessness Blues/08 - Fleet Foxes - Lorelai.mp3
+74:Fleet Foxes/2011 - Helplessness Blues/09 - Fleet Foxes - Someone You'd Admire.mp3
+75:Fleet Foxes/2011 - Helplessness Blues/10 - Fleet Foxes - The Shrine _ An Argument.mp3
+76:Fleet Foxes/2011 - Helplessness Blues/11 - Fleet Foxes - Blue Spotted Tail.mp3
+77:Fleet Foxes/2011 - Helplessness Blues/12 - Fleet Foxes - Grown Ocean.mp3
+78:Fleet Foxes/2017 - Crack-Up/01. I Am All That I Need - Arroyo Seco - Thumbprint Scar.mp3
+79:Fleet Foxes/2017 - Crack-Up/02. Cassius, -.mp3
+80:Fleet Foxes/2017 - Crack-Up/03. - Naiads, Cassadies.mp3
+81:Fleet Foxes/2017 - Crack-Up/04. Kept Woman.mp3
+82:Fleet Foxes/2017 - Crack-Up/05. Third Of May - Odaigahara.mp3
+83:Fleet Foxes/2017 - Crack-Up/06. If You Need To, Keep Time On Me.mp3
+84:Fleet Foxes/2017 - Crack-Up/07. Mearcstapa.mp3
+85:Fleet Foxes/2017 - Crack-Up/08. On Another Ocean (January  June).mp3
+86:Fleet Foxes/2017 - Crack-Up/09. Fool's Errand.mp3
+87:Fleet Foxes/2017 - Crack-Up/10. I Should See Memphis.mp3
+88:Fleet Foxes/2017 - Crack-Up/11. Crack-Up.mp3
+89:Muse/2018 - Simulation Theory (Super Deluxe)/01. Algorithm.mp3
+90:Muse/2018 - Simulation Theory (Super Deluxe)/04. Propaganda.mp3
+91:Muse/2018 - Simulation Theory (Super Deluxe)/21. The Dark Side (Alternate Reality Version Instrumental).mp3
+92:Muse/2018 - Simulation Theory (Super Deluxe)/12. Algorithm (Alternate Reality Version).mp3
+93:Muse/2015 - Drones/08 - Defector.mp3
+94:Binaural Beats/Binaural Beat 40 Hz Gamma.mp3
+95:Binaural Beats/Binaural Beat 40 Hz Gamma.mp3
+96:Muse/2018 - Simulation Theory (Super Deluxe)/05. Break it to Me.mp3
+97:Atoms For Peace/2013 - AMOK/08. Reverse Running.mp3
+98:Atoms For Peace/2013 - AMOK/09. Amok.mp3
+99:Radiohead/2013 - Judge Jury And Executioner/A1. Judge Jury And Executioner.mp3
+100:Radiohead/2013 - Judge Jury And Executioner/B1. S.A.D.mp3
+101:Binaural Beats/Binaural Beat 40 Hz Gamma.mp3
+102:Binaural Beats/Binaural Beat 40 Hz Gamma.mp3
 playlist_end

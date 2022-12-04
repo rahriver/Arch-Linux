@@ -13,7 +13,7 @@
    as a 2D sampler.
    
    See documentation for more details. */
-#request mod circle
+#request mod bars
 
 /* Window hints */
 #request setfloating  false

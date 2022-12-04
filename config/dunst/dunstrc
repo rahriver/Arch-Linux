@@ -137,7 +137,7 @@ horizontal_padding = 30
 #  * foreground: use the same color as the foreground;
 #  * frame: use the same color as the frame;
 #  * anything else will be interpreted as a X color.
-separator_color = "#000000"
+separator_color = "#090042"
 
 # Print a notification on startup.
 # This is mainly for error detection, since dbus (re-)starts dunst
@@ -182,21 +182,21 @@ close_all = ctrl+shift+space
 context = ctrl+shift+period
 
 [urgency_low]
-background = "#000000"
+background = "#090042"
 foreground = "#FFFFFF"
-frame_color = "#000000" 
+frame_color = "#090042" 
 timeout = 8
 
 [urgency_normal]
-background = "#000000"
+background = "#090042"
 foreground = "#FFFFFF" 
-frame_color = "#000000"
+frame_color = "#090042"
 timeout = 10
 icon = "~/.config/dunst/bell.png"
 
 [urgency_critical]
-background = "#000000"
+background = "#090042"
 foreground = "#FFFFFF" 
-frame_color = "#000000" 
+frame_color = "#090042" 
 timeout = 15
 icon = "~/.config/dunst/alert.png"

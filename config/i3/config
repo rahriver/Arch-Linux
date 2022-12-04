@@ -109,18 +109,18 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
-# <<--------- i3 Status Bar --------->>
-# <<---- Colors ---->>
+# <<--------- Colors --------->>
+set_from_resource $fg i3wm.color7 #f0f0f0
+set_from_resource $bg i3wm.color2 #f0f0f0
 
-# bar {
-# 	font pango:JetBrains Mono 10
-# 	position top
-# 	tray_output none
-# 	status_command ~/Downloads/Programs/bumblebee-status/bumblebee-status -m disk \
-# 		indicator layout-xkb battery brightness pasink time \
-# 		-p root.path=/ time.format="%H:%M CW %V" date.format="%a, %b %d %Y" \
-# 		-t dracula-powerline
-# }
+# class                 border  backgr. text indicator child_border
+client.focused          $bg     $bg     $fg  $bg       $bg
+client.focused_inactive $bg     $bg     $fg  $bg       $bg
+client.unfocused        $bg     $bg     $fg  $bg       $bg
+client.urgent           $bg     $bg     $fg  $bg       $bg
+client.placeholder      $bg     $bg     $fg  $bg       $bg
+
+client.background       $bg
 
 # <<--------- Assign Programs To Workspaces -------->>
 for_window [class="Brave-browser"]		move to workspace $ws1
@@ -134,10 +134,6 @@ for_window [instance="ncmpcpp"]         move position center
 for_window [instance="ncmpcpp"]         floating enable
 for_window [instance="ncmpcpp"]         resize set 1000 800
 for_window [instance="ncmpcpp"]         move scratchpad
-
-for_window [instance="newsboat"]        move position center
-for_window [instance="newsboat"]        floating enable
-for_window [instance="newsboat"]        resize set 1000 800
 
 for_window [class="Ranger"]             move position center
 for_window [class="Ranger"]             floating enable
@@ -162,9 +158,9 @@ for_window [title="dropideas"]          floating enable
 for_window [title="dropideas"]          resize set 800 600
 for_window [title="dropideas"]          move position center
 
-for_window [title="dropurl"]			floating enable
-for_window [title="dropurl"]			move position center
-for_window [title="dropurl"]			resize set 800 600
+for_window [class="dropurl"]			floating enable
+for_window [class="dropurl"]			move position center
+for_window [class="dropurl"]			resize set 800 600
 
 for_window [instance="dropterm"]		floating enable
 for_window [instance="dropterm"]        resize set 800 600
@@ -177,8 +173,8 @@ for_window [instance="dayplan"]        move position center
 
 # <<--------- Startup & Scripts --------->>
 # exec_always         --no-startup-id numlockx on
-# exec_always         feh --bg-fill ~/Media/Pictures/Wallpapers/325.png
-# exec_always         xwallpaper --zoom ~/Media/Pictures/Wallpapers/325.png
+# exec_always         feh --bg-fill ~/f.jpg
+exec_always         xwallpaper --zoom ~/f.jpg
 # exec_always         /home/core/.config/scripts/layout && $refresh_i3status
 exec_always         "setxkbmap -model pc104 -layout us,ir -variant ,, -option grp:ctrl_shift_toggle"
 exec_always 		picom --experimental-backends
@@ -199,9 +195,10 @@ bindsym $mod+l 			    exec --no-startup-id thunar
 bindsym $mod+o			    exec --no-startup-id obsidian
 bindsym $mod+g 			    exec --no-startup-id telegram-desktop -g 78x24+50+20
 bindsym $mod+z			    exec --no-startup-id zotero
+bindsym $mod+u              exec --no-startup-id $term --class "dropurl" -e nvim ~/.config/scripts/url.txt
 bindsym $mod+k			    exec $term --class "Kanban" -e taskell ~/Documents/Notes/KanTodo.md
 bindsym $mod+F12		    exec i3-input -F 'exec goldendict %s' -P 'Word: '
-bindsym $mod+p 			    exec ls -v -r ~/Media/Pictures/Wallpapers/*.png | sxiv -t -b -
+bindsym $mod+p 			    exec ls -v -r ~/Media/Pictures/Wallpapers/*.png | nsxiv -t -b -
 bindsym $mod+s			    [class="dropterm"] scratchpad show; move position center
 bindsym $mod+i              exec $term -T "dropideas" -e nvim ~/Temp/MEGA/Article/Wiki/Ideas.wiki
 bindsym $mod+t              exec $term --class dayplan -e nvim ~/Documents/Notes/Dayplan/$(date +%Y-%m-%d).wiki
@@ -247,7 +244,6 @@ for_window [title="^.*"]    border pixel 0
 bindsym $mod+Shift+minus	gaps inner current plus 5
 bindsym $mod+Shift+plus		gaps inner current minus 5
 bindsym $mod+Shift+d		gaps inner current set 0; gaps outer current set 0
-# client.focused #FF0000 #CC0000 #ffffff #000000     #000000
 
 # <<--------- System Power Control --------->>
 set $mode_system System (e) logout, (r) reboot, (s) sleep, (Shift+s) shutdown
@@ -260,3 +256,14 @@ mode "$mode_system" {
 	bindsym Escape  mode "default"
 }
 bindsym $mod+F1 mode "$mode_system"
+
+# <<--------- Old Status Bar --------->>
+# bar {
+# 	font pango:JetBrains Mono 10
+# 	position top
+# 	tray_output none
+# 	status_command ~/Downloads/Programs/bumblebee-status/bumblebee-status -m disk \
+# 		indicator layout-xkb battery brightness pasink time \
+# 		-p root.path=/ time.format="%H:%M CW %V" date.format="%a, %b %d %Y" \
+# 		-t dracula-powerline
+# }

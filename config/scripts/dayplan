@@ -1,9 +1,9 @@
 #!/bin/sh
 
 FILENAME=$(date +%Y-%m-%d).wiki
-DIR="/home/core/Documents/Notes/Dayplan/"
-INDEX="/home/core/Documents/Notes/Dayplan/Dayplans.wiki"
-TEMPLATE="/home/core/Documents/Notes/Templates/Dayplan.md"
+DIR="/home/core/Temp/MEGA/Notes/"
+INDEX="/home/core/Temp/MEGA/Notes/Dayplan/Dayplans.wiki"
+TEMPLATE="/home/core/Temp/MEGA/Notes/Templates/Dayplan.md"
 
 # create a file named with the current date, in the directory
 if [ ! -f $DIR$FILENAME ]; then

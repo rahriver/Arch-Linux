@@ -66,6 +66,8 @@ return packer.startup(function(use)
   use { "p00f/nvim-ts-rainbow" }
 
 	-- Colorschemes
+  use { "sainnhe/everforest" }
+  use { "sainnhe/gruvbox-material" }
   use { "LunarVim/Colorschemes"}
   use { "Mofiqul/dracula.nvim" }
   use { "Mofiqul/vscode.nvim" }

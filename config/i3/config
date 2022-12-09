@@ -172,68 +172,69 @@ for_window [instance="dayplan"]        resize set 800 600
 for_window [instance="dayplan"]        move position center
 
 # <<--------- Startup & Scripts --------->>
+# exec                --no-startup-id nvidia-settings --load-config-only
 # exec_always         --no-startup-id numlockx on
 # exec_always         feh --bg-fill ~/f.jpg
 # exec_always         xwallpaper --zoom ~/f.jpg
 # exec_always         /home/core/.config/scripts/layout && $refresh_i3status
-exec_always         "setxkbmap -model pc104 -layout us,ir -variant ,, -option grp:ctrl_shift_toggle"
-exec_always 		picom --experimental-backends
-exec                /home/core/.config/scripts/dayplan
-exec                xset r rate 300 70
-exec                mpd
-exec_always         --no-startup-id $HOME/.config/dunst/wal_dunst.sh
-exec_always         --no-startup-id /home/core/.config/polybar/launch.sh
-exec_always         --no-startup-id /usr/bin/dunst
-exec                --no-startup-id $term --class ncmpcpp -e ncmpcpp
-exec                --no-startup-id $term --class dropterm
+exec_always           "setxkbmap -model pc104 -layout us,ir -variant ,, -option grp:ctrl_shift_toggle"
+exec_always 		      picom --experimental-backends
+exec                  /home/core/.config/scripts/dayplan
+exec                  xset r rate 300 70
+exec                  mpd
+exec_always           --no-startup-id $HOME/.config/dunst/wal_dunst.sh
+exec_always           --no-startup-id /home/core/.config/polybar/launch.sh
+exec_always           --no-startup-id /usr/bin/dunst
+exec                  --no-startup-id $term --class ncmpcpp -e ncmpcpp
+exec                  --no-startup-id $term --class dropterm
 
 # <<--------- Bindings --------->>
 bindsym Print               exec --no-startup-id flameshot gui
-bindsym $mod+w			    exec --no-startup-id brave
-bindsym $mod+shift+w	    exec --no-startup-id qutebrowser
-bindsym $mod+l 			    exec --no-startup-id thunar
-bindsym $mod+o			    exec --no-startup-id obsidian; exec ~/.config/scripts/obs-pic
-bindsym $mod+g 			    exec --no-startup-id telegram-desktop -g 78x24+50+20
-bindsym $mod+z			    exec --no-startup-id zotero
+bindsym $mod+w			        exec --no-startup-id brave
+bindsym $mod+shift+w	      exec --no-startup-id qutebrowser
+bindsym $mod+l 			        exec --no-startup-id thunar
+bindsym $mod+o			        exec --no-startup-id obsidian; exec ~/.config/scripts/obs-pic
+bindsym $mod+g 			        exec --no-startup-id telegram-desktop -g 78x24+50+20
+bindsym $mod+z			        exec --no-startup-id zotero
 bindsym $mod+u              exec --no-startup-id $term --class "dropurl" -e nvim ~/.config/scripts/url.txt
-bindsym $mod+k			    exec $term --class "Kanban" -e taskell ~/Documents/Notes/KanTodo.md
-bindsym $mod+F12		    exec i3-input -F 'exec goldendict %s' -P 'Word: '
-bindsym $mod+p 			    exec ls -v -r ~/Media/Pictures/Wallpapers/*.png | nsxiv -t -b -
-bindsym $mod+s			    [class="dropterm"] scratchpad show; move position center
+bindsym $mod+k			        exec $term --class "Kanban" -e taskell ~/Temp/MEGA/Notes/KanTodo.md
+bindsym $mod+F12		        exec i3-input -F 'exec goldendict %s' -P 'Word: '
+bindsym $mod+p 			        exec ls -v -r ~/Media/Pictures/Wallpapers/*.png | nsxiv -t -b -
+bindsym $mod+s			        [class="dropterm"] scratchpad show; move position center
 bindsym $mod+i              exec $term -T "dropideas" -e nvim ~/Temp/MEGA/Article/Wiki/Ideas.wiki
 bindsym $mod+t              exec $term --class dayplan -e nvim ~/Documents/Notes/Dayplan/$(date +%Y-%m-%d).wiki
-bindsym $mod+c			    exec $term --class "dropcalc" -e R --quiet
-bindsym $mod+m			    [class="ncmpcpp"] scratchpad show; move position center
-bindsym $mod+shift+l	    exec $term -e ~/.config/scripts/lfub
-bindsym $mod+n			    exec $term --class "Noter" -e noter view
+bindsym $mod+c			        exec $term --class "dropcalc" -e R --quiet
+bindsym $mod+m			        [class="ncmpcpp"] scratchpad show; move position center
+bindsym $mod+shift+l	      exec $term -e ~/.config/scripts/lfub
+bindsym $mod+n			        exec $term --class "Noter" -e noter view
 bindsym $mod+shift+s        exec $screencast
 bindsym $mod+d              exec rofi -show drun -show-icons
 bindsym $mod+shift+e        exec rofi -show emoji -modi emoji
-bindsym $mod+shift+x	    exec /home/core/.config/scripts/lock
-bindsym $mod+Return 	    exec $term
+bindsym $mod+shift+x	      exec /home/core/.config/scripts/lock
+bindsym $mod+Return 	      exec $term
 bindsym $mod+Shift+Return   exec $alt
 bindsym $mod+semicolon	    layout toggle split
 bindsym $mod+backslash	    split h
 bindsym $mod+slash	        split v
 bindsym $mod+Shift+r        restart
-bindsym $mod+f		        fullscreen toggle
+bindsym $mod+f		          fullscreen toggle
 bindsym $mod+q              kill
 
 # <<--------- Window Resize --------->>
-bindsym $mod+r mode "resize"
+bindsym $mod+r    mode "resize"
 bindsym $mod+Shift+Escape exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 mode "resize" {
-bindsym j resize shrink width 10 px or 10 ppt
-bindsym k resize grow height 10 px or 10 ppt
-bindsym l resize shrink height 10 px or 10 ppt
+bindsym j         resize shrink width 10 px or 10 ppt
+bindsym k         resize grow height 10 px or 10 ppt
+bindsym l         resize shrink height 10 px or 10 ppt
 bindsym semicolon resize grow width 10 px or 10 ppt
-bindsym Left resize shrink width 10 px or 10 ppt
-bindsym Down resize grow height 10 px or 10 ppt
-bindsym Up resize shrink height 10 px or 10 ppt
-bindsym Right resize grow width 10 px or 10 ppt
-bindsym Return mode "default"
-bindsym Escape mode "default"
-bindsym $mod+r mode "default"
+bindsym Left      resize shrink width 10 px or 10 ppt
+bindsym Down      resize grow height 10 px or 10 ppt
+bindsym Up        resize shrink height 10 px or 10 ppt
+bindsym Right     resize grow width 10 px or 10 ppt
+bindsym Return    mode "default"
+bindsym Escape    mode "default"
+bindsym $mod+r    mode "default"
 }
 
 # <<--------- Gap & Appearance --------->>
@@ -241,9 +242,9 @@ gaps inner 10
 gaps outer 10
 for_window [class="^.*"]    border pixel 0
 for_window [title="^.*"]    border pixel 0
-bindsym $mod+Shift+minus	gaps inner current plus 5
-bindsym $mod+Shift+plus		gaps inner current minus 5
-bindsym $mod+Shift+d		gaps inner current set 0; gaps outer current set 0
+bindsym $mod+Shift+minus	  gaps inner current plus 5
+bindsym $mod+Shift+plus		  gaps inner current minus 5
+bindsym $mod+Shift+d		    gaps inner current set 0; gaps outer current set 0
 
 # <<--------- System Power Control --------->>
 set $mode_system System (e) logout, (r) reboot, (s) sleep, (Shift+s) shutdown

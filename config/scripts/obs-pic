@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cp $(ls -v ~/Media/Pictures/Wallpapers/*.png | shuf -n 1) ~/Temp/MEGA/Obsidian/Broadest/0\ -\ Meta/0.1\ -\ Attachments/dashboard-pic.png
+
+cp $(ls -v ~/Media/Pictures/Wallpapers/Autumn/*.png | shuf -n 1) ~/Temp/MEGA/Obsidian/Broadest/0\ -\ Meta/0.1\ -\ Attachments/Journal.png

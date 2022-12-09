@@ -69,11 +69,11 @@ set clipboard=unnamedplus
 set smartindent
 set hls is
 set laststatus=2
-" set cursorline
+set cursorline
 set encoding=UTF-8
 set incsearch
 set showcmd
-" set termguicolors
+set termguicolors
 
 " <<--------- Bindings --------->>
 " Disable Plugins For File Formats

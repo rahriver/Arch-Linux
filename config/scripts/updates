@@ -1,0 +1,4 @@
+#!/bin/sh
+
+QUERY=$(pacman -Qu -q | wc -l)
+notify-send "📦 Pacman Update" "$QUERY packages need to be updated."

@@ -2,7 +2,7 @@
 # neofetch --config ~/.config/neofetch/arch-small | lolcat
 # <<--------- Visuals --------->>
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-ZSH_THEME="robbyrussell"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # <<--------- General Settings --------->>
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
@@ -36,8 +36,8 @@ alias vop="nvim ~/.config/polybar/config.ini"
 alias telcol="wal-telegram --wal -g"
 alias vsh="nvim ~/.zshrc"
 alias vwm="nvim ~/.config/i3/config"
-alias vimrc="nvim ~/.config/nvim/init.vim"
-alias vimplug="nvim ~/.config/nvim/plugins.vim"
+alias vimrc="nvim ~/.config/nvim/init.lua"
+alias vimplug="nvim ~/.config/nvim/lua/user/plugins.lua"
 alias randwall="~/.config/scripts/setbg ~/Media/Pictures/Wallpapers"
 alias p="sudo pacman"
 alias ax="axel -a -c"
@@ -61,15 +61,15 @@ export XDG_RUNTIME_DIR=/run/user/$(id -u)
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/core/Temp/Programs/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/core/Temp/Programs/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/core/Temp/Programs/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/core/Temp/Programs/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
+# __conda_setup="$('/home/core/Temp/Programs/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+# if [ $? -eq 0 ]; then
+#     eval "$__conda_setup"
+# else
+#     if [ -f "/home/core/Temp/Programs/miniconda3/etc/profile.d/conda.sh" ]; then
+#         . "/home/core/Temp/Programs/miniconda3/etc/profile.d/conda.sh"
+#     else
+#         export PATH="/home/core/Temp/Programs/miniconda3/bin:$PATH"
+#     fi
+# fi
+# unset __conda_setup
 # <<< conda initialize <<<

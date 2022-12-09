@@ -1,0 +1,8 @@
+#!/bin/sh
+
+notify-send "🌡️ Temperature 
+
+Core 0: $(sensors | grep "Core 0:" | tr -d '+' | awk '{print $3}')
+Core 1: $(sensors | grep "Core 1:" | tr -d '+' | awk '{print $3}')
+GPU: $(sensors | awk 'NR==33' | awk '{print $2}')
+"

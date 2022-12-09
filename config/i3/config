@@ -75,9 +75,9 @@ bindsym $mod+0 workspace number $ws10
 # <<--------- Workspace Navigation --------->>
 bindsym $mod+Home	workspace $ws1
 bindsym $mod+End	workspace $ws10
-bindsym $mod+Next	workspace prev
-bindsym $mod+Prior	workspace next
-bindsym $mod+Tab	workspace back_and_forth
+bindsym $mod+Tab	workspace next
+# bindsym $mod+Prior	workspace prev
+# bindsym $mod+Tab	workspace back_and_forth
 # bindsym $mod+mod2+KP_0
 # bindsym $mod+mod2+KP_1 
 # bindsym $mod+mod2+KP_2 
@@ -174,7 +174,7 @@ for_window [instance="dayplan"]        move position center
 # <<--------- Startup & Scripts --------->>
 # exec_always         --no-startup-id numlockx on
 # exec_always         feh --bg-fill ~/f.jpg
-exec_always         xwallpaper --zoom ~/f.jpg
+# exec_always         xwallpaper --zoom ~/f.jpg
 # exec_always         /home/core/.config/scripts/layout && $refresh_i3status
 exec_always         "setxkbmap -model pc104 -layout us,ir -variant ,, -option grp:ctrl_shift_toggle"
 exec_always 		picom --experimental-backends
@@ -192,7 +192,7 @@ bindsym Print               exec --no-startup-id flameshot gui
 bindsym $mod+w			    exec --no-startup-id brave
 bindsym $mod+shift+w	    exec --no-startup-id qutebrowser
 bindsym $mod+l 			    exec --no-startup-id thunar
-bindsym $mod+o			    exec --no-startup-id obsidian
+bindsym $mod+o			    exec --no-startup-id obsidian; exec ~/.config/scripts/obs-pic
 bindsym $mod+g 			    exec --no-startup-id telegram-desktop -g 78x24+50+20
 bindsym $mod+z			    exec --no-startup-id zotero
 bindsym $mod+u              exec --no-startup-id $term --class "dropurl" -e nvim ~/.config/scripts/url.txt

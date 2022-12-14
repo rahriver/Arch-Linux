@@ -1,0 +1,62 @@
+# — SETTINGS — #
+background yes
+update_interval 1
+cpu_avg_samples 2
+net_avg_samples 2
+double_buffer yes
+no_buffers yes
+text_buffer_size 1024
+imlib_cache_size 0
+
+# — WINDOW — #
+own_window yes
+own_window_type normal
+own_window_transparent no
+own_window_class conky-semi
+own_window_type override
+own_window_hints undecorate,sticky,skip_taskbar,skip_pager,below
+own_window_argb_visual yes
+own_window_argb_value 0
+
+# — BORDER — #
+border_inner_margin 1
+border_outer_margin 0
+
+# — SIZE — #
+minimum_size 220 8
+maximum_width 420
+
+# — ALIGNMENT — #
+alignment top_left
+gap_x 6
+gap_y 60
+
+# — GRAPHIC — #
+draw_shades yes
+draw_outline no
+draw_borders no
+draw_graph_borders no
+#default_bar_size 40 8
+default_shade_color 181818
+#own_window_colour 292929
+
+# — TEXT — #
+use_xft yes
+xftfont Roboto Condensed:size=10
+xftalpha 1.0
+uppercase no
+override_utf8_locale yes
+default_color f0f0f0
+
+# — LUA — #
+#lua_load ~/Conky/bgcolor/bg.lua
+#lua_draw_hook_pre conky_draw_bg
+
+# — Colors — #
+color1 606060
+TEXT
+${voffset 25}${goto 140}${font Roboto Condensed:size=10:bold}$mpd_title$font
+${goto 140}$mpd_artist
+${goto 140}$mpd_album
+${goto 140}${mpd_bar 3,100}
+${execi 1 ~/.config/conky/conky-mpd/cover.sh}${image /tmp/conkyCover.png -p 10}

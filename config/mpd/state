@@ -1,7 +1,9 @@
 sw_volume: 94
 audio_device_state:1:My Pulse Output
 audio_device_state:1:my_fifo
-state: stop
+state: play
+current: 159
+time: 96.208000
 random: 0
 repeat: 0
 single: 0
@@ -165,4 +167,9 @@ playlist_begin
 152:AaRON/2015 - We Cut The Night/10. 2-22.mp3
 153:Muse/2012 - The 2nd Law (Deluxe Limited Edition) EU/11. Liquid State.mp3
 154:Muse/2012 - The 2nd Law (Deluxe Limited Edition) EU/09. Big Freeze.mp3
+155:Radiohead/2011 - Supercollider, The Butcher/02 - The Butcher.mp3
+156:The Smile/The Smile - Colours Fly.mp3
+157:The Smile/02 - The Opposite.mp3
+158:The Smile/05 - The Smoke.mp3
+159:Gorillaz/2011 - The Fall/B1. The Parish Of Space Dust.mp3
 playlist_end

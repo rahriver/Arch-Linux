@@ -179,7 +179,7 @@ for_window [instance="dayplan"]        move position center
 # exec_always         /home/core/.config/scripts/layout && $refresh_i3status
 exec_always           "setxkbmap -model pc104 -layout us,ir -variant ,, -option grp:ctrl_shift_toggle"
 exec_always 		      picom --experimental-backend
-exec                  conky -c "/home/core/.conky/conkyrc-mpd"
+exec                  conky -c "/home/core/.config/conky/conkyrc-mpd"
 exec                  conky -c "/home/core/.config/conky/conky.conf"
 exec                  /home/core/.config/scripts/dayplan
 exec                  xset r rate 300 70

@@ -14,13 +14,13 @@
    enabling this is required for alpha to function
    correctly on X11 with `"native"` transparency. */
 #define USE_ALPHA 1
-#define ALPHA 0.2
+#define ALPHA 0.5
 /* How strong the gradient changes */
 #define GRADIENT_POWER 60
 /* Bar color changes with height */
 #define GRADIENT (d / GRADIENT_POWER + 1)
 /* Bar color */
-#define COLOR (#872bff* GRADIENT * ALPHA )
+#define COLOR mix(#005e59, #00ccc5, clamp(d / 100, 0, 1)) * (ALPHA)
 /* Direction that the bars are facing, 0 for inward, 1 for outward */
 #define DIRECTION 0
 /* Whether to switch left/right audio buffers */
@@ -31,3 +31,5 @@
 /* Use with `FLIP 1` to render on the right side */
 #define MIRROR_YX 0
 
+/* No Gradient */
+/* #define COLOR (#872bff* GRADIENT * ALPHA ) */

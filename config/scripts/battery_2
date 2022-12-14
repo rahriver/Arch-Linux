@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# notify send this command
+REMAIN=$(acpi | grep -o -E "[0-9]+:[0-9]+:[0-9]+")
+
+notify-send "Remaining Time" "$REMAIN"

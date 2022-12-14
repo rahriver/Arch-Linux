@@ -1,3 +1,12 @@
+<p align="center">
+<a href="https://img.shields.io/github/stars/rahriver/Arch-Linux?style=for-the-badge"
+/a>
+<a href="https://github.com/rahriver/rofi-noter/master/LICENSE"><img src="https://img.shields.io/static/v1.svg?style=flat&label=License&message=MIT&logoColor=eceff4&logo=github&colorA=black&colorB=green"/></a>
+<img src="https://img.shields.io/github/commit-activity/m/rahriver/rofi-noter">
+<a href="https://github.com/rahriver/rofi-noter/graphs/contributors"><img src="https://img.shields.io/github/contributors/rahriver/rofi-noter"></a>
+<img src="https://img.shields.io/github/v/release/rahriver/rofi-noter">
+</p>
+
 # My Arch Linux RICE
 ## Preview
 

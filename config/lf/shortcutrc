@@ -1,5 +1,7 @@
 map zb cd ~/Documents/Books/Left\ Side/
-map zn cd ~/Documents/Notes/
+map zn cd ~/Temp/MEGA/Notes/
 map zp cd ~/Temp/MEGA/Projects/
-map zh cd ~
+map zo cd ~/Temp/MEGA/Obsidian/Broadest/
 map zm cd ~/Media/
+map zw cd ~/Media/Pictures/Wallpapers/
+map zh cd ~

@@ -121,12 +121,12 @@ let g:vimwiki_key_mappings = { 'table_mappings': 0 }
 
 " Navigation
 nnoremap <silent>  <leader>= :bNext<CR>
+nnoremap <leader>- :bd<CR>
 nnoremap <C-c> <Esc>
 nnoremap <C-LEFT> :wincmd h<CR>
 nnoremap <C-DOWN> :wincmd j<CR>
 nnoremap <C-UP> :wincmd k<CR>
 nnoremap <C-RIGHT> :wincmd l<CR>
-nnoremap <leader>- :bd<CR>
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 

@@ -46,18 +46,22 @@ return packer.startup(function(use)
   use { "numToStr/Comment.nvim" }
   use { "JoosepAlviste/nvim-ts-context-commentstring" }
   use { "kyazdani42/nvim-web-devicons" }
+  use { "preservim/tagbar" }
   use { "kyazdani42/nvim-tree.lua" }
   use { "akinsho/bufferline.nvim" }
 	use { "moll/vim-bbye" }
   use { "nvim-lualine/lualine.nvim" }
   use { "akinsho/toggleterm.nvim" }
+  use { "vimwiki/vimwiki" }
+  use { "lervag/vimtex" }
   use { "ahmedkhalf/project.nvim" }
   use { "lewis6991/impatient.nvim" }
   use { "lukas-reineke/indent-blankline.nvim" }
   use { "goolord/alpha-nvim" }
-	use {"folke/which-key.nvim"}
+	use { "folke/which-key.nvim" }
 	use { "nvim-telescope/telescope.nvim" }
 	use { "nvim-treesitter/nvim-treesitter" }
+  use { "feline-nvim/feline.nvim" }
 	use { "lewis6991/gitsigns.nvim" }
   use { "junegunn/goyo.vim" }
   use { "junegunn/limelight.vim" }
@@ -69,8 +73,8 @@ return packer.startup(function(use)
   use { "sainnhe/everforest" }
   use { "sainnhe/gruvbox-material" }
   use { "LunarVim/Colorschemes"}
-  use { "Mofiqul/dracula.nvim" }
   use { "Mofiqul/vscode.nvim" }
+  use { "haishanh/night-owl.vim" }
   use { "folke/tokyonight.nvim" }
   use { "EdenEast/nightfox.nvim" }
   use { "tanvirtin/monokai.nvim" }

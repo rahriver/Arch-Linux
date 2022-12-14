@@ -1,6 +1,6 @@
 # <<--------- General Settings --------->>
 floating_modifier  $mod
-font               pango:Inconsolata Condensed Black 12
+font               pango:Segoe UI Variable Static Text Regular 12
 set                $term --no-startup-id kitty
 set                $alt  --no-startup-id cool-retro-term
 set                $mod Mod4
@@ -178,7 +178,9 @@ for_window [instance="dayplan"]        move position center
 # exec_always         xwallpaper --zoom ~/f.jpg
 # exec_always         /home/core/.config/scripts/layout && $refresh_i3status
 exec_always           "setxkbmap -model pc104 -layout us,ir -variant ,, -option grp:ctrl_shift_toggle"
-exec_always 		      picom --experimental-backends
+exec_always 		      picom --experimental-backend
+exec                  conky -c "/home/core/.conky/conkyrc-mpd"
+exec                  conky -c "/home/core/.config/conky/conky.conf"
 exec                  /home/core/.config/scripts/dayplan
 exec                  xset r rate 300 70
 exec                  mpd
@@ -202,11 +204,13 @@ bindsym $mod+F12		        exec i3-input -F 'exec goldendict %s' -P 'Word: '
 bindsym $mod+p 			        exec ls -v -r ~/Media/Pictures/Wallpapers/*.png | nsxiv -t -b -
 bindsym $mod+s			        [class="dropterm"] scratchpad show; move position center
 bindsym $mod+i              exec $term -T "dropideas" -e nvim ~/Temp/MEGA/Article/Wiki/Ideas.wiki
-bindsym $mod+t              exec $term --class dayplan -e nvim ~/Documents/Notes/Dayplan/$(date +%Y-%m-%d).wiki
+bindsym $mod+t              exec $term --class dayplan -e nvim ~/Temp/MEGA/Notes/Dayplan/$(date +%Y-%m-%d).wiki
 bindsym $mod+c			        exec $term --class "dropcalc" -e R --quiet
+bindsym $mod+shift+c			  exec ~/.config/scripts/conf_selector
 bindsym $mod+m			        [class="ncmpcpp"] scratchpad show; move position center
 bindsym $mod+shift+l	      exec $term -e ~/.config/scripts/lfub
 bindsym $mod+n			        exec $term --class "Noter" -e noter view
+bindsym $mod+shift+n        exec ~/.config/scripts/rofi_noter
 bindsym $mod+shift+s        exec $screencast
 bindsym $mod+d              exec rofi -show drun -show-icons
 bindsym $mod+shift+e        exec rofi -show emoji -modi emoji

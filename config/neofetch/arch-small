@@ -10,7 +10,6 @@
 print_info() {
     info title
     info underline
-
     info "OS" distro
     # info "Host" model
     # info "Kernel" kernel
@@ -40,8 +39,8 @@ print_info() {
     # info "Public IP" public_ip
     # info "Users" users
     # info "Locale" locale  # This only works on glibc systems.
-
-    # info cols
+    info cols
+prin "${cl3} \n \n ${cl5} \n \n ${cl2} \n \n ${cl6}  \n \n ${cl4}  \n \n ${cl1}  \n \n ${cl7}  \n \n ${cl0}"
 }
 
 # Title

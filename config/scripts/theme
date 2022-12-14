@@ -1,0 +1,43 @@
+#!/bin/bash
+
+chosen=$(cat ~/.config/scripts/theme.md | rofi -dmenu -i -p "Chose a theme")
+
+CONFIG=/home/core/.config/glava/bars.glsl
+
+YELLOW='#define COLOR mix(#baac10, #966400, clamp(d \/ 100, 0, 1)) \* (ALPHA)'
+PURPLE='#define COLOR mix(#0065ff, #7700ff, clamp(d \/ 100, 0, 1)) \* (ALPHA)'
+RED='#define COLOR mix(#9e0000, #d80000, clamp(d \/ 100, 0, 1)) \* (ALPHA)'
+TEAL='#define COLOR mix(#00ff9d, #00a361, clamp(d \/ 100, 0, 1)) \* (ALPHA)'
+ORANGE='#define COLOR mix(#c1854d, #ff7f00, clamp(d \/ 100, 0, 1)) \* (ALPHA)'
+DARK_CYAN='#define COLOR mix(#005e59, #00ccc5, clamp(d \/ 100, 0, 1)) \* (ALPHA)'
+DARK='#define COLOR mix(#444444, #01000c, clamp(d \/ 100, 0, 1)) \* (ALPHA)'
+
+if [ $chosen == Teal ]; then
+      sed -i "23s/.*/$TEAL/" $CONFIG
+      killall -q glava
+
+  elif [ $chosen == Orange ]; then
+      sed -i "23s/.*/$ORANGE/" $CONFIG
+      killall -q glava
+
+  elif [ $chosen == Purple ]; then
+      sed -i "23s/.*/$PURPLE/" $CONFIG
+      killall -q glava
+
+  elif [ $chosen == Yellow ]; then
+      sed -i "23s/.*/$YELLOW/" $CONFIG
+      killall -q glava
+
+  elif [ $chosen == Red ]; then
+      sed -i "23s/.*/$RED/" $CONFIG
+      killall -q glava
+
+  elif [ $chosen == Dark_Cyan ]; then
+      sed -i "23s/.*/$DARK_CYAN/" $CONFIG
+      killall -q glava
+
+  elif [ $chosen == Dark ]; then
+      sed -i "23s/.*/$DARK/" $CONFIG
+      killall -q glava
+fi
+

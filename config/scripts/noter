@@ -1,13 +1,15 @@
 #!/bin/sh
 
+# <<--------- Settings --------->> #
+
 # Set the directory where the notes are stored
-NOTES_DIR="/home/core/Documents/Notes"
+NOTES_DIR="/home/core/Temp/MEGA/Notes"
 # Set the editor to use
 EDITOR="nvim"
 # Set the file extension for the notes
 EXTENSION="*"
 
-# <<--------- Choosing Templates --------->>
+# <<--------- Choosing Templates --------->> #
 Basic() {
 
     notify-send "Basic Document Created!"
@@ -56,7 +58,7 @@ template() {
     esac
 }
 
-# <<--------- Main --------->>
+# <<--------- Functions --------->> #
 create_note() {
 
     read -p "Enter the name of the note: " "note_name"
@@ -78,7 +80,6 @@ create_note() {
 
 view_note() {
 
-
     note=$(find $NOTES_DIR -type f -name "*.$EXTENSION" | fzf --preview 'bat --color=always {}')
     if [ -z "$note" ]; then
         main
@@ -99,14 +100,16 @@ delete_note() {
     fi
 }
 
+# <<--------- Main --------->> #
+
 main() {
 
-    # Check if the notes directory exists
+    # Check if the note directory exists
     if [ ! -d $NOTES_DIR ]; then
         mkdir $NOTES_DIR
     fi
 
-    # Check if the notes directory is empty
+    # Check if the note directory is empty
     if [ ! "$(ls -A $NOTES_DIR)" ]; then
         echo "No notes found"
         echo "Creating a new note"
@@ -129,7 +132,7 @@ main() {
     fi
 }
 
-# <--------- Arguments --------->
+# <<--------- Arguments --------->> #
 if [ "$1" = "view" ]; then
     view_note
 else

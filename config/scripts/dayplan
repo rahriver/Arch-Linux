@@ -1,7 +1,7 @@
 #!/bin/sh
 
 FILENAME=$(date +%Y-%m-%d).wiki
-DIR="/home/core/Temp/MEGA/Notes/"
+DIR="/home/core/Temp/MEGA/Notes/Dayplan/"
 INDEX="/home/core/Temp/MEGA/Notes/Dayplan/Dayplans.wiki"
 TEMPLATE="/home/core/Temp/MEGA/Notes/Templates/Dayplan.md"
 

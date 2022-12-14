@@ -1,6 +1,6 @@
 <p align="center">
-<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/rahriver/Arch-Linux">
 <a href="https://github.com/rahriver/Arch-Linux/master/LICENSE"><img src="https://img.shields.io/static/v1.svg?style=flat&label=License&message=MIT&logoColor=eceff4&logo=github&colorA=black&colorB=green"/></a>
+<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/rahriver/Arch-Linux">
 <img src="https://img.shields.io/github/commit-activity/m/rahriver/Arch-Linux">
 <a href="https://github.com/rahriver/Arch-Linux/graphs/contributors"><img src="https://img.shields.io/github/contributors/rahriver/Arch-Linux"></a>
 </p>

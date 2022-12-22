@@ -53,7 +53,6 @@ return packer.startup(function(use)
   use { "nvim-lualine/lualine.nvim" }
   use { "akinsho/toggleterm.nvim" }
   use { "vimwiki/vimwiki" }
-  use { "lervag/vimtex" }
   use { "ahmedkhalf/project.nvim" }
   use { "lewis6991/impatient.nvim" }
   use { "lukas-reineke/indent-blankline.nvim" }
@@ -71,6 +70,7 @@ return packer.startup(function(use)
 
 	-- Colorschemes
   use { "sainnhe/everforest" }
+  use { 'AlphaTechnolog/pywal.nvim', as = 'pywal' }
   use { "sainnhe/gruvbox-material" }
   use { "LunarVim/Colorschemes"}
   use { "Mofiqul/vscode.nvim" }

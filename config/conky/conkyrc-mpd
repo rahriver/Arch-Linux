@@ -24,7 +24,7 @@ border_outer_margin 0
 
 # — SIZE — #
 minimum_size 220 8
-maximum_width 420
+maximum_width 480
 
 # — ALIGNMENT — #
 alignment top_left

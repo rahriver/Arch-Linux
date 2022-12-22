@@ -1,175 +1,19 @@
-sw_volume: 94
+sw_volume: 96
 audio_device_state:1:My Pulse Output
 audio_device_state:1:my_fifo
-state: play
-current: 159
-time: 96.208000
+state: stop
+current: 0
 random: 0
-repeat: 0
+repeat: 1
 single: 0
 consume: 1
 crossfade: 2
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Fleet Foxes/2011 - Helplessness Blues/03 - Fleet Foxes - Sim Sala Bim.mp3
-1:Fleet Foxes/2011 - Helplessness Blues/04 - Fleet Foxes - Battery Kinzie.mp3
-2:Fleet Foxes/2011 - Helplessness Blues/05 - Fleet Foxes - The Plains _ Bitter Dancer.mp3
-3:Fleet Foxes/2011 - Helplessness Blues/06 - Fleet Foxes - Helplessness Blues.mp3
-4:Fleet Foxes/2011 - Helplessness Blues/07 - Fleet Foxes - The Cascades.mp3
-5:Fleet Foxes/2011 - Helplessness Blues/08 - Fleet Foxes - Lorelai.mp3
-6:Fleet Foxes/2011 - Helplessness Blues/09 - Fleet Foxes - Someone You'd Admire.mp3
-7:Fleet Foxes/2011 - Helplessness Blues/10 - Fleet Foxes - The Shrine _ An Argument.mp3
-8:Fleet Foxes/2011 - Helplessness Blues/11 - Fleet Foxes - Blue Spotted Tail.mp3
-9:Fleet Foxes/2011 - Helplessness Blues/12 - Fleet Foxes - Grown Ocean.mp3
-10:Fleet Foxes/2017 - Crack-Up/01. I Am All That I Need - Arroyo Seco - Thumbprint Scar.mp3
-11:Fleet Foxes/2017 - Crack-Up/02. Cassius, -.mp3
-12:Fleet Foxes/2017 - Crack-Up/03. - Naiads, Cassadies.mp3
-13:Fleet Foxes/2017 - Crack-Up/04. Kept Woman.mp3
-14:Fleet Foxes/2017 - Crack-Up/05. Third Of May - Odaigahara.mp3
-15:Fleet Foxes/2017 - Crack-Up/06. If You Need To, Keep Time On Me.mp3
-16:Fleet Foxes/2017 - Crack-Up/07. Mearcstapa.mp3
-17:Fleet Foxes/2017 - Crack-Up/08. On Another Ocean (January  June).mp3
-18:Fleet Foxes/2017 - Crack-Up/09. Fool's Errand.mp3
-19:Fleet Foxes/2017 - Crack-Up/10. I Should See Memphis.mp3
-20:Fleet Foxes/2017 - Crack-Up/11. Crack-Up.mp3
-21:Fleet Foxes/2008 - Fleet Foxes/CD 1 - Album/08 - Your Protector.mp3
-22:Fleet Foxes/2008 - Fleet Foxes/CD 1 - Album/09 - Meadowlarks.mp3
-23:Fleet Foxes/2008 - Fleet Foxes/CD 1 - Album/10 - Blue Ridge Mountains.mp3
-24:Fleet Foxes/2008 - Fleet Foxes/CD 1 - Album/11 - Oliver James.mp3
-25:Fleet Foxes/2008 - Fleet Foxes/CD 2 -  Limited Edition Bonus Tracks - 2008/01 - Sun Giant.mp3
-26:Fleet Foxes/2008 - Fleet Foxes/CD 2 -  Limited Edition Bonus Tracks - 2008/02 - Drops In The River.mp3
-27:Fleet Foxes/2008 - Fleet Foxes/CD 2 -  Limited Edition Bonus Tracks - 2008/03 - English House.mp3
-28:Fleet Foxes/2008 - Fleet Foxes/CD 2 -  Limited Edition Bonus Tracks - 2008/04 - Mykonos (Alternate Version).mp3
-29:Fleet Foxes/2008 - Fleet Foxes/CD 2 -  Limited Edition Bonus Tracks - 2008/05 - Isles.mp3
-30:Fleet Foxes/2008 - Fleet Foxes/CD 2 - Japan - Limited Edition Bonus Tracks - 2009/01 - Sun Giant.mp3
-31:Fleet Foxes/2008 - Fleet Foxes/CD 2 - Japan - Limited Edition Bonus Tracks - 2009/02 - Drops In The River.mp3
-32:Fleet Foxes/2008 - Fleet Foxes/CD 2 - Japan - Limited Edition Bonus Tracks - 2009/03 - English House.mp3
-33:Fleet Foxes/2008 - Fleet Foxes/CD 2 - Japan - Limited Edition Bonus Tracks - 2009/04 - Mykonos.mp3
-34:Fleet Foxes/2008 - Fleet Foxes/CD 2 - Japan - Limited Edition Bonus Tracks - 2009/05 - Innocent Son.mp3
-35:Fleet Foxes/2008 - Fleet Foxes/CD 2 - Japan - Limited Edition Bonus Tracks - 2009/06 - False Knight On The Road.mp3
-36:Fleet Foxes/2011 - Helplessness Blues/01 - Fleet Foxes - Montezuma.mp3
-37:Fleet Foxes/2011 - Helplessness Blues/02 - Fleet Foxes - Bedouin Dress.mp3
-38:Fleet Foxes/2011 - Helplessness Blues/03 - Fleet Foxes - Sim Sala Bim.mp3
-39:Fleet Foxes/2011 - Helplessness Blues/04 - Fleet Foxes - Battery Kinzie.mp3
-40:Fleet Foxes/2011 - Helplessness Blues/05 - Fleet Foxes - The Plains _ Bitter Dancer.mp3
-41:Fleet Foxes/2011 - Helplessness Blues/06 - Fleet Foxes - Helplessness Blues.mp3
-42:Fleet Foxes/2011 - Helplessness Blues/07 - Fleet Foxes - The Cascades.mp3
-43:Fleet Foxes/2011 - Helplessness Blues/08 - Fleet Foxes - Lorelai.mp3
-44:Fleet Foxes/2011 - Helplessness Blues/09 - Fleet Foxes - Someone You'd Admire.mp3
-45:Fleet Foxes/2011 - Helplessness Blues/10 - Fleet Foxes - The Shrine _ An Argument.mp3
-46:Fleet Foxes/2011 - Helplessness Blues/11 - Fleet Foxes - Blue Spotted Tail.mp3
-47:Fleet Foxes/2011 - Helplessness Blues/12 - Fleet Foxes - Grown Ocean.mp3
-48:Fleet Foxes/2017 - Crack-Up/01. I Am All That I Need - Arroyo Seco - Thumbprint Scar.mp3
-49:Fleet Foxes/2017 - Crack-Up/02. Cassius, -.mp3
-50:Fleet Foxes/2017 - Crack-Up/03. - Naiads, Cassadies.mp3
-51:Fleet Foxes/2017 - Crack-Up/04. Kept Woman.mp3
-52:Fleet Foxes/2017 - Crack-Up/05. Third Of May - Odaigahara.mp3
-53:Fleet Foxes/2017 - Crack-Up/06. If You Need To, Keep Time On Me.mp3
-54:Fleet Foxes/2017 - Crack-Up/07. Mearcstapa.mp3
-55:Fleet Foxes/2017 - Crack-Up/08. On Another Ocean (January  June).mp3
-56:Fleet Foxes/2017 - Crack-Up/09. Fool's Errand.mp3
-57:Fleet Foxes/2017 - Crack-Up/10. I Should See Memphis.mp3
-58:Fleet Foxes/2017 - Crack-Up/11. Crack-Up.mp3
-59:Muse/2018 - Simulation Theory (Super Deluxe)/01. Algorithm.mp3
-60:Muse/2018 - Simulation Theory (Super Deluxe)/04. Propaganda.mp3
-61:Muse/2018 - Simulation Theory (Super Deluxe)/21. The Dark Side (Alternate Reality Version Instrumental).mp3
-62:Muse/2018 - Simulation Theory (Super Deluxe)/12. Algorithm (Alternate Reality Version).mp3
-63:Muse/2015 - Drones/08 - Defector.mp3
-64:Binaural Beats/Binaural Beat 40 Hz Gamma.mp3
-65:Binaural Beats/Binaural Beat 40 Hz Gamma.mp3
-66:Muse/2018 - Simulation Theory (Super Deluxe)/05. Break it to Me.mp3
-67:Atoms For Peace/2013 - AMOK/08. Reverse Running.mp3
-68:Atoms For Peace/2013 - AMOK/09. Amok.mp3
-69:Radiohead/2013 - Judge Jury And Executioner/A1. Judge Jury And Executioner.mp3
-70:Radiohead/2013 - Judge Jury And Executioner/B1. S.A.D.mp3
-71:Binaural Beats/Binaural Beat 40 Hz Gamma.mp3
-72:Binaural Beats/Binaural Beat 40 Hz Gamma.mp3
-73:Radiohead/2000 - Kid A/01. Everything In Its Right Place.mp3
-74:Radiohead/2000 - Kid A/05. Treefingers.mp3
-75:Radiohead/2000 - Kid A/06. Optimistic.mp3
-76:Muse/2001 - Origin Of Symmetry (UK)/01. New Born.mp3
-77:Muse/2003 - Absolution (UK)/01. Intro.mp3
-78:Muse/2003 - Absolution (UK)/02. Apocalypse Please.mp3
-79:Muse/2003 - Absolution (UK)/11. The Small Print.mp3
-80:Muse/2003 - Absolution (UK)/12. Endlessly.mp3
-81:Muse/2003 - Absolution (UK)/13. Thoughts Of A Dying Atheist.mp3
-82:Muse/2003 - Absolution (UK)/14. Ruled By Secrecy.mp3
-83:Muse/2002 - Hullabaloo Soundtrack (2008 Japanese Limited Edition) Reissue/CD 1/03. Recess.mp3
-84:Tame Impala/2015 - Currents/Taxi s Here   Tame Impala.mp3
-85:Tame Impala/2012 - Lonerism (Deluxe Limited Edition)/Lonerism (Vinyl 7) (Single) - (320 kbps)/01. A - Led Zeppelin.mp3
-86:Tame Impala/2012 - Lonerism (Deluxe Limited Edition)/Lonerism (Vinyl 7) (Single) - (320 kbps)/02. B - Beverly Laurel.mp3
-87:Tame Impala/2012 - Lonerism (Deluxe Limited Edition)/CD 1/01. Be Above It.mp3
-88:Tame Impala/2012 - Lonerism (Deluxe Limited Edition)/CD 1/02. Endors Toi.mp3
-89:Tame Impala/2012 - Lonerism (Deluxe Limited Edition)/CD 1/03. Apocalypse Dreams.mp3
-90:Tame Impala/2012 - Lonerism (Deluxe Limited Edition)/CD 1/04. Mind Mischief.mp3
-91:Tame Impala/2012 - Lonerism (Deluxe Limited Edition)/CD 1/05. Music To Walk Home By.mp3
-92:Tame Impala/2012 - Lonerism (Deluxe Limited Edition)/CD 1/06. Why Won't They Talk to Me.mp3
-93:Tame Impala/2012 - Lonerism (Deluxe Limited Edition)/CD 1/07. Feels Like We Only Go Backwards.mp3
-94:Tame Impala/2012 - Lonerism (Deluxe Limited Edition)/CD 1/08. Keep On Lying.mp3
-95:Tame Impala/2012 - Lonerism (Deluxe Limited Edition)/CD 1/09. Elephant.mp3
-96:Tame Impala/2012 - Lonerism (Deluxe Limited Edition)/CD 1/10. She Just Won't Believe Me.mp3
-97:Tame Impala/2012 - Lonerism (Deluxe Limited Edition)/CD 1/11. Nothing That Has Happened So Far Has Been Anything We Could Control.mp3
-98:Tame Impala/2012 - Lonerism (Deluxe Limited Edition)/CD 1/12. Sun's Coming Up.mp3
-99:Tame Impala/2012 - Lonerism (Deluxe Limited Edition)/CD 2 - Rough Trade Bonus Disc/01. Apocalypse Dreams (Live).mp3
-100:Tame Impala/2012 - Lonerism (Deluxe Limited Edition)/CD 2 - Rough Trade Bonus Disc/02. Elephant (Live).mp3
-101:Tame Impala/2012 - Lonerism (Deluxe Limited Edition)/CD 2 - Rough Trade Bonus Disc/03. Feels Like We Only Go Backwards (Live).mp3
-102:Tame Impala/2012 - Lonerism (Deluxe Limited Edition)/CD 2 - Rough Trade Bonus Disc/04. Elephant (Todd Rundgren Remix).mp3
-103:Tame Impala/2012 - Lonerism (Deluxe Limited Edition)/CD 2 - Rough Trade Bonus Disc/05. Elephant (Canyons Wooly Mammoth Extension).mp3
-104:Tame Impala/2015 - Currents/01. Let It Happen.mp3
-105:Tame Impala/2015 - Currents/02. Nangs.mp3
-106:Tame Impala/2015 - Currents/03. The Moment.mp3
-107:Tame Impala/2015 - Currents/04. Yes I'm Changing.mp3
-108:Tame Impala/2015 - Currents/05. Eventually.mp3
-109:Tame Impala/2015 - Currents/06. Gossip.mp3
-110:Tame Impala/2015 - Currents/07. The Less I Know The Better.mp3
-111:Tame Impala/2015 - Currents/08. Past Life.mp3
-112:Tame Impala/2015 - Currents/09. Disciples.mp3
-113:Tame Impala/2015 - Currents/10. 'Cause I'm A Man.mp3
-114:Tame Impala/2015 - Currents/11. Reality In Motion.mp3
-115:Tame Impala/2015 - Currents/12. LoveParanoia.mp3
-116:Tame Impala/2015 - Currents/13. New Person, Same Old Mistakes.mp3
-117:Tame Impala/2020 - The Slow Rush/01. One More Year.mp3
-118:Tame Impala/2020 - The Slow Rush/02. Instant Destiny.mp3
-119:Tame Impala/2020 - The Slow Rush/03. Borderline.mp3
-120:Tame Impala/2020 - The Slow Rush/04. Posthumous Forgiveness.mp3
-121:Tame Impala/2020 - The Slow Rush/05. Breathe Deeper.mp3
-122:Tame Impala/2020 - The Slow Rush/06. Tomorrow's Dust.mp3
-123:Tame Impala/2020 - The Slow Rush/07. On Track.mp3
-124:Tame Impala/2020 - The Slow Rush/08. Lost In Yesterday.mp3
-125:Tame Impala/2020 - The Slow Rush/09. Is It True.mp3
-126:Tame Impala/2020 - The Slow Rush/10. It Might Be Time.mp3
-127:Tame Impala/2020 - The Slow Rush/11. Glimmer.mp3
-128:Tame Impala/2020 - The Slow Rush/12. One More Hour.mp3
-129:Tame Impala/2021 - InnerSpeaker (10 Year Anniversary Edition)/01. It Is Not Meant To Be.mp3
-130:Tame Impala/2021 - InnerSpeaker (10 Year Anniversary Edition)/02. Desire Be Desire Go.mp3
-131:Tame Impala/2021 - InnerSpeaker (10 Year Anniversary Edition)/03. Alter Ego.mp3
-132:Tame Impala/2021 - InnerSpeaker (10 Year Anniversary Edition)/04. Lucidity.mp3
-133:Tame Impala/2021 - InnerSpeaker (10 Year Anniversary Edition)/05. Why Won't You Make Up Your Mind_.mp3
-134:Tame Impala/2021 - InnerSpeaker (10 Year Anniversary Edition)/06. Solitude Is Bliss.mp3
-135:Tame Impala/2021 - InnerSpeaker (10 Year Anniversary Edition)/07. Jeremy's Storm.mp3
-136:Tame Impala/2021 - InnerSpeaker (10 Year Anniversary Edition)/08. Expectation.mp3
-137:Tame Impala/2021 - InnerSpeaker (10 Year Anniversary Edition)/09. The Bold Arrow Of Time.mp3
-138:Tame Impala/2021 - InnerSpeaker (10 Year Anniversary Edition)/10. Runway Houses City Clouds.mp3
-139:Tame Impala/2021 - InnerSpeaker (10 Year Anniversary Edition)/11. I Don't Really Mind.mp3
-140:Tame Impala/2021 - InnerSpeaker (10 Year Anniversary Edition)/12. Alter Ego (2020 Mix).mp3
-141:Tame Impala/2021 - InnerSpeaker (10 Year Anniversary Edition)/13. Runway Houses City Clouds (2020 Mix).mp3
-142:Uncomfortably Beautiful/Tame Impala - Powerlines.mp3
-143:Coldplay/2021 - Music of the Spheres/12 Coloratura.mp3
-144:Gorillaz/2021 - The Nearer The Fountain, More Pure The Stream Flows/01. The Nearer The Fountain, More Pure The Stream Flows.mp3
-145:Muse/1999 - Muscle Museum (Limited Edition CD EP) UK/01. Muscle Museum.mp3
-146:Muse/2012 - The 2nd Law (Deluxe Limited Edition) EU/06. Follow Me.mp3
-147:Muse/2012 - The 2nd Law (Deluxe Limited Edition) EU/08. Explorers.mp3
-148:Uncomfortably Beautiful/Smalltalk (Four Tet Remix)   Ultraísta.mp3
-149:Muse/2009 - The Resistance (Limited Edition Digipak) UK/08. I Belong To You  Mon Cœur S'ouvre À Ta Voix.mp3
-150:Muse/2012 - The 2nd Law (Deluxe Limited Edition) EU/10. Save Me.mp3
-151:Muse/2010 - Neutron Star Collision (Love Is Forever) (Single) UK/01. Neutron Star Collision (Love Is Forever).mp3
-152:AaRON/2015 - We Cut The Night/10. 2-22.mp3
-153:Muse/2012 - The 2nd Law (Deluxe Limited Edition) EU/11. Liquid State.mp3
-154:Muse/2012 - The 2nd Law (Deluxe Limited Edition) EU/09. Big Freeze.mp3
-155:Radiohead/2011 - Supercollider, The Butcher/02 - The Butcher.mp3
-156:The Smile/The Smile - Colours Fly.mp3
-157:The Smile/02 - The Opposite.mp3
-158:The Smile/05 - The Smoke.mp3
-159:Gorillaz/2011 - The Fall/B1. The Parish Of Space Dust.mp3
+0:The Strokes/2020 - The New Abnormal/05 Eternal Summer.mp3
+1:The Strokes/2020 - The New Abnormal/06 At the Door.mp3
+2:The Strokes/2020 - The New Abnormal/07 Why Are Sundays So Depressing.mp3
+3:The Strokes/2020 - The New Abnormal/08 Not the Same Anymore.mp3
+4:The Strokes/2020 - The New Abnormal/09 Ode to the Mets.mp3
 playlist_end

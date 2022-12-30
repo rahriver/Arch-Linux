@@ -72,6 +72,8 @@ return packer.startup(function(use)
   use { "sainnhe/everforest" }
   use { 'AlphaTechnolog/pywal.nvim', as = 'pywal' }
   use { "sainnhe/gruvbox-material" }
+  use { "nanotech/jellybeans.vim" }
+  use { 'Mofiqul/dracula.nvim' }
   use { "LunarVim/Colorschemes"}
   use { "Mofiqul/vscode.nvim" }
   use { "haishanh/night-owl.vim" }

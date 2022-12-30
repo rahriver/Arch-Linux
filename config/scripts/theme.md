@@ -1,4 +1,6 @@
 Orange
+Teal
+Amethyst
 Dark_Cyan
 Dark
 Red

@@ -28,8 +28,8 @@ maximum_width 480
 
 # — ALIGNMENT — #
 alignment top_left
-gap_x 6
-gap_y 60
+gap_x 10
+gap_y 200
 
 # — GRAPHIC — #
 draw_shades yes

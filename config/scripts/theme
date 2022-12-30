@@ -11,6 +11,7 @@ TEAL='#define COLOR mix(#00ff9d, #00a361, clamp(d \/ 100, 0, 1)) \* (ALPHA)'
 ORANGE='#define COLOR mix(#c1854d, #ff7f00, clamp(d \/ 100, 0, 1)) \* (ALPHA)'
 DARK_CYAN='#define COLOR mix(#005e59, #00ccc5, clamp(d \/ 100, 0, 1)) \* (ALPHA)'
 DARK='#define COLOR mix(#444444, #01000c, clamp(d \/ 100, 0, 1)) \* (ALPHA)'
+AMETHYST='#define COLOR mix(#3b00ff, #7f5bff, clamp(d \/ 100, 0, 1)) \* (ALPHA)'
 
 if [ $chosen == Teal ]; then
       sed -i "23s/.*/$TEAL/" $CONFIG
@@ -39,5 +40,9 @@ if [ $chosen == Teal ]; then
   elif [ $chosen == Dark ]; then
       sed -i "23s/.*/$DARK/" $CONFIG
       killall -q glava
-fi
 
+  elif [ $chosen == Amethyst ]; then
+      sed -i "23s/.*/$AMETHYST/" $CONFIG
+      killall -q glava
+fi
+glava

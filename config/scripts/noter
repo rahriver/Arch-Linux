@@ -82,7 +82,7 @@ view_note() {
 
     note=$(find $NOTES_DIR -type f -name "*.$EXTENSION" | fzf --preview 'bat --color=always {}')
     if [ -z "$note" ]; then
-        main
+        exit
     else
         nvim "$note"
         view_note

@@ -1,0 +1,12 @@
+#!/bin/sh
+
+DAYPLAN=/home/core/.config/scripts/dayplan
+DATE=`date +%Y-%m-%d`
+FILE=/home/core/Temp/MEGA/Notes/Dayplan/$DATE.wiki
+# If the file dont exist, create it, else run dunstify on it
+if [ ! -f $FILE ]; then
+  $DAYPLAN
+  notify-send "Dayplan" "Created a TODO For Today $DATE"
+else
+  dunstify -u low --replace=69 -i "TODOS" "$(cat $FILE | awk '(NR>2)')"
+fi

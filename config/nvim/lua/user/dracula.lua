@@ -1,8 +1,10 @@
+-- require('dracula').setup{}
 local dracula = require("dracula")
 dracula.setup({
   -- customize dracula color palette
   colors = {
-    bg = "#282A36",
+    -- bg = "#282A36",
+    bg = "#11081e",
     fg = "#F8F8F2",
     selection = "#44475A",
     comment = "#6272A4",
@@ -20,24 +22,9 @@ dracula.setup({
     bright_magenta = "#FF92DF",
     bright_cyan = "#A4FFFF",
     bright_white = "#FFFFFF",
-    menu = "#21222C",
+    menu = "#11081e",
     visual = "#3E4452",
     gutter_fg = "#4B5263",
     nontext = "#3B4048",
-  },
-  -- show the '~' characters after the end of buffers
-  show_end_of_buffer = true, -- default false
-  -- use transparent background
-  transparent_bg = true, -- default false
-  -- set custom lualine background color
-  lualine_bg_color = "#44475a", -- default nil
-  -- set italic comment
-  italic_comment = true, -- default false
-  -- overrides the default highlights see `:h synIDattr`
-  overrides = {
-    -- Examples
-    -- NonText = { fg = dracula.colors().white }, -- set NonText fg to white
-    -- NvimTreeIndentMarker = { link = "NonText" }, -- link to NonText highlight
-    -- Nothing = {} -- clear highlight of Nothing
   },
 })

@@ -21,6 +21,7 @@ require "user.goyo"
 
 -- Colorscheme --
 require "user.pywal"
+require "user.dracula"
 
 -- General --
 require "user.plugins"

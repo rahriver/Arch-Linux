@@ -1,5 +1,5 @@
 [global]
-font = Roboto Condensed 11
+font = Comic Sans MS Regular 11
 
 # Allow a small subset of html markup:
 #   <b>bold</b>
@@ -137,7 +137,7 @@ horizontal_padding = 30
 #  * foreground: use the same color as the foreground;
 #  * frame: use the same color as the frame;
 #  * anything else will be interpreted as a X color.
-separator_color = "#3d3d3d"
+separator_color = "#613583"
 
 # Print a notification on startup.
 # This is mainly for error detection, since dbus (re-)starts dunst
@@ -182,21 +182,21 @@ close_all = ctrl+shift+space
 context = ctrl+shift+period
 
 [urgency_low]
-background = "#3d3d3d"
+background = "#613583"
 foreground = "#FFFFFF"
-frame_color = "#3d3d3d" 
+frame_color = "#613583" 
 timeout = 8
 
 [urgency_normal]
-background = "#3d3d3d"
+background = "#613583"
 foreground = "#FFFFFF" 
-frame_color = "#3d3d3d"
+frame_color = "#613583"
 timeout = 10
 icon = "~/.config/dunst/bell.png"
 
 [urgency_critical]
-background = "#3d3d3d"
+background = "#613583"
 foreground = "#FFFFFF" 
-frame_color = "#3d3d3d" 
+frame_color = "#613583" 
 timeout = 15
 icon = "~/.config/dunst/alert.png"

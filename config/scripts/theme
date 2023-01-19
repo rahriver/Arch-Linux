@@ -12,37 +12,45 @@ ORANGE='#define COLOR mix(#c1854d, #ff7f00, clamp(d \/ 100, 0, 1)) \* (ALPHA)'
 DARK_CYAN='#define COLOR mix(#005e59, #00ccc5, clamp(d \/ 100, 0, 1)) \* (ALPHA)'
 DARK='#define COLOR mix(#444444, #01000c, clamp(d \/ 100, 0, 1)) \* (ALPHA)'
 AMETHYST='#define COLOR mix(#3b00ff, #7f5bff, clamp(d \/ 100, 0, 1)) \* (ALPHA)'
+CATPPUCCIN='#define COLOR mix(#271c49, #352763, clamp(d \/ 100, 0, 1)) \* (ALPHA)'
 
-if [ $chosen == Teal ]; then
-      sed -i "23s/.*/$TEAL/" $CONFIG
-      killall -q glava
+# if chosen is not empty, then do this
+if [ -n "$chosen" ]; then
+  if [ $chosen == Teal ]; then
+        sed -i "23s/.*/$TEAL/" $CONFIG
+        killall -q glava
 
-  elif [ $chosen == Orange ]; then
-      sed -i "23s/.*/$ORANGE/" $CONFIG
-      killall -q glava
+    elif [ $chosen == Orange ]; then
+        sed -i "23s/.*/$ORANGE/" $CONFIG
+        killall -q glava
 
-  elif [ $chosen == Purple ]; then
-      sed -i "23s/.*/$PURPLE/" $CONFIG
-      killall -q glava
+    elif [ $chosen == Purple ]; then
+        sed -i "23s/.*/$PURPLE/" $CONFIG
+        killall -q glava
 
-  elif [ $chosen == Yellow ]; then
-      sed -i "23s/.*/$YELLOW/" $CONFIG
-      killall -q glava
+    elif [ $chosen == Catppuccin ]; then
+        sed -i "23s/.*/$CATPPUCCIN/" $CONFIG
+        killall -q glava
 
-  elif [ $chosen == Red ]; then
-      sed -i "23s/.*/$RED/" $CONFIG
-      killall -q glava
+    elif [ $chosen == Yellow ]; then
+        sed -i "23s/.*/$YELLOW/" $CONFIG
+        killall -q glava
 
-  elif [ $chosen == Dark_Cyan ]; then
-      sed -i "23s/.*/$DARK_CYAN/" $CONFIG
-      killall -q glava
+    elif [ $chosen == Red ]; then
+        sed -i "23s/.*/$RED/" $CONFIG
+        killall -q glava
 
-  elif [ $chosen == Dark ]; then
-      sed -i "23s/.*/$DARK/" $CONFIG
-      killall -q glava
+    elif [ $chosen == Dark_Cyan ]; then
+        sed -i "23s/.*/$DARK_CYAN/" $CONFIG
+        killall -q glava
 
-  elif [ $chosen == Amethyst ]; then
-      sed -i "23s/.*/$AMETHYST/" $CONFIG
-      killall -q glava
+    elif [ $chosen == Dark ]; then
+        sed -i "23s/.*/$DARK/" $CONFIG
+        killall -q glava
+
+    elif [ $chosen == Amethyst ]; then
+        sed -i "23s/.*/$AMETHYST/" $CONFIG
+        killall -q glava
+  fi
+  glava
 fi
-glava

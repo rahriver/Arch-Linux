@@ -2,13 +2,15 @@
 # neofetch --config ~/.config/neofetch/arch-small | lolcat
 # <<--------- Visuals --------->>
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-ZSH_THEME="powerlevel10k/powerlevel10k"
+# ZSH_THEME="nicoulaj"
+ZSH_THEME="robbyrussell"
 
 # <<--------- General Settings --------->>
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 export ZSH="/home/core/.oh-my-zsh"
+export TERMINAL=kitty;
 export VISUAL=nvim;
 export EDITOR=nvim;
 zstyle ':omz:update' mode auto      # update automatically without asking
@@ -42,6 +44,7 @@ alias vimrc="nvim ~/.config/nvim/init.lua"
 alias vimplug="nvim ~/.config/nvim/lua/user/plugins.lua"
 alias randwall="~/.config/scripts/setbg ~/Media/Pictures/Wallpapers"
 alias p="sudo pacman"
+alias mind="markmap -w"
 alias ax="axel -a -c"
 alias fzf="fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'"
 alias yt="youtube-dl --all-subs --add-metadata -i --output '/home/core/Media/Videos/Youtube/%(title)s.%(ext)s'"
@@ -60,6 +63,8 @@ alias radio="curseradio"
 export PATH=$PATH:/home/core/.config/scripts
 export PATH="/home/core/.local/bin:$PATH"
 export XDG_RUNTIME_DIR=/run/user/$(id -u)
+
+source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!

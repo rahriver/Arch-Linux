@@ -337,7 +337,7 @@ def parse_args():
     # Display - main loop showing status
     parser.add_argument("--worktime",
                         type=int,
-                        default=30 * 60,
+                        default=60 * 60,
                         help="Default work timer time in seconds")
     parser.add_argument("--breaktime",
                         type=int,

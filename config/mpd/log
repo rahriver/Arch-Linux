@@ -2546,3 +2546,169 @@ Dec 30 23:54 : player: played "Daft Punk/2020 - TRON Legacy - The Complete Editi
 Dec 30 23:58 : player: played "Daft Punk/2020 - TRON Legacy - The Complete Edition (Original Motion Picture Soundtrack)/31. Outlands, Part II.mp3"
 Dec 31 00:23 : player: played "AaRON/2015 - We Cut The Night/03. The Leftovers.mp3"
 Dec 31 00:32 : player: played "AaRON/2015 - We Cut The Night/03. The Leftovers.mp3"
+Dec 31 13:55 : player: played "Gorillaz/2010 - Plastic Beach (Japan Edition)/06 - Superfast Jellyfish.mp3"
+Dec 31 13:56 : player: played "AaRON/2015 - We Cut The Night/03. The Leftovers.mp3"
+Jan 01 01:14 : player: played "Radiohead/2017 - OK Computer (OKNOTOK 1997-2017)/CD1/10 No Surprises.mp3"
+Jan 01 01:22 : player: played "Radiohead/2017 - OK Computer (OKNOTOK 1997-2017)/CD1/07 Fitter Happier.mp3"
+Jan 01 01:26 : player: played "AaRON/2015 - We Cut The Night/10. 2-22.mp3"
+Jan 01 01:32 : player: played "Muse/2012 - The 2nd Law (Deluxe Limited Edition) EU/10. Save Me.mp3"
+Jan 01 01:33 : player: played "Binaural Beats/Binaural Beat 40 Hz Gamma.mp3"
+Jan 01 18:58 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1276] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Jan 01 18:58 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Jan 01 19:06 : player: played "The Smile/The Smile - Bending hectic.mp3"
+Jan 01 19:10 : player: played "The Smile/09 - Free In The Knowledge.mp3"
+Jan 01 20:09 : player: played "The Smile/01 - The Same.mp3"
+Jan 01 22:24 : player: played "Binaural Beats/Binaural Beat 40 Hz Gamma.mp3"
+Jan 02 13:45 : player: played "Tame Impala/2015 - Currents/12. LoveParanoia.mp3"
+Jan 02 13:51 : player: played "Tame Impala/2015 - Currents/13. New Person, Same Old Mistakes.mp3"
+Jan 02 13:55 : player: played "Tame Impala/2015 - Currents/11. Reality In Motion.mp3"
+Jan 02 13:57 : player: played "Tame Impala/2015 - Currents/09. Disciples.mp3"
+Jan 02 14:09 : player: played "Tame Impala/2015 - Currents/03. The Moment.mp3"
+Jan 02 14:13 : player: played "Tame Impala/2015 - Currents/04. Yes I'm Changing.mp3"
+Jan 02 14:19 : player: played "Tame Impala/2015 - Currents/05. Eventually.mp3"
+Jan 02 14:20 : player: played "Tame Impala/2015 - Currents/06. Gossip.mp3"
+Jan 02 14:23 : player: played "Tame Impala/2015 - Currents/07. The Less I Know The Better.mp3"
+Jan 02 14:28 : player: played "AaRON/2015 - We Cut The Night/07. Invisible Stains.mp3"
+Jan 02 14:32 : player: played "AaRON/2015 - We Cut The Night/08. We Cut The Night.mp3"
+Jan 02 14:36 : player: played "AaRON/2015 - We Cut The Night/09. Shades Of Blue.mp3"
+Jan 02 15:01 : player: played "Radiohead/2006 - Analyse/03 - Iluvya.mp3"
+Jan 02 15:19 : player: played "Binaural Beats/Binaural Beat 40 Hz Gamma.mp3"
+Jan 03 10:50 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1276] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Jan 03 10:50 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Jan 03 10:54 : player: played "Totally Enormous Extinct Dinosaurs/Totally Enormous Extinct Dinosaurs - “The Sleeper”.mp3"
+Jan 03 10:54 : player: played "Binaural Beats/Binaural Beat 40 Hz Gamma.mp3"
+Jan 03 20:43 : player: played "Totally Enormous Extinct Dinosaurs/Totally Enormous Extinct Dinosaurs - Never Seen You Dance (Official Video).mp3"
+Jan 03 20:50 : player: played "Totally Enormous Extinct Dinosaurs/Totally Enormous Extinct Dinosaurs - Radical.mp3"
+Jan 03 20:50 : player: played "Radiohead/2017 - OK Computer (OKNOTOK 1997-2017)/CD1/10 No Surprises.mp3"
+Jan 04 22:28 : player: played "Radiohead/2017 - OK Computer (OKNOTOK 1997-2017)/CD1/10 No Surprises.mp3"
+Jan 05 18:50 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1276] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Jan 05 18:50 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Jan 05 18:58 : player: played "Totally Enormous Extinct Dinosaurs/Totally Enormous Extinct Dinosaurs - Radical.mp3"
+Jan 05 18:58 : player: played "Radiohead/2017 - OK Computer (OKNOTOK 1997-2017)/CD1/10 No Surprises.mp3"
+Jan 05 19:03 : player: played "Totally Enormous Extinct Dinosaurs/Totally Enormous Extinct Dinosaurs - _When the Lights Go_.mp3"
+Jan 05 19:07 : player: played "Totally Enormous Extinct Dinosaurs/Totally Enormous Extinct Dinosaurs – Promises.mp3"
+Jan 05 19:13 : player: played "Totally Enormous Extinct Dinosaurs/Totally Enormous Extinct Dinosaurs - Into The Light.mp3"
+Jan 05 19:20 : player: played "Totally Enormous Extinct Dinosaurs/Totally Enormous Extinct Dinosaurs - Radical.mp3"
+Jan 05 19:24 : player: played "Totally Enormous Extinct Dinosaurs/Totally Enormous Extinct Dinosaurs - Never Seen You Dance (Official Video).mp3"
+Jan 05 20:08 : player: played "Totally Enormous Extinct Dinosaurs/Totally Enormous Extinct Dinosaurs - _Forever_.mp3"
+Jan 05 21:14 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1276] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Jan 05 21:14 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Jan 05 21:19 : player: played "Totally Enormous Extinct Dinosaurs/Totally Enormous Extinct Dinosaurs - “Crosswalk”.mp3"
+Jan 05 22:07 : player: played "Totally Enormous Extinct Dinosaurs/Totally Enormous Extinct Dinosaurs - _Forever_.mp3"
+Jan 06 13:53 : player: played "Totally Enormous Extinct Dinosaurs/Totally Enormous Extinct Dinosaurs - _Forever_.mp3"
+Jan 06 13:58 : player: played "Totally Enormous Extinct Dinosaurs/Totally Enormous Extinct Dinosaurs - Blood In The Snow.mp3"
+Jan 06 13:58 : exception: Not playing
+Jan 06 13:58 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1276] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Jan 06 13:58 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Jan 06 14:03 : player: played "Totally Enormous Extinct Dinosaurs/Totally Enormous Extinct Dinosaurs - “Crosswalk”.mp3"
+Jan 06 14:03 : player: played "Totally Enormous Extinct Dinosaurs/Totally Enormous Extinct Dinosaurs - Blood In The Snow.mp3"
+Jan 06 14:08 : player: played "Totally Enormous Extinct Dinosaurs/Totally Enormous Extinct Dinosaurs - _Forever_.mp3"
+Jan 06 20:30 : player: played "Tame Impala/2020 - The Slow Rush/12. One More Hour.mp3"
+Jan 07 15:07 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1276] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Jan 07 15:07 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Jan 07 15:07 : player: played "Neon/2050 - Nova.mp3"
+Jan 11 12:55 : player: played "Grizzly Bear/2011 - Blue Valentine (A Love Story)/01. Grizzly Bear - Granny Diner.mp3"
+Jan 11 13:38 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1276] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Jan 11 13:38 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Jan 11 13:38 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1276] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Jan 11 13:38 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Jan 11 13:38 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1276] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Jan 11 13:38 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Jan 11 13:38 : player: played "Neon/Aviad Zinemanas — Density Wave.mp3"
+Jan 11 13:38 : player: played "Uncomfortably Beautiful/Corey Hart - Sunglasses At Night.mp3"
+Jan 11 13:38 : player: played "Sons of Kemet/Sons Of Kemet - Hustle.mp3"
+Jan 11 13:38 : player: played "Sons of Kemet/Sons Of Kemet - Pick Up Your Burning Cross.mp3"
+Jan 11 13:38 : player: played "Uncomfortably Beautiful/Tin King - Ultraísta.mp3"
+Jan 11 13:43 : player: played "Uncomfortably Beautiful/Ultraista - Harmony.mp3"
+Jan 11 13:43 : player: played "Uncomfortably Beautiful/The Perfect Girl    Mareux.mp3"
+Jan 11 13:43 : exception: Not playing
+Jan 11 13:48 : player: played "Muse/2006 - Black Holes And Revelations (UK)/01. Take A Bow.mp3"
+Jan 11 13:52 : player: played "Muse/2006 - Black Holes And Revelations (UK)/02. Starlight.mp3"
+Jan 11 13:57 : player: played "Muse/2006 - Black Holes And Revelations (UK)/03. Supermassive Black Hole.mp3"
+Jan 11 14:08 : player: played "Muse/2006 - Black Holes And Revelations (UK)/04. Map Of The Problematique.mp3"
+Jan 11 19:36 : player: played "Uncomfortably Beautiful/Smalltalk (Four Tet Remix)   Ultraísta.mp3"
+Jan 11 19:40 : player: played "Muse/2006 - Black Holes And Revelations (UK)/04. Map Of The Problematique.mp3"
+Jan 11 19:44 : player: played "Muse/2006 - Supermassive Black Hole (CDS) EU/02. Crying Shame.mp3"
+Jan 12 00:26 : player: played "Tame Impala/2015 - Currents/01. Let It Happen.mp3"
+Jan 12 12:46 : player: played "Coldplay/2008 - Viva la Vida or Death and All His Friends/07 Viva la Vida.mp3"
+Jan 12 12:50 : player: played "Coldplay/2008 - Viva la Vida or Death and All His Friends/08 Violet Hill.mp3"
+Jan 12 13:46 : player: played "Coldplay/2008 - Viva la Vida or Death and All His Friends/08 Violet Hill.mp3"
+Jan 12 15:03 : player: played "Coldplay/2008 - Viva la Vida or Death and All His Friends/09 Strawberry Swing.mp3"
+Jan 13 12:08 : player: played "Gorillaz/2001 - Gorillaz/2001 - Gorillaz (Unmastered Version)/18 - Faust.mp3"
+Jan 13 12:17 : player: played "Tame Impala/2015 - Currents/04. Yes I'm Changing.mp3"
+Jan 13 12:17 : player: played "Coldplay/2008 - Viva la Vida or Death and All His Friends/09 Strawberry Swing.mp3"
+Jan 13 12:23 : player: played "Tame Impala/2020 - The Slow Rush/11. Glimmer.mp3"
+Jan 13 12:24 : player: played "Tame Impala/2015 - Currents/06. Gossip.mp3"
+Jan 13 13:27 : player: played "Tame Impala/2015 - Currents/09. Disciples.mp3"
+Jan 15 12:11 : player: played "The Strokes/2020 - The New Abnormal/09 Ode to the Mets.mp3"
+Jan 15 12:42 : player: played "The Strokes/2020 - The New Abnormal/01 The Adults Are Talking.mp3"
+Jan 15 14:14 : player: played "The Strokes/2020 - The New Abnormal/09 Ode to the Mets.mp3"
+Jan 16 12:48 : player: played "The Smile/02 - The Opposite.mp3"
+Jan 16 12:49 : player: played "Tame Impala/2015 - Currents/09. Disciples.mp3"
+Jan 16 12:52 : player: played "The Smile/03 - You Will Never Work in Television Again.mp3"
+Jan 16 14:01 : player: played "The Smile/04 - Pana-Vision.mp3"
+Jan 16 14:04 : player: played "The Smile/05 - The Smoke.mp3"
+Jan 16 14:09 : player: played "The Smile/06 - Speech Bubbles.mp3"
+Jan 16 14:58 : player: played "The Smile/07 - Thin Thing.mp3"
+Jan 16 15:52 : player: played "The Smile/04 - Pana-Vision.mp3"
+Jan 16 15:55 : player: played "The Smile/11 - Waving a White Flag.mp3"
+Jan 18 01:13 : player: played "Atoms For Peace/2013 - AMOK/04. Dropped.mp3"
+Jan 18 01:14 : player: played "Tame Impala/2015 - Currents/02. Nangs.mp3"
+Jan 18 01:18 : player: played "Tame Impala/2012 - Lonerism (Deluxe Limited Edition)/CD 1/01. Be Above It.mp3"
+Jan 18 01:21 : player: played "Tame Impala/2012 - Lonerism (Deluxe Limited Edition)/CD 1/02. Endors Toi.mp3"
+Jan 18 01:27 : player: played "Tame Impala/2012 - Lonerism (Deluxe Limited Edition)/CD 1/03. Apocalypse Dreams.mp3"
+Jan 18 01:32 : player: played "Tame Impala/2012 - Lonerism (Deluxe Limited Edition)/CD 1/05. Music To Walk Home By.mp3"
+Jan 18 21:19 : player: played "Uncomfortably Beautiful/Missing You - John Waite.mp3"
+Jan 18 21:24 : player: played "The Smile/10 - A Hairdryer.mp3"
+Jan 18 21:33 : player: played "The Strokes/2020 - The New Abnormal/01 The Adults Are Talking.mp3"
+Jan 18 21:59 : player: played "The Strokes/2020 - The New Abnormal/02 Selfless.mp3"
+Jan 18 22:03 : player: played "The Strokes/2020 - The New Abnormal/03 Brooklyn Bridge to Chorus.mp3"
+Jan 18 22:09 : player: played "The Strokes/2020 - The New Abnormal/05 Eternal Summer.mp3"
+Jan 18 22:15 : player: played "The Strokes/2020 - The New Abnormal/06 At the Door.mp3"
+Jan 18 22:30 : player: played "The Strokes/2020 - The New Abnormal/07 Why Are Sundays So Depressing.mp3"
+Jan 18 22:39 : player: played "Atoms For Peace/2013 - AMOK/07. Judge Jury Executioner.mp3"
+Jan 18 22:52 : player: played "Squarepusher/Squarepusher - Tundra 4.mp3"
+Jan 18 22:52 : player: played "The Strokes/2020 - The New Abnormal/04 Bad Decisions.mp3"
+Jan 19 21:00 : player: played "Radiohead/2018 - Suspiria (Music For the Luca Guadagnino Film)/Disc 1/06 - Klemperer Walks.mp3"
+Jan 19 21:00 : exception: Not playing
+Jan 19 21:05 : player: played "Radiohead/2018 - Suspiria (Music For the Luca Guadagnino Film)/Disc 1/09 - The Inevitable Pull.mp3"
+Jan 19 21:08 : player: played "Radiohead/2018 - Suspiria (Music For the Luca Guadagnino Film)/Disc 1/10 - Olga's Destruction (Volk Tape).mp3"
+Jan 19 21:10 : player: played "Radiohead/2018 - Suspiria (Music For the Luca Guadagnino Film)/Disc 1/11 - The Conjuring of Anke.mp3"
+Jan 19 21:12 : player: played "Radiohead/2018 - Suspiria (Music For the Luca Guadagnino Film)/Disc 1/12 - A Light Green.mp3"
+Jan 19 21:28 : player: played "Radiohead/2018 - Suspiria (Music For the Luca Guadagnino Film)/Disc 1/13 - Unmade.mp3"
+Jan 19 22:48 : player: played "Radiohead/2018 - Suspiria (Music For the Luca Guadagnino Film)/Disc 1/14 - The Jumps.mp3"
+Jan 19 22:54 : update: added Neon/Ekstrak - Induction Kit.mp3
+Jan 19 22:54 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1276] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Jan 19 22:54 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Jan 19 22:54 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1276] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Jan 19 22:54 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Jan 19 22:54 : player: played "Neon/Aviad Zinemanas — Density Wave.mp3"
+Jan 19 22:54 : player: played "Neon/Aviad Zinemanas — Density Wave.mp3"
+Jan 19 22:54 : player: played "Neon/Aviad Zinemanas — Density Wave.mp3"
+Jan 19 22:54 : player: played "Neon/Ekstrak - Induction Kit.mp3"
+Jan 19 22:54 : player: played "Neon/Ekstrak - Induction Kit.mp3"
+Jan 19 23:00 : player: played "Neon/Ekstrak - Induction Kit.mp3"
+Jan 19 23:03 : player: played "Radiohead/2018 - Suspiria (Music For the Luca Guadagnino Film)/Disc 1/14 - The Jumps.mp3"
+Jan 19 23:09 : player: played "Radiohead/2018 - Suspiria (Music For the Luca Guadagnino Film)/Disc 2/01 - Volk.mp3"
+Jan 19 23:11 : player: played "Radiohead/2018 - Suspiria (Music For the Luca Guadagnino Film)/Disc 2/03 - The Balance of Things.mp3"
+Jan 19 23:17 : player: played "Radiohead/2018 - Suspiria (Music For the Luca Guadagnino Film)/Disc 2/07 - Synthesizer Speaks.mp3"
+Jan 19 23:18 : player: played "Radiohead/2018 - Suspiria (Music For the Luca Guadagnino Film)/Disc 2/08 - The Room of Compartments.mp3"
+Jan 19 23:23 : player: played "Radiohead/2018 - Suspiria (Music For the Luca Guadagnino Film)/Disc 2/09 - An Audition.mp3"
+Jan 19 23:33 : player: played "Neon/James Holden & The Animal Spiri - Each Moment Like The First.mp3"
+Jan 19 23:35 : update: added Uncomfortably Beautiful/Melt!   Kelly Lee Owens.mp3
+Jan 19 23:35 : update: added Uncomfortably Beautiful/01 Broadcast - I Found The F.mp3
+Jan 19 23:35 : update: added Uncomfortably Beautiful/Broadcast_-_Tears_In_The_Typing_Pool[Mp3Converter.net].mp3
+Jan 19 23:35 : update: added Uncomfortably Beautiful/Re-Wild   Kelly Lee Owens.mp3
+Jan 19 23:38 : player: played "Uncomfortably Beautiful/Broadcast_-_Tears_In_The_Typing_Pool[Mp3Converter.net].mp3"
+Jan 19 23:40 : player: played "Uncomfortably Beautiful/01 Broadcast - I Found The F.mp3"

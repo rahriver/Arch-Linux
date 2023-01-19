@@ -2,6 +2,7 @@ local servers = {
 	"sumneko_lua",
   "texlab",
 	"cssls",
+  "r_language_server",
 	"html",
 	"pyright",
 	"bashls",

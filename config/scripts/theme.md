@@ -1,5 +1,6 @@
 Orange
 Teal
+Catppuccin
 Amethyst
 Dark_Cyan
 Dark

@@ -24,7 +24,7 @@ border_outer_margin 0
 
 # — SIZE — #
 minimum_size 220 8
-maximum_width 480
+maximum_width 580
 
 # — ALIGNMENT — #
 alignment top_left
@@ -55,7 +55,7 @@ default_color f0f0f0
 # — Colors — #
 color1 606060
 TEXT
-${voffset 25}${goto 140}${font Roboto Condensed:size=10:bold}$mpd_title$font
+${voffset 25}${goto 140}${font Ubuntu:size=10:bold}$mpd_title$font
 ${goto 140}$mpd_artist
 ${goto 140}$mpd_album
 ${goto 140}${mpd_bar 3,100}

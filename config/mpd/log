@@ -2712,3 +2712,356 @@ Jan 19 23:35 : update: added Uncomfortably Beautiful/Broadcast_-_Tears_In_The_Ty
 Jan 19 23:35 : update: added Uncomfortably Beautiful/Re-Wild   Kelly Lee Owens.mp3
 Jan 19 23:38 : player: played "Uncomfortably Beautiful/Broadcast_-_Tears_In_The_Typing_Pool[Mp3Converter.net].mp3"
 Jan 19 23:40 : player: played "Uncomfortably Beautiful/01 Broadcast - I Found The F.mp3"
+Jan 20 00:11 : player: played "Uncomfortably Beautiful/Re-Wild   Kelly Lee Owens.mp3"
+Jan 20 00:11 : player: played "Uncomfortably Beautiful/Re-Wild   Kelly Lee Owens.mp3"
+Jan 20 14:14 : player: played "Uncomfortably Beautiful/01 Broadcast - I Found The F.mp3"
+Jan 20 14:15 : player: played "Radiohead/2018 - Suspiria (Music For the Luca Guadagnino Film)/Disc 2/09 - An Audition.mp3"
+Jan 20 14:15 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1276] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Jan 20 14:15 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Jan 20 14:15 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1276] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Jan 20 14:15 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Jan 20 14:19 : player: played "Uncomfortably Beautiful/Re-Wild   Kelly Lee Owens.mp3"
+Jan 20 14:21 : player: played "Uncomfortably Beautiful/Broadcast_-_Tears_In_The_Typing_Pool[Mp3Converter.net].mp3"
+Jan 20 21:03 : player: played "Neon/Ekstrak - Induction Kit.mp3"
+Jan 20 21:13 : player: played "Atoms For Peace/2013 - AMOK/02. Default.mp3"
+Jan 20 21:21 : player: played "Radiohead/2006 - The Eraser/07 - And It Rained All Night.mp3"
+Jan 20 21:26 : player: played "Atoms For Peace/2013 - AMOK/04. Dropped.mp3"
+Jan 20 21:31 : player: played "Radiohead/2006 - The Eraser/04 - Black Swan.mp3"
+Jan 20 21:36 : player: played "Radiohead/2006 - The Eraser/06 - Atoms For Peace.mp3"
+Jan 21 00:17 : player: played "Gorillaz/2017 - Humanz (Deluxe Edition)/CD 2/06. Circle Of Friendz (Feat. Brandon Markell Holmes).mp3"
+Jan 21 00:20 : player: played "Gorillaz/2017 - Humanz (Deluxe Edition)/CD 1/07. Submission (Feat. Danny Brown & Kelela).mp3"
+Jan 21 00:20 : player: played "Gorillaz/2017 - Humanz (Deluxe Edition)/CD 1/06. Interlude - The Non-Conformist Oath.mp3"
+Jan 21 19:38 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1276] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Jan 21 19:38 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Jan 21 19:46 : player: played "The Smile/The Smile - Bending hectic.mp3"
+Jan 21 19:57 : player: played "The Smile/The Smile - Colours Fly.mp3"
+Jan 21 20:05 : player: played "The Smile/09 - Free In The Knowledge.mp3"
+Jan 21 21:43 : player: played "Gorillaz/2011 - The Fall/B3. Amarillo.mp3"
+Jan 21 21:46 : player: played "Gorillaz/2011 - The Fall/B5. Aspen Forest.mp3"
+Jan 21 21:49 : player: played "Gorillaz/2011 - The Fall/B6. Bobby In Phoenix.mp3"
+Jan 21 21:52 : player: played "Gorillaz/2011 - The Fall/B7. California & The Slipping Of The Sun.mp3"
+Jan 21 21:54 : player: played "Gorillaz/2011 - The Fall/A4. Detroit.mp3"
+Jan 22 00:17 : player: played "Gorillaz/2011 - The Fall/A3. Hillbilly Man.mp3"
+Jan 22 09:46 : player: played "Gorillaz/2011 - The Fall/A3. Hillbilly Man.mp3"
+Jan 23 21:01 : player: played "Uncomfortably Beautiful/CARIBOU - You and I.mp3"
+Jan 23 21:11 : player: played "Gorillaz/2011 - The Fall/B1. The Parish Of Space Dust.mp3"
+Jan 23 21:14 : player: played "Gorillaz/2011 - The Fall/B2. The Snake In Dallas.mp3"
+Jan 23 21:16 : player: played "Gorillaz/2011 - The Fall/B4. The Speak It Mountain.mp3"
+Jan 23 21:45 : player: played "Gorillaz/2017 - Humanz (Deluxe Edition)/CD 1/11. Busted And Blue.mp3"
+Jan 23 21:54 : player: played "Gorillaz/2017 - Humanz (Deluxe Edition)/CD 1/11. Busted And Blue.mp3"
+Jan 24 20:58 : player: played "Tame Impala/2020 - The Slow Rush/04. Posthumous Forgiveness.mp3"
+Jan 24 20:58 : player: played "The Smile/09 - Free In The Knowledge.mp3"
+Jan 24 21:20 : player: played "Tame Impala/2020 - The Slow Rush/01. One More Year.mp3"
+Jan 24 21:23 : player: played "Tame Impala/2020 - The Slow Rush/02. Instant Destiny.mp3"
+Jan 24 21:27 : player: played "Tame Impala/2020 - The Slow Rush/03. Borderline.mp3"
+Jan 24 22:52 : player: played "Radiohead/2013 - Judge Jury And Executioner/B1. S.A.D.mp3"
+Jan 24 22:57 : player: played "The Smile/09 - Free In The Knowledge.mp3"
+Jan 24 23:11 : player: played "Gorillaz/2011 - The Fall/A3. Hillbilly Man.mp3"
+Jan 24 23:14 : player: played "Gorillaz/2011 - The Fall/A6. Little Pink Plastic Bags.mp3"
+Jan 24 23:18 : player: played "Gorillaz/2011 - The Fall/A1. Phoner To Arizona.mp3"
+Jan 24 23:21 : player: played "Gorillaz/2011 - The Fall/A2. Revolving Doors.mp3"
+Jan 24 23:22 : player: played "Gorillaz/2011 - The Fall/B8. Seattle Yodel.mp3"
+Jan 24 23:25 : player: played "Gorillaz/2011 - The Fall/A5. Shy-Town.mp3"
+Jan 24 23:28 : player: played "Gorillaz/2011 - The Fall/A7. The Joplin Spider.mp3"
+Jan 24 23:30 : player: played "Gorillaz/2011 - The Fall/B2. The Snake In Dallas.mp3"
+Jan 24 23:35 : player: played "Gorillaz/2017 - Humanz (Deluxe Edition)/CD 1/11. Busted And Blue.mp3"
+Jan 24 23:41 : player: played "Tame Impala/2020 - The Slow Rush/05. Breathe Deeper.mp3"
+Jan 24 23:47 : player: played "Tame Impala/2020 - The Slow Rush/06. Tomorrow's Dust.mp3"
+Jan 24 23:49 : player: played "Tame Impala/2020 - The Slow Rush/07. On Track.mp3"
+Jan 25 17:43 : player: played "Fleet Foxes/2008 - Fleet Foxes/CD 1 - Album/02 - White Winter Hymnal.mp3"
+Jan 25 19:07 : player: played "Tame Impala/2020 - The Slow Rush/07. On Track.mp3"
+Jan 25 19:11 : player: played "Tame Impala/2020 - The Slow Rush/08. Lost In Yesterday.mp3"
+Jan 25 19:30 : player: played "Tame Impala/2020 - The Slow Rush/09. Is It True.mp3"
+Jan 25 19:34 : player: played "Tame Impala/2020 - The Slow Rush/10. It Might Be Time.mp3"
+Jan 25 19:36 : player: played "Tame Impala/2020 - The Slow Rush/11. Glimmer.mp3"
+Jan 25 20:11 : player: played "Tame Impala/2020 - The Slow Rush/12. One More Hour.mp3"
+Jan 27 13:14 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 27 13:14 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Jan 27 13:14 : player: played "Gorillaz/2012 - Rocket Juice & The Moon (w. Tony Allen & Flea)/01 1-2-3-4-5-6.m4a"
+Jan 27 13:14 : exception: Not playing
+Jan 27 13:14 : exception: Not playing
+Jan 27 13:15 : exception: Not playing
+Jan 27 13:19 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 27 13:19 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Jan 27 13:25 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 27 13:25 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Jan 27 13:25 : player: played "Gorillaz/2012 - Rocket Juice & The Moon (w. Tony Allen & Flea)/01 1-2-3-4-5-6.m4a"
+Jan 27 13:27 : player: played "Gorillaz/2012 - Rocket Juice & The Moon (w. Tony Allen & Flea)/02 Hey, Shooter (feat. Erykah Badu, Hypnotic Brass Ensemble and Thundercat).m4a"
+Jan 28 18:49 : update: added Gorillaz/2022 - New/Gorillaz - Silent Running (feat. Adeleye Omotayo).flac
+Jan 28 18:49 : update: removing Gorillaz/2022 - New/Gorillaz - Silent Running.mp3
+Jan 28 19:00 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 28 19:00 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Jan 28 19:00 : player: played "Gorillaz/2022 - New/Gorillaz - Silent Running (feat. Adeleye Omotayo).flac"
+Jan 28 19:05 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 28 19:05 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Jan 28 19:06 : player: played "Gorillaz/2022 - New/Gorillaz - Silent Running (feat. Adeleye Omotayo).flac"
+Jan 28 19:10 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 28 19:10 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Jan 28 19:10 : player: played "Gorillaz/2022 - New/Gorillaz - Silent Running (feat. Adeleye Omotayo).flac"
+Jan 28 19:15 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 28 19:15 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Jan 28 19:15 : player: played "Gorillaz/2022 - New/Gorillaz - Silent Running (feat. Adeleye Omotayo).flac"
+Jan 28 19:40 : player: played "Gorillaz/2012 - Rocket Juice & The Moon (w. Tony Allen & Flea)/02 Hey, Shooter (feat. Erykah Badu, Hypnotic Brass Ensemble and Thundercat).m4a"
+Jan 28 23:31 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 28 23:31 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Jan 28 23:32 : player: played "Gorillaz/2022 - New/Gorillaz - Silent Running (feat. Adeleye Omotayo).flac"
+Jan 28 23:36 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 28 23:36 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Jan 28 23:36 : player: played "Gorillaz/2022 - New/Gorillaz - Silent Running (feat. Adeleye Omotayo).flac"
+Jan 28 23:42 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 28 23:42 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Jan 28 23:42 : player: played "Grizzly Bear/2009 - Veckatimest (Special Limited Edition) 2CD/CD1/02. Two Weeks.mp3"
+Jan 28 23:42 : player: played "Gorillaz/2012 - Rocket Juice & The Moon (w. Tony Allen & Flea)/02 Hey, Shooter (feat. Erykah Badu, Hypnotic Brass Ensemble and Thundercat).m4a"
+Jan 28 23:47 : player: played "Grizzly Bear/2009 - Veckatimest (Special Limited Edition) 2CD/CD1/03. All We Ask.mp3"
+Jan 29 00:08 : player: played "Aphex Twin/2005 - Analord 10/01 Fenixfunk 5.mp3"
+Jan 29 00:32 : player: played "Aphex Twin/2005 - Analord 10/02 XMD5A.mp3"
+Jan 29 01:05 : player: played "Radiohead/2009 - These Are My Twisted Words/01 - These Are My Twisted Words.mp3"
+Jan 29 01:06 : player: played "Grizzly Bear/2009 - Veckatimest (Special Limited Edition) 2CD/CD1/04. Fine For Now.mp3"
+Jan 29 12:09 : player: played "Gorillaz/2022 - New/Gorillaz - Silent Running (feat. Adeleye Omotayo).flac"
+Jan 29 13:38 : player: played "Grizzly Bear/2009 - Veckatimest (Special Limited Edition) 2CD/CD1/05. Cheerleader.mp3"
+Jan 29 13:38 : player: played "Grizzly Bear/2009 - Veckatimest (Special Limited Edition) 2CD/CD1/06. Dory.mp3"
+Jan 31 10:01 : player: played "Gorillaz/2022 - New/Gorillaz - Silent Running (feat. Adeleye Omotayo).flac"
+Jan 31 10:06 : player: played "Grizzly Bear/2009 - Veckatimest (Special Limited Edition) 2CD/CD1/05. Cheerleader.mp3"
+Jan 31 10:15 : player: played "Grizzly Bear/2009 - Veckatimest (Special Limited Edition) 2CD/CD1/06. Dory.mp3"
+Jan 31 10:30 : player: played "Grizzly Bear/2009 - Veckatimest (Special Limited Edition) 2CD/CD1/03. All We Ask.mp3"
+Jan 31 14:51 : player: played "Grizzly Bear/2009 - Veckatimest (Special Limited Edition) 2CD/CD1/04. Fine For Now.mp3"
+Jan 31 21:03 : player: played "Gorillaz/2010 - Plastic Beach (Japan Edition)/02 - Welcome to the World of the Plastic Beach.mp3"
+Jan 31 21:07 : player: played "Gorillaz/2010 - Plastic Beach (Japan Edition)/05 - Stylo.mp3"
+Jan 31 21:12 : player: played "Gorillaz/2010 - Plastic Beach (Japan Edition)/07 - Empire Ants.mp3"
+Jan 31 21:16 : player: played "Gorillaz/2010 - Plastic Beach (Japan Edition)/08 - Glitter Freeze.mp3"
+Jan 31 21:19 : player: played "Gorillaz/2010 - Plastic Beach (Japan Edition)/09 - Some Kind of Nature.mp3"
+Jan 31 21:23 : player: played "Gorillaz/2010 - Plastic Beach (Japan Edition)/10 - On Melancholy Hill.mp3"
+Jan 31 21:45 : player: played "Grizzly Bear/2009 - Veckatimest (Special Limited Edition) 2CD/CD1/07. Ready, Able.mp3"
+Jan 31 21:48 : player: played "Grizzly Bear/2009 - Veckatimest (Special Limited Edition) 2CD/CD1/08. About Face.mp3"
+Jan 31 21:50 : player: played "Grizzly Bear/2009 - Veckatimest (Special Limited Edition) 2CD/CD1/09. Hold Still.mp3"
+Jan 31 22:06 : player: played "Radiohead/2017 - OK Computer (OKNOTOK 1997-2017)/CD1/12 The Tourist.mp3"
+Jan 31 22:53 : player: played "Radiohead/2017 - OK Computer (OKNOTOK 1997-2017)/CD2/02 Man Of War.mp3"
+Jan 31 22:55 : player: played "Aphex Twin/1994 - Selected Ambient Works Volume II/1-11 White Blur 1.mp3"
+Feb 01 00:15 : player: played "Aphex Twin/1994 - Selected Ambient Works Volume II/1-11 White Blur 1.mp3"
+Feb 01 00:20 : player: played "Aphex Twin/2016 - Cheetah EP/07. 2X202-St5.mp3"
+Feb 01 00:24 : player: played "Grizzly Bear/2009 - Veckatimest (Special Limited Edition) 2CD/CD1/06. Dory.mp3"
+Feb 01 00:28 : player: played "Grizzly Bear/2009 - Veckatimest (Special Limited Edition) 2CD/CD1/07. Ready, Able.mp3"
+Feb 01 00:32 : player: played "Grizzly Bear/2009 - Veckatimest (Special Limited Edition) 2CD/CD1/08. About Face.mp3"
+Feb 01 00:42 : player: played "Totally Enormous Extinct Dinosaurs/Totally Enormous Extinct Dinosaurs - Into The Light.mp3"
+Feb 01 00:44 : player: played "Grizzly Bear/2009 - Veckatimest (Special Limited Edition) 2CD/CD1/09. Hold Still.mp3"
+Feb 01 00:48 : player: played "Grizzly Bear/2009 - Veckatimest (Special Limited Edition) 2CD/CD1/10. While You Wait For The Others.mp3"
+Feb 01 00:53 : player: played "Grizzly Bear/2009 - Veckatimest (Special Limited Edition) 2CD/CD1/11. I Live With You.mp3"
+Feb 01 00:57 : player: played "Grizzly Bear/2009 - Veckatimest (Special Limited Edition) 2CD/CD1/12. Foreground.mp3"
+Feb 01 01:12 : player: played "Grizzly Bear/2012 - Shields/01. Sleeping Ute.mp3"
+Feb 01 15:03 : player: played "Grizzly Bear/2012 - Shields/01. Sleeping Ute.mp3"
+Feb 01 15:12 : update: added Grizzly Bear/2017 - Painting/Wasted Acres   Grizzly Bear.mp3
+Feb 01 15:12 : update: added Grizzly Bear/2017 - Painting/Aquarian   Grizzly Bear.mp3
+Feb 01 15:12 : update: added Grizzly Bear/2017 - Painting/Grizzly Bear. Sky Took Hold. 2017.mp3
+Feb 01 15:12 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Feb 01 15:12 : update: added Grizzly Bear/2017 - Painting/Glass Hillside - Grizzly Bear.m4a
+Feb 01 15:12 : update: added Grizzly Bear/2017 - Painting/Grizzly Bear - Losing All Sense.mp3
+Feb 01 15:12 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Feb 01 15:12 : update: added Grizzly Bear/2017 - Painting/Mourning Sound - Grizzly Bear.m4a
+Feb 01 15:12 : update: added Grizzly Bear/2017 - Painting/09 - Neighbors.mp3
+Feb 01 15:12 : update: added Grizzly Bear/2017 - Painting/04. Three Rings.mp3
+Feb 01 15:12 : update: removing Grizzly Bear/2017 - Painting/09 - Neighbors.mp3
+Feb 01 15:12 : update: removing Grizzly Bear/2017 - Painting/Grizzly Bear - Losing All Sense.mp3
+Feb 01 15:12 : update: removing Grizzly Bear/2017 - Painting/04. Three Rings.mp3
+Feb 01 15:12 : update: removing Grizzly Bear/2017 - Painting/Mourning Sound - Grizzly Bear.m4a
+Feb 01 15:12 : update: removing Grizzly Bear/2017 - Painting/Glass Hillside - Grizzly Bear.m4a
+Feb 01 15:12 : update: removing Grizzly Bear/2017 - Painting/Grizzly Bear. Sky Took Hold. 2017.mp3
+Feb 01 15:12 : update: removing Grizzly Bear/2017 - Painting/Wasted Acres   Grizzly Bear.mp3
+Feb 01 15:12 : update: removing Grizzly Bear/2017 - Painting/Aquarian   Grizzly Bear.mp3
+Feb 01 15:12 : update: added Grizzly Bear/2017 - Painted Ruins/Wasted Acres   Grizzly Bear.mp3
+Feb 01 15:12 : update: added Grizzly Bear/2017 - Painted Ruins/Aquarian   Grizzly Bear.mp3
+Feb 01 15:12 : update: added Grizzly Bear/2017 - Painted Ruins/Grizzly Bear. Sky Took Hold. 2017.mp3
+Feb 01 15:12 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Feb 01 15:12 : update: added Grizzly Bear/2017 - Painted Ruins/Glass Hillside - Grizzly Bear.m4a
+Feb 01 15:12 : update: added Grizzly Bear/2017 - Painted Ruins/Grizzly Bear - Losing All Sense.mp3
+Feb 01 15:12 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Feb 01 15:12 : update: added Grizzly Bear/2017 - Painted Ruins/Mourning Sound - Grizzly Bear.m4a
+Feb 01 15:12 : update: added Grizzly Bear/2017 - Painted Ruins/09 - Neighbors.mp3
+Feb 01 15:12 : update: added Grizzly Bear/2017 - Painted Ruins/04. Three Rings.mp3
+Feb 01 15:15 : update: removing Grizzly Bear/2017 - Painted Ruins/Wasted Acres   Grizzly Bear.mp3
+Feb 01 15:15 : update: removing Grizzly Bear/2017 - Painted Ruins/Aquarian   Grizzly Bear.mp3
+Feb 01 15:15 : update: removing Grizzly Bear/2017 - Painted Ruins/Grizzly Bear - Losing All Sense.mp3
+Feb 01 15:15 : update: removing Grizzly Bear/2017 - Painted Ruins/Mourning Sound - Grizzly Bear.m4a
+Feb 01 15:15 : update: removing Grizzly Bear/2017 - Painted Ruins/Glass Hillside - Grizzly Bear.m4a
+Feb 01 15:15 : update: removing Grizzly Bear/2017 - Painted Ruins/Grizzly Bear. Sky Took Hold. 2017.mp3
+Feb 01 15:15 : update: added Grizzly Bear/2017 - Painted Ruins/06. Aquarian.mp3
+Feb 01 15:15 : update: added Grizzly Bear/2017 - Painted Ruins/03. Four Cypresses.mp3
+Feb 01 15:15 : update: added Grizzly Bear/2017 - Painted Ruins/11. Sky Took Hold.mp3
+Feb 01 15:15 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Feb 01 15:15 : update: added Grizzly Bear/2017 - Painted Ruins/08. Glass Hillside.m4a
+Feb 01 15:15 : update: added Grizzly Bear/2017 - Painted Ruins/07. Cut-Out.mp3
+Feb 01 15:15 : update: added Grizzly Bear/2017 - Painted Ruins/05. Losing All Sense.mp3
+Feb 01 15:15 : update: added Grizzly Bear/2017 - Painted Ruins/10. Systole.mp3
+Feb 01 15:15 : update: added Grizzly Bear/2017 - Painted Ruins/01. Wasted Acres.mp3
+Feb 01 15:15 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Feb 01 15:15 : update: added Grizzly Bear/2017 - Painted Ruins/02. Mourning Sound.m4a
+Feb 01 15:21 : player: played "Grizzly Bear/2017 - Painted Ruins/03. Four Cypresses.mp3"
+Feb 01 15:52 : player: played "Grizzly Bear/2017 - Painted Ruins/10. Systole.mp3"
+Feb 01 16:20 : player: played "Grizzly Bear/2017 - Painted Ruins/10. Systole.mp3"
+Feb 01 16:41 : player: played "Grizzly Bear/2017 - Painted Ruins/10. Systole.mp3"
+Feb 01 19:27 : player: played "Grizzly Bear/2017 - Painted Ruins/04. Three Rings.mp3"
+Feb 01 19:38 : player: played "Grizzly Bear/2009 - Veckatimest (Special Limited Edition) 2CD/CD1/04. Fine For Now.mp3"
+Feb 01 19:48 : player: played "Grizzly Bear/2009 - Veckatimest (Special Limited Edition) 2CD/CD1/05. Cheerleader.mp3"
+Feb 02 01:11 : player: played "Grizzly Bear/2009 - Veckatimest (Special Limited Edition) 2CD/CD1/06. Dory.mp3"
+Feb 02 17:21 : player: played "Grizzly Bear/2017 - Painted Ruins/04. Three Rings.mp3"
+Feb 02 17:26 : player: played "Grizzly Bear/2009 - Veckatimest (Special Limited Edition) 2CD/CD1/05. Cheerleader.mp3"
+Feb 02 17:30 : player: played "Grizzly Bear/2009 - Veckatimest (Special Limited Edition) 2CD/CD1/07. Ready, Able.mp3"
+Feb 02 18:06 : player: played "Grizzly Bear/2009 - Veckatimest (Special Limited Edition) 2CD/CD1/08. About Face.mp3"
+Feb 02 18:19 : player: played "Grizzly Bear/2017 - Painted Ruins/07. Cut-Out.mp3"
+Feb 02 18:21 : player: played "Grizzly Bear/2009 - Veckatimest (Special Limited Edition) 2CD/CD1/09. Hold Still.mp3"
+Feb 02 19:03 : player: played "Grizzly Bear/2009 - Veckatimest (Special Limited Edition) 2CD/CD1/10. While You Wait For The Others.mp3"
+Feb 02 19:03 : player: played "Gorillaz/2010 - Plastic Beach (Japan Edition)/12 - Sweepstakes.mp3"
+Feb 02 20:26 : player: played "Grizzly Bear/2012 - Shields/10. Sun In Your Eyes.mp3"
+Feb 02 23:17 : player: played "Grizzly Bear/2017 - Painted Ruins/04. Three Rings.mp3"
+Feb 02 23:25 : player: played "Grizzly Bear/2012 - Shields/10. Sun In Your Eyes.mp3"
+Feb 02 23:57 : player: played "Grizzly Bear/2017 - Painted Ruins/05. Losing All Sense.mp3"
+Feb 03 12:38 : player: played "Grizzly Bear/2017 - Painted Ruins/04. Three Rings.mp3"
+Feb 03 13:22 : player: played "Grizzly Bear/2017 - Painted Ruins/04. Three Rings.mp3"
+Feb 03 13:26 : player: played "Grizzly Bear/2017 - Painted Ruins/03. Four Cypresses.mp3"
+Feb 03 14:03 : player: played "Muse/2003 - Absolution (UK)/04. Sing For Absolution.mp3"
+Feb 03 16:43 : player: played "Muse/2003 - Absolution (UK)/04. Sing For Absolution.mp3"
+Feb 05 19:24 : player: played "Muse/2003 - Absolution (UK)/04. Sing For Absolution.mp3"
+Feb 05 19:29 : player: played "Grizzly Bear/2017 - Painted Ruins/05. Losing All Sense.mp3"
+Feb 05 19:35 : player: played "Grizzly Bear/2017 - Painted Ruins/04. Three Rings.mp3"
+Feb 05 20:46 : player: played "Grizzly Bear/2017 - Painted Ruins/04. Three Rings.mp3"
+Feb 05 21:03 : player: played "Grizzly Bear/2017 - Painted Ruins/07. Cut-Out.mp3"
+Feb 05 23:28 : player: played "Grizzly Bear/2017 - Painted Ruins/04. Three Rings.mp3"
+Feb 05 23:39 : player: played "Grizzly Bear/2017 - Painted Ruins/07. Cut-Out.mp3"
+Feb 06 00:04 : player: played "Grizzly Bear/2017 - Painted Ruins/09 - Neighbors.mp3"
+Feb 07 12:39 : player: played "Men I Trust/Men I Trust - 2019 - Oncle Jazz/Air   Men I Trust.mp3"
+Feb 07 12:42 : player: played "Men I Trust/Men I Trust - 2019 - Oncle Jazz/All Night   Men I Trust.mp3"
+Feb 07 12:45 : player: played "Men I Trust/Men I Trust - 2019 - Oncle Jazz/Alright   Men I Trust.mp3"
+Feb 07 12:48 : player: played "Men I Trust/Men I Trust - 2019 - Oncle Jazz/Days Go By   Men I Trust.mp3"
+Feb 07 13:02 : player: played "Men I Trust/Men I Trust - 2019 - Oncle Jazz/Dorian   Men I Trust.mp3"
+Feb 07 13:03 : player: played "Men I Trust/Men I Trust - 2019 - Oncle Jazz/Fiero GT   Men I Trust.mp3"
+Feb 07 13:07 : player: played "Men I Trust/Men I Trust - 2019 - Oncle Jazz/Found Me   Men I Trust.mp3"
+Feb 07 13:10 : player: played "Men I Trust/Men I Trust - 2019 - Oncle Jazz/Norton Commander (All We Need)   Men I Trust.mp3"
+Feb 07 13:14 : player: played "Men I Trust/Men I Trust - 2019 - Oncle Jazz/Numb   Men I Trust.mp3"
+Feb 07 13:15 : player: played "Men I Trust/Men I Trust - 2019 - Oncle Jazz/Pierre   Men I Trust.mp3"
+Feb 07 15:24 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1276] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Feb 07 15:24 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Feb 07 15:25 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1276] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Feb 07 15:25 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Feb 07 15:25 : player: played "Neon/Aviad Zinemanas — Density Wave.mp3"
+Feb 07 15:25 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Feb 07 15:25 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Feb 07 15:25 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Feb 07 15:25 : player: played "Neon/Night Rider 87 - Lightning Highway.m4a"
+Feb 07 15:26 : update: removing Neon/2050 - Nova.mp3
+Feb 07 15:26 : update: removing Neon/Night Rider 87 - Lightning Highway.m4a
+Feb 07 15:26 : update: removing Neon/Night Rider 87 - Galactic Realms.m4a
+Feb 07 15:26 : update: removing Neon/Night Rider 87 - Hero s Curse.m4a
+Feb 07 15:26 : update: removing Neon/Tinlicker, Dosem - Hypnotised.flac
+Feb 07 15:26 : update: removing Neon/Norbeatt - Carabali.mp3
+Feb 07 15:26 : update: removing Neon/Night Rider 87 - Star Conquest.mp3
+Feb 07 15:26 : update: removing Neon/2050 - Time Jumper.mp3
+Feb 07 15:34 : player: played "Grizzly Bear/2011 - Blue Valentine (A Love Story)/13. Grizzly Bear - Lullaby.mp3"
+Feb 07 15:46 : player: played "Coldplay/2019 - Everyday Life/03 Trouble In Town.mp3"
+Feb 07 15:50 : player: played "Grizzly Bear/2011 - Blue Valentine (A Love Story)/02. Department Of Eagle - In Ear Park.mp3"
+Feb 07 16:07 : player: played "Daft Punk/2013 - Random Access Memories/06. Lose Yourself To Dance (Feat. Pharrell Williams).mp3"
+Feb 07 16:12 : player: played "Daft Punk/2013 - Random Access Memories/09. Beyond.mp3"
+Feb 07 16:18 : player: played "Daft Punk/2013 - Random Access Memories/10. Motherboard.mp3"
+Feb 07 16:27 : player: played "Daft Punk/2013 - Random Access Memories/12. Doin' It Right (Feat. Panda Bear).mp3"
+Feb 07 16:35 : player: played "Daft Punk/2013 - Random Access Memories/13. Contact.mp3"
+Feb 07 16:39 : player: played "Daft Punk/2013 - Random Access Memories/01. Give Life Back To Music.mp3"
+Feb 07 16:45 : player: played "Daft Punk/2013 - Random Access Memories/02. The Game Of Love.mp3"
+Feb 07 16:55 : player: played "Daft Punk/2013 - Random Access Memories/03. Giorgio By Moroder.mp3"
+Feb 07 16:55 : player: played "Grizzly Bear/2011 - Blue Valentine (A Love Story)/14. Grizzly Bear - I Live With You.mp3"
+Feb 07 16:59 : player: played "Daft Punk/2013 - Random Access Memories/04. Within.mp3"
+Feb 07 19:04 : player: played "Daft Punk/2013 - Random Access Memories/07. Touch (Feat. Paul Williams).mp3"
+Feb 07 19:09 : player: played "Daft Punk/2013 - Random Access Memories/09. Beyond.mp3"
+Feb 07 19:15 : player: played "Daft Punk/2013 - Random Access Memories/05. Instant Crush (Feat. Julian Casablancas).mp3"
+Feb 07 19:21 : player: played "Daft Punk/2013 - Random Access Memories/06. Lose Yourself To Dance (Feat. Pharrell Williams).mp3"
+Feb 07 19:28 : player: played "Daft Punk/2013 - Random Access Memories/10. Motherboard.mp3"
+Feb 07 19:35 : player: played "Daft Punk/2013 - Random Access Memories/13. Contact.mp3"
+Feb 07 19:39 : player: played "Daft Punk/2013 - Random Access Memories/12. Doin' It Right (Feat. Panda Bear).mp3"
+Feb 07 20:03 : player: played "Daft Punk/2013 - Random Access Memories/11. Fragments Of Time (Feat. Todd Edwards).mp3"
+Feb 07 20:12 : player: played "Daft Punk/2013 - Random Access Memories/09. Beyond.mp3"
+Feb 07 20:16 : player: played "Daft Punk/2013 - Random Access Memories/04. Within.mp3"
+Feb 07 20:21 : player: played "Daft Punk/2013 - Random Access Memories/01. Give Life Back To Music.mp3"
+Feb 07 20:26 : player: played "Radiohead/2000 - Kid A/02. Kid A.mp3"
+Feb 07 20:33 : player: played "Radiohead/2000 - Kid A/03. The National Anthem.mp3"
+Feb 07 23:28 : player: played "Radiohead/2000 - Kid A/05. Treefingers.mp3"
+Feb 07 23:59 : player: played "Gorillaz/2011 - The Fall/B5. Aspen Forest.mp3"
+Feb 07 23:59 : exception: Not playing
+Feb 08 00:02 : player: played "Gorillaz/2011 - The Fall/B3. Amarillo.mp3"
+Feb 08 00:05 : player: played "Gorillaz/2011 - The Fall/B5. Aspen Forest.mp3"
+Feb 08 00:12 : player: played "Gorillaz/2011 - The Fall/A7. The Joplin Spider.mp3"
+Feb 08 00:14 : player: played "Gorillaz/2011 - The Fall/B1. The Parish Of Space Dust.mp3"
+Feb 08 00:16 : player: played "Gorillaz/2011 - The Fall/B2. The Snake In Dallas.mp3"
+Feb 08 00:19 : player: played "Gorillaz/2011 - The Fall/B4. The Speak It Mountain.mp3"
+Feb 08 01:26 : player: played "Gorillaz/2011 - The Fall/A7. The Joplin Spider.mp3"
+Feb 08 01:26 : player: played "Gorillaz/2011 - The Fall/B1. The Parish Of Space Dust.mp3"
+Feb 09 01:15 : player: played "Daft Punk/2013 - Random Access Memories/11. Fragments Of Time (Feat. Todd Edwards).mp3"
+Feb 09 21:54 : player: played "Gorillaz/2022 - New/Cracker Island ft. Thundercat.mp3"
+Feb 09 22:09 : player: played "Gorillaz/2022 - New/New Gold ft. Tame Impala & Bootie Brown.mp3"
+Feb 09 22:13 : player: played "Gorillaz/2001 - Gorillaz/2001 - Gorillaz (Unmastered Version)/01 - Slow Country.mp3"
+Feb 09 22:16 : player: played "Gorillaz/2001 - Gorillaz/2001 - Gorillaz (Unmastered Version)/02 - Tomorrow Comes Today.mp3"
+Feb 09 22:20 : player: played "Gorillaz/2001 - Gorillaz/2001 - Gorillaz (Unmastered Version)/03 - Latin Simone (High Backing Vocals).mp3"
+Feb 09 22:24 : player: played "Gorillaz/2010 - Plastic Beach (Japan Edition)/02 - Welcome to the World of the Plastic Beach.mp3"
+Feb 09 22:28 : player: played "Gorillaz/2010 - Plastic Beach (Japan Edition)/03 - White Flag.mp3"
+Feb 09 22:31 : player: played "Gorillaz/2010 - Plastic Beach (Japan Edition)/04 - Rhinestone Eyes.mp3"
+Feb 09 22:52 : player: played "Gorillaz/2010 - Plastic Beach (Japan Edition)/05 - Stylo.mp3"
+Feb 10 14:19 : player: played "Radiohead/2000 - Kid A/02. Kid A.mp3"
+Feb 10 16:29 : player: played "Gorillaz/2011 - The Fall/B2. The Snake In Dallas.mp3"
+Feb 10 17:04 : player: played "Gorillaz/2011 - The Fall/B2. The Snake In Dallas.mp3"
+Feb 10 19:35 : player: played "Gorillaz/2011 - The Fall/B2. The Snake In Dallas.mp3"
+Feb 10 19:38 : player: played "Gorillaz/2011 - The Fall/B4. The Speak It Mountain.mp3"
+Feb 10 19:51 : player: played "Daft Punk/2013 - Random Access Memories/11. Fragments Of Time (Feat. Todd Edwards).mp3"
+Feb 11 13:07 : player: played "Daft Punk/2013 - Random Access Memories/11. Fragments Of Time (Feat. Todd Edwards).mp3"
+Feb 11 13:12 : player: played "Daft Punk/2013 - Random Access Memories/09. Beyond.mp3"
+Feb 11 13:18 : player: played "Daft Punk/2013 - Random Access Memories/10. Motherboard.mp3"
+Feb 11 13:23 : player: played "Daft Punk/2013 - Random Access Memories/12. Doin' It Right (Feat. Panda Bear).mp3"
+Feb 11 13:23 : player: played "Fleet Foxes/2011 - Helplessness Blues/03 - Fleet Foxes - Sim Sala Bim.mp3"
+Feb 11 21:36 : player: played "Daft Punk/2013 - Random Access Memories/10. Motherboard.mp3"
+Feb 11 21:38 : player: played "Fleet Foxes/2011 - Helplessness Blues/03 - Fleet Foxes - Sim Sala Bim.mp3"
+Feb 11 22:02 : player: played "Daft Punk/2013 - Random Access Memories/10. Motherboard.mp3"
+Feb 11 22:08 : player: played "Daft Punk/2013 - Random Access Memories/10. Motherboard.mp3"
+Feb 11 22:15 : player: played "Daft Punk/2013 - Random Access Memories/06. Lose Yourself To Dance (Feat. Pharrell Williams).mp3"
+Feb 11 23:17 : player: played "Daft Punk/2013 - Random Access Memories/07. Touch (Feat. Paul Williams).mp3"
+Feb 11 23:37 : player: played "Daft Punk/2013 - Random Access Memories/10. Motherboard.mp3"
+Feb 11 23:52 : player: played "Daft Punk/2013 - Random Access Memories/11. Fragments Of Time (Feat. Todd Edwards).mp3"
+Feb 12 00:05 : player: played "Squarepusher/Squarepusher - Tundra 4.mp3"
+Feb 12 12:29 : player: played "David Bowie/1969 - Space Oddity (1984 West Germany)/03. Letter To Hermione.mp3"
+Feb 12 12:37 : player: played "David Bowie/1969 - Space Oddity (1984 West Germany)/05. Janine.mp3"
+Feb 12 12:40 : player: played "David Bowie/1969 - Space Oddity (1984 West Germany)/06. An Occasional Dream.mp3"
+Feb 12 12:44 : player: played "David Bowie/1969 - Space Oddity (1984 West Germany)/07. Wild Eyed Boy From Freecloud.mp3"
+Feb 12 12:54 : player: played "David Bowie/1969 - Space Oddity (1984 West Germany)/09. Memory Of A Free Festival.mp3"
+Feb 12 12:54 : player: played "Grizzly Bear/2011 - Blue Valentine (A Love Story)/02. Department Of Eagle - In Ear Park.mp3"
+Feb 12 14:00 : player: played "Grizzly Bear/2011 - Blue Valentine (A Love Story)/02. Department Of Eagle - In Ear Park.mp3"
+Feb 12 14:03 : player: played "Gorillaz/2017 - Garage Palace (feat. Little Simz)/1 - Garage Palace (feat. Little Simz).mp3"
+Feb 12 14:09 : player: played "Gorillaz/2017 - Humanz (Deluxe Edition)/CD 2/04. Out Of Body (Feat. Kilo Kish, Zebra Katz & Imani Vonsha).mp3"
+Feb 12 14:12 : player: played "Gorillaz/2017 - Humanz (Deluxe Edition)/CD 1/10. Andromeda (Feat. D.R.A.M.).mp3"
+Feb 12 14:16 : player: played "Gorillaz/2017 - Humanz (Deluxe Edition)/CD 1/08. Charger (Feat. Grace Jones).mp3"
+Feb 12 14:16 : player: played "Gorillaz/2017 - Humanz (Deluxe Edition)/CD 1/09. Interlude - Elevator Going Up.mp3"
+Feb 12 14:23 : player: played "Gorillaz/2017 - Humanz (Deluxe Edition)/CD 2/03. Halfway To The Halfway House (Feat. Peven Everett).mp3"
+Feb 12 14:26 : player: played "Gorillaz/2017 - Humanz (Deluxe Edition)/CD 1/17. She's My Collar (Feat. Kali Uchis).mp3"
+Feb 13 14:10 : player: played "Uncomfortably Beautiful/CARIBOU - You and I.mp3"
+Feb 13 18:07 : player: played "Uncomfortably Beautiful/CARIBOU - You and I.mp3"
+Feb 13 18:11 : player: played "Gorillaz/2017 - Humanz (Deluxe Edition)/CD 1/17. She's My Collar (Feat. Kali Uchis).mp3"
+Feb 13 18:35 : player: played "Gorillaz/2017 - Humanz (Deluxe Edition)/CD 1/11. Busted And Blue.mp3"
+Feb 15 14:00 : player: played "Gorillaz/2017 - Humanz (Deluxe Edition)/CD 1/19. Hallelujah Money (Feat. Benjamin Clementine).mp3"
+Feb 15 21:14 : player: played "Aphex Twin/1994 - Selected Ambient Works Volume II/2-12 Matchsticks.mp3"
+Feb 15 21:15 : player: played "Aphex Twin/2017 - ...I Care Because You Do/13. Sekonda e,+2.mp3"
+Feb 15 22:02 : player: played "Gorillaz/2001 - Gorillaz/2001 - Gorillaz (Unmastered Version)/01 - Slow Country.mp3"
+Feb 15 22:07 : player: played "Gorillaz/2017 - Humanz (Deluxe Edition)/CD 1/02. Ascension (Feat. Vince Staples).mp3"
+Feb 15 22:10 : player: played "Gorillaz/2011 - The Fall/B7. California & The Slipping Of The Sun.mp3"
+Feb 15 22:13 : player: played "Gorillaz/2011 - The Fall/B2. The Snake In Dallas.mp3"
+Feb 15 22:38 : player: played "Gorillaz/2017 - Humanz (Deluxe Edition)/CD 2/02. The Apprentice (Feat. Rag'n'Bone Man, Zebra Katz & RAY BLK).mp3"
+Feb 15 22:38 : player: played "Gorillaz/2017 - Humanz (Deluxe Edition)/CD 2/03. Halfway To The Halfway House (Feat. Peven Everett).mp3"
+Feb 15 23:56 : player: played "Gorillaz/2017 - Sleeping Powder/Gorillaz - Sleeping Powder.mp3"
+Feb 17 22:19 : player: played "Gorillaz/2017 - Sleeping Powder/Gorillaz - Sleeping Powder.mp3"
+Feb 18 14:43 : player: played "Radiohead/2007 - In Rainbows/CD1/03. Nude.mp3"
+Feb 18 14:45 : player: played "Radiohead/2007 - In Rainbows/CD2/04. MK2.mp3"
+Feb 18 14:45 : player: played "Gorillaz/2017 - Sleeping Powder/Gorillaz - Sleeping Powder.mp3"
+Feb 18 14:49 : player: played "Radiohead/2007 - In Rainbows/CD2/07. Bangers And Mash.mp3"
+Feb 18 15:03 : player: played "Radiohead/2007 - In Rainbows/CD2/06. Up On The Ladder.mp3"
+Feb 18 20:41 : player: played "Radiohead/2007 - In Rainbows/CD1/09. Jigsaw Falling Into Place.mp3"
+Feb 18 21:45 : player: played "Radiohead/2007 - In Rainbows/CD2/06. Up On The Ladder.mp3"
+Feb 19 14:33 : player: played "The Smile/01 - The Same.mp3"
+Feb 19 14:45 : player: played "Radiohead/2007 - In Rainbows/CD2/06. Up On The Ladder.mp3"
+Feb 20 00:00 : player: played "Radiohead/2007 - In Rainbows/CD2/06. Up On The Ladder.mp3"

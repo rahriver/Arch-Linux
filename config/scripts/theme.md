@@ -7,4 +7,3 @@ Dark
 Red
 Purple
 Yellow
-Green

@@ -1,5 +1,5 @@
 local servers = {
-	"sumneko_lua",
+	"lua_ls",
   "texlab",
 	"cssls",
   "r_language_server",

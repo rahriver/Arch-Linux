@@ -158,6 +158,10 @@ for_window [title="dropideas"]          floating enable
 for_window [title="dropideas"]          resize set 800 600
 for_window [title="dropideas"]          move position center
 
+for_window [title="dropbooks"]          floating enable
+for_window [title="dropbooks"]          resize set 800 400
+for_window [title="dropbooks"]          move position center
+
 for_window [title="Quick Format Citation"]          move position center
 for_window [title="Quick Format Citation"]          floating enable
 
@@ -208,8 +212,8 @@ bindsym $mod+p 			        exec ls -v -r ~/Media/Pictures/Wallpapers/*.png | nsxi
 bindsym $mod+s			        [class="dropterm"] scratchpad show; move position center
 bindsym $mod+i              exec $term -T "dropideas" -e nvim ~/Temp/MEGA/Article/Wiki/Ideas.wiki
 bindsym $mod+t              exec $term --class dayplan -e nvim ~/Temp/MEGA/Notes/Dayplan/$(date +%Y-%m-%d).wiki
-# bindsym $mod+c			        exec $term --class "dropcalc" -e R --quiet
-bindsym $mod+c			        exec $term --class "dropcalc" -e python -q
+bindsym $mod+c			        exec $term --class "dropcalc" -e R --quiet
+# bindsym $mod+c			        exec $term --class "dropcalc" -e python -q
 bindsym $mod+shift+c			  exec ~/.config/scripts/conf_selector
 bindsym $mod+m			        [class="ncmpcpp"] scratchpad show; move position center
 bindsym $mod+shift+l	      exec $term -e ~/.config/scripts/lfub

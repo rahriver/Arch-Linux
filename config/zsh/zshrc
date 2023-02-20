@@ -3,15 +3,22 @@
 # <<--------- Visuals --------->>
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 # ZSH_THEME="nicoulaj"
-ZSH_THEME="robbyrussell"
+ZSH_THEME="darkblood"
+# ZSH_THEME="robbyrussell"
+
+# export http_proxy=http://127.0.0.1:37475
+# export https_proxy=https://127.0.0.1:37475
+# export http_proxy=socks5://127.0.0.1:43751
 
 # <<--------- General Settings --------->>
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 export ZSH="/home/core/.oh-my-zsh"
+export LIBBY_OUTPUT_DIR="~/Documents/Books/books/"
 export TERMINAL=kitty;
 export VISUAL=nvim;
+export OPENAI_API_KEY=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
 export EDITOR=nvim;
 zstyle ':omz:update' mode auto      # update automatically without asking
 plugins=(git archlinux zsh-syntax-highlighting zsh-autosuggestions fzf)
@@ -19,7 +26,7 @@ source $ZSH/oh-my-zsh.sh
 export MANPATH="/usr/local/man:$MANPATH"
 export MUSIC_DIR="/home/core/Media/Music"
 export LANG=en_US.UTF-8
-export CONDA_AUTO_ACTIVATE_BASE=false
+# export CONDA_AUTO_ACTIVATE_BASE=false
 
 # <<--------- Aliases --------->>
 alias lf="lfub"
@@ -36,6 +43,7 @@ alias cp="advcp"
 alias mv="advmv"
 alias repo="cd ~/Documents/Repositories"
 alias spr="tspreed -w 320 -f -b <"
+alias primer3="primer3_core --format_output --p3_settings_file=/home/core/Temp/Programs/primer3/primer3_config.conf"
 alias vop="nvim ~/.config/polybar/config.ini"
 alias telcol="wal-telegram --wal -g"
 alias vsh="nvim ~/.zshrc"
@@ -61,6 +69,7 @@ alias radio="curseradio"
 
 # <<--------- PATH --------->>
 export PATH=$PATH:/home/core/.config/scripts
+export PATH=$PATH:/home/core/Temp/Programs/BLAST/bin/
 export PATH="/home/core/.local/bin:$PATH"
 export XDG_RUNTIME_DIR=/run/user/$(id -u)
 

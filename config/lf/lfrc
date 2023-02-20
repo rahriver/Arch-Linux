@@ -1,16 +1,3 @@
-# For those wanting image previews, like this system, there are four steps to
-# set it up. These are done automatically for LARBS users, but I will state
-# them here for others doing it manually.
-#
-# 1. ueberzug must be installed.
-# 2. The scope file (~/.config/lf/scope for me), must have a command similar to
-#    mine to generate ueberzug images.
-# 3. A `set cleaner` line as below is a cleaner script.
-# 4. lf should be started through a wrapper script (~/.local/bin/lfub for me)
-#    that creates the environment for ueberzug. This command can be be aliased
-#    in your shellrc (`alias lf="lfub") or if set to a binding, should be
-#    called directly instead of normal lf.
-
 # Basic vars
 set shellopts '-eu'
 set ifs "\n"
@@ -45,63 +32,43 @@ set previewer '~/.config/lf/scope'
 #     esac
 # }}
 #
-# cmd mkdir $mkdir -p "$(echo $* | tr ' ' '\ ')"
-#
-# cmd extract ${{
-# 	clear; tput cup $(($(tput lines)/3)); tput bold
-# 	set -f
-# 	printf "%s\n\t" "$fx"
-# 	printf "extract?[y/N]"
-# 	read ans
-# 	[ $ans = "y" ] && aunpack $fx
-# }}
-#
-# cmd delete ${{
-# 	clear; tput cup $(($(tput lines)/3)); tput bold
-# 	set -f
-# 	printf "%s\n\t" "$fx"
-# 	printf "delete?[y/N]"
-# 	read ans
-# 	[ $ans = "y" ] && rm -rf -- $fx
-# }}
-#
-# cmd moveto ${{
-# 	clear; tput cup $(($(tput lines)/3)); tput bold
-# 	set -f
-# 	clear; echo "Move to where?"
-# 	dest="$(sed -e 's/\s*#.*//' -e '/^$/d' -e 's/^\S*\s*//' ${XDG_CONFIG_HOME:-$HOME/.config}/shell/bm-dirs | fzf | sed 's|~|$HOME|')" &&
-# 	for x in $fx; do
-# 		eval mv -iv \"$x\" \"$dest\"
-# 	done &&
-# 	notify-send "🚚 File(s) moved." "File(s) moved to $dest."
-# }}
-#
-# cmd copyto ${{
-# 	clear; tput cup $(($(tput lines)/3)); tput bold
-# 	set -f
-# 	clear; echo "Copy to where?"
-# 	dest="$(sed -e 's/\s*#.*//' -e '/^$/d' -e 's/^\S*\s*//' ${XDG_CONFIG_HOME:-$HOME/.config}/shell/bm-dirs | fzf | sed 's|~|$HOME|')" &&
-# 	for x in $fx; do
-# 		eval cp -ivr \"$x\" \"$dest\"
-# 	done &&
-# 	notify-send "📋 File(s) copied." "File(s) copies to $dest."
+
+cmd extract ${{
+	clear; tput cup $(($(tput lines)/3)); tput bold
+	set -f
+	printf "%s\n\t" "$fx"
+	printf "extract?[y/N]"
+	read ans
+	[ $ans = "y" ] && aunpack $fx
+}}
+
+cmd trash ${{
+	clear; tput cup $(($(tput lines)/3)); tput bold
+	set -f
+	printf "%s\n\t" "$fx"
+	printf "delete?[y/N]"
+	read ans
+	[ $ans = "y" ] && mv $fx /home/core/.local/share/Trash/files
+}}
+
+# cmd trash ${{
+#     mkdir -p /home/core/.local/share/Trash/files
+#     if [ -z "$fs" ]; then
+#         mv "$f" /home/core/.local/share/Trash/files
+#     else
+#         IFS="$(printf '\n\t')"; mv $fs /home/core/.local/share/Trash/files
+#     fi
 # }}
 
 cmd setwallpaper %cp "$f" ~/.config/wall.jpg && wal -i "$f"
-
-cmd setbg "$1"
 cmd bulkrename $vidir
 
 # Bindings
-map <c-f> $lf -remote "send $id select '$(fzf)'"
-map J $lf -remote "send $id cd $(sed -e 's/\s*#.*//' -e '/^$/d' -e 's/^\S*\s*//' ${XDG_CONFIG_HOME:-$HOME/.config}/shell/bm-dirs | fzf)"
 map gh
 map g top
-map D delete
+map D trash
 map E extract
-map C copyto
-map M moveto
-map <c-n> push :mkdir<space>
+map <c-l> push :mkdir<space>
 map <c-r> reload
 map <c-s> set hidden!
 map <enter> shell
@@ -115,12 +82,7 @@ map I push A<c-a> # at the very beginning
 map i push A<a-b><a-b><a-f> # before extention
 map a push A<a-b> # after extention
 map B bulkrename
-# map b $setbg $f
 map b setwallpaper
-map <c-e> down
-map <c-y> up
-map V push :!nvim<space>
-map W $setsid -f $TERMINAL >/dev/null 2>&1
 map Y $printf "%s" "$fx" | xclip -selection clipboard
 
 # Folder Mapping

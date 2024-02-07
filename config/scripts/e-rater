@@ -1,0 +1,47 @@
+#!/bin/python3
+
+import nltk
+from nltk.tokenize import word_tokenize
+from language_tool_python import LanguageTool
+
+def analyze_essay(file_path):
+    # Read the essay from the file
+    with open(file_path, 'r') as file:
+        essay = file.read()
+
+    # Tokenize the essay into words
+    words = word_tokenize(essay)
+
+    # Count the number of unique words
+    unique_word_count = len(set(words))
+
+    # Calculate the vocabulary diversity
+    vocabulary_diversity = unique_word_count / len(words)
+
+    print(f"Word count:{len(words)}")
+    print(f"Number of unique words: {unique_word_count}")
+    print(f"Vocabulary diversity: {vocabulary_diversity:.2f}")
+
+    # Calculate the average word length
+    word_lengths = [len(word) for word in words]
+    average_word_length = sum(word_lengths) / len(word_lengths)
+    print(f"Average word length: {average_word_length:.2f}")
+
+    # Perform grammar and spelling error detection
+    tool = LanguageTool('en-US')
+    errors = tool.check(essay)
+
+    # Count the number of grammar and spelling errors
+    error_count = len(errors)
+
+    print(f"Number of errors: {error_count}")
+    print("\nError details:")
+
+    for error in errors:
+        print(f"\nError message: {error.message}")
+        print(f"Error context: {error.context}")
+        print(f"Error details: {error.ruleId}")
+
+# Provide the path to the essay file
+file_path = 'essay.txt'
+analyze_essay(file_path)

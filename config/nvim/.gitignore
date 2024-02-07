@@ -1,43 +1,49 @@
-# Compiled Lua sources
-luac.out
+# Project gitignore
+.luarc.json
+after
+coc-settings.json
+colors
+docs
+ftplugin
+ginit.vim
+lua/user
+neoconf.json
+plugin
+queries
+spell
 
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
+# Global gitignore
+# ----------------
 
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
+# Mac OS X
+.AppleDouble
+.DS_Store
+.LSOverride
+._*
 
-# Precompiled Headers
-*.gch
-*.pch
+# Windoze
+$RECYCLE.BIN/
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
+# (Neo)Vim
+*~
+.netrwhist
+Session.vim
+Sessionx.vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+[._]*.un~
+tags
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# VS Code
+.history
+.vscode
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-
-plugin/packer_compiled.lua
+# JetBrains
+.idea

@@ -2,7 +2,7 @@
 floating_modifier  $mod
 font               pango:Ubuntu 12
 set                $term --no-startup-id kitty
-set                $alt  --no-startup-id cool-retro-term
+set                $alt  --no-startup-id terminator
 set                $mod Mod4
 set                $screencast bash ~/.config/scripts/record_vid
 exec               --no-startup-id dex --autostart --environment i3
@@ -128,6 +128,7 @@ for_window [class="Rhythmbox"]          move to workspace $ws8
 for_window [class="CPod"]               move to workspace $ws9
 for_window [class="Zotero"]             move to workspace $ws3
 for_window [class="TeXstudio"]          move to workspace $ws2
+for_window [class="obsidian"]          move to workspace $ws2
 for_window [class="Spotify"]            move to workspace $ws9
 
 for_window [instance="ncmpcpp"]         move position center
@@ -138,6 +139,10 @@ for_window [instance="ncmpcpp"]         move scratchpad
 for_window [class="Ranger"]             move position center
 for_window [class="Ranger"]             floating enable
 for_window [class="Ranger"]             resize set 1000 800
+
+for_window [title="dropnews"]             move position center
+for_window [title="dropnews"]             floating enable
+for_window [title="dropnews"]             resize set 800 600
 
 for_window [class="TelegramDesktop"]	move position center
 for_window [class="TelegramDesktop"]	floating enable
@@ -158,9 +163,9 @@ for_window [title="dropideas"]          floating enable
 for_window [title="dropideas"]          resize set 800 600
 for_window [title="dropideas"]          move position center
 
-for_window [title="dropbooks"]          floating enable
-for_window [title="dropbooks"]          resize set 800 400
-for_window [title="dropbooks"]          move position center
+for_window [title="dropgpt"]          floating enable
+for_window [title="dropgpt"]          resize set 1300 700
+for_window [title="dropgpt"]          move position center
 
 for_window [title="Quick Format Citation"]          move position center
 for_window [title="Quick Format Citation"]          floating enable
@@ -184,10 +189,12 @@ for_window [instance="dayplan"]        move position center
 # exec_always         feh --bg-fill ~/f.jpg
 # exec_always         xwallpaper --zoom ~/f.jpg
 # exec_always         /home/core/.config/scripts/layout && $refresh_i3status
+# exec_always           xborders --config /home/core/.config/xborders/conf.json
 exec_always           "setxkbmap -model pc104 -layout us,ir -variant ,, -option grp:ctrl_shift_toggle"
-exec_always 		      picom --experimental-backend
+exec_always 		      picom
 # exec                  conky -c "/home/core/.config/conky/conkyrc-mpd"
 # exec                  conky -c "/home/core/.config/conky/conky.conf"
+exec                  conky
 exec                  /home/core/.config/scripts/dayplan
 exec                  xset r rate 300 30
 exec                  mpd
@@ -206,7 +213,7 @@ bindsym $mod+o			        exec --no-startup-id obsidian; exec ~/.config/scripts/o
 bindsym $mod+g 			        exec --no-startup-id telegram-desktop -g 78x24+50+20
 bindsym $mod+z			        exec --no-startup-id zotero
 bindsym $mod+u              exec --no-startup-id $term --class "dropurl" -e nvim ~/.config/scripts/url.txt
-bindsym $mod+k			        exec $term --class "Kanban" -e taskell ~/Temp/MEGA/Notes/KanTodo.md
+bindsym $mod+k			        exec $term --class "Kanban" -e taskell /home/core/Temp/MEGA/Obsidian/Broadest/10\ -\ Inbox/KanTodo.md
 bindsym $mod+F12		        exec i3-input -F 'exec goldendict %s' -P 'Word: '
 bindsym $mod+p 			        exec ls -v -r ~/Media/Pictures/Wallpapers/*.png | nsxiv -t -b -
 bindsym $mod+s			        [class="dropterm"] scratchpad show; move position center
@@ -217,10 +224,12 @@ bindsym $mod+c			        exec $term --class "dropcalc" -e R --quiet
 bindsym $mod+shift+c			  exec ~/.config/scripts/conf_selector
 bindsym $mod+m			        [class="ncmpcpp"] scratchpad show; move position center
 bindsym $mod+shift+l	      exec $term -e ~/.config/scripts/lfub
-bindsym $mod+n			        exec /home/core/Documents/Repositories/RofiNoter/main
+bindsym $mod+n			        exec /home/core/.config/scripts/rofi-noter
 bindsym $mod+shift+s        exec $screencast
-bindsym $mod+d              exec rofi -show drun -show-icons
-bindsym $mod+shift+e        exec rofi -show emoji -modi emoji
+# bindsym $mod+d              exec rofi -show drun -show-icons -theme spotlight-dark
+bindsym $mod+d              exec rofi -show drun -show-icons -theme launchpad
+bindsym $mod+j              exec /home/core/Temp/Programs/Rofi-Beats/rofi-beats
+bindsym $mod+shift+e        exec rofi -show emoji -modi emoji -theme rounded-pink-dark
 bindsym $mod+shift+x	      exec /home/core/.config/scripts/lock
 bindsym $mod+Return 	      exec $term
 bindsym $mod+Shift+Return   exec $alt
@@ -239,10 +248,10 @@ bindsym j         resize shrink width 10 px or 10 ppt
 bindsym k         resize grow height 10 px or 10 ppt
 bindsym l         resize shrink height 10 px or 10 ppt
 bindsym semicolon resize grow width 10 px or 10 ppt
-bindsym Left      resize shrink width 10 px or 10 ppt
-bindsym Down      resize grow height 10 px or 10 ppt
+bindsym Right     resize shrink width 10 px or 10 ppt
+bindsym Left      resize grow width 10 px or 10 ppt
 bindsym Up        resize shrink height 10 px or 10 ppt
-bindsym Right     resize grow width 10 px or 10 ppt
+bindsym Down      resize grow height 10 px or 10 ppt
 bindsym Return    mode "default"
 bindsym Escape    mode "default"
 bindsym $mod+r    mode "default"

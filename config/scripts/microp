@@ -1,0 +1,11 @@
+#!/bin/sh
+
+pulseaudio-ctl mute-input
+
+VAR=$(pulseaudio-ctl | grep "Is source muted" | awk '{print $NF}')
+
+if [ $(echo ${#VAR}) -eq 21 ]; then
+  notify-send "🔇 Microphone Muted"
+elif [ $(echo ${#VAR}) -eq 20 ]; then
+  notify-send "✅ Microphone Enabled"
+fi

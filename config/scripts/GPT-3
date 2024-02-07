@@ -1,0 +1,128 @@
+#!/usr/bin/python3
+
+from rich.console import Console
+import os
+import openai
+from dotenv import load_dotenv
+from colorama import Fore, Back, Style
+
+# initialize the visualizer
+console = Console()
+
+# load values from the .env file if it exists
+load_dotenv()
+
+# configure OpenAI
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
+# INSTRUCTIONS = """
+# I want you to act as an English translator, spelling corrector and improver. I will speak to you in any language and you will detect the language, translate it and answer in the corrected and improved version of my text, in English. I want you to replace my simplified A0-level words and sentences with more beautiful and elegant, upper level English words and sentences. Keep the meaning same, but make them more literary. I want you to only reply the correction, the improvements and nothing else, do not write explanations. I want you to provide me with multiple sentences so I can choose the one that I think it's the best. You should avoid any form of plagiarism in your texts.
+# """
+
+INSTRUCTIONS = """
+I want you to act as a researcher who summarizes articles to write and include them in review articles. I will give you some paragraphs, and you will provide a summary of it in the third person view. Your summary should be informative and factual, covering the most important aspects of the paragraph.
+"""
+TEMPERATURE = 0.6
+MAX_TOKENS = 500
+FREQUENCY_PENALTY = 0
+PRESENCE_PENALTY = 0.6
+# limits how many questions we include in the prompt
+MAX_CONTEXT_QUESTIONS = 10
+
+
+def get_response(prompt, previous_questions_and_answers, new_question):
+    """
+    Get a response from the model using the prompt
+
+    Parameters:
+        prompt (str): The prompt to use to generate the response
+
+    Returns the response from the model
+    """
+    # build the messages
+    messages = [
+        { "role": "system", "content": prompt },
+    ]
+    # add the previous questions and answers
+    for question, answer in previous_questions_and_answers[-MAX_CONTEXT_QUESTIONS:]:
+        messages.append({ "role": "user", "content": question })
+        messages.append({ "role": "assistant", "content": answer })
+    # add the new question
+    messages.append({ "role": "user", "content": new_question })
+
+    completion = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=messages,
+        temperature=TEMPERATURE,
+        max_tokens=MAX_TOKENS,
+        top_p=1,
+        frequency_penalty=FREQUENCY_PENALTY,
+        presence_penalty=PRESENCE_PENALTY,
+    )
+    return completion.choices[0].message.content
+
+
+def get_moderation(question):
+    """
+    Check the question is safe to ask the model
+
+    Parameters:
+        question (str): The question to check
+
+    Returns a list of errors if the question is not safe, otherwise returns None
+    """
+
+    errors = {
+        "hate": "Content that expresses, incites, or promotes hate based on race, gender, ethnicity, religion, nationality, sexual orientation, disability status, or caste.",
+        "hate/threatening": "Hateful content that also includes violence or serious harm towards the targeted group.",
+        "self-harm": "Content that promotes, encourages, or depicts acts of self-harm, such as suicide, cutting, and eating disorders.",
+        "sexual": "Content meant to arouse sexual excitement, such as the description of sexual activity, or that promotes sexual services (excluding sex education and wellness).",
+        "sexual/minors": "Sexual content that includes an individual who is under 18 years old.",
+        "violence": "Content that promotes or glorifies violence or celebrates the suffering or humiliation of others.",
+        "violence/graphic": "Violent content that depicts death, violence, or serious physical injury in extreme graphic detail.",
+    }
+    response = openai.Moderation.create(input=question)
+    if response.results[0].flagged:
+        # get the categories that are flagged and generate a message
+        result = [
+            error
+            for category, error in errors.items()
+            if response.results[0].categories[category]
+        ]
+        return result
+    return None
+
+
+def main():
+    os.system("cls" if os.name == "nt" else "clear")
+    # keep track of previous questions and answers
+    previous_questions_and_answers = []
+    while True:
+        # ask the user for their question
+        new_question = input(
+                Fore.GREEN + Style.BRIGHT + "Provide some texts" + "\n" + Style.RESET_ALL
+        )
+        # check the question is safe
+        errors = get_moderation(new_question)
+        if errors:
+            print(
+                Fore.RED
+                + Style.BRIGHT
+                + "Sorry, you're question didn't pass the moderation check:"
+            )
+            for error in errors:
+                print(error)
+            print(Style.RESET_ALL)
+            continue
+        console.log(f"[bold cyan]Please Wait...")
+        response = get_response(INSTRUCTIONS, previous_questions_and_answers, new_question)
+
+        # add the new question and answer to the list of previous questions and answers
+        previous_questions_and_answers.append((new_question, response))
+
+        # print the response
+        print("\n" + Fore.CYAN + Style.BRIGHT + "GPT-3: " + Style.NORMAL + response + "\n")
+
+
+if __name__ == "__main__":
+    main()

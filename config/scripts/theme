@@ -51,6 +51,18 @@ if [ -n "$chosen" ]; then
     elif [ $chosen == Amethyst ]; then
         sed -i "23s/.*/$AMETHYST/" $CONFIG
         killall -q glava
+
+    elif [ $chosen == Pro ]; then
+        wal -i /home/core/Media/Pictures/Wallpapers/683.png && conky -c "/home/core/.config/conky/Sidebar" && conky -c "/home/core/.config/conky/conkyrc-mpd" && conky
+        sed -i "23s/.*/$RED/" $CONFIG
+        killall -q glava
+
+    elif [ $chosen == Minimal ]; then
+        wal -i /home/core/Media/Pictures/Wallpapers/337.png
+        sed -i "23s/.*/$PURPLE/" $CONFIG
+        killall conky
+        killall -q glava
+
   fi
   glava
 fi

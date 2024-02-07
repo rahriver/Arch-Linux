@@ -1,5 +1,7 @@
 Orange
 Teal
+Pro
+Minimal
 Catppuccin
 Amethyst
 Dark_Cyan

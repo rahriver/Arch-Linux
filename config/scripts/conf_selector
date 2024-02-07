@@ -5,5 +5,5 @@ chosen=$(cat /home/core/.config/scripts/conf_locations | rofi -dmenu -i -p "Conf
 if [ -z "$chosen" ]; then
     exit 0
 else
-  kitty -e nvim $chosen
+  kitty -e lvim $chosen
 fi

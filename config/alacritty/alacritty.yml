@@ -67,7 +67,7 @@ window:
   #
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
-  opacity: 1.0
+  opacity: 0.7
 
   # Startup Mode (changes require restart)
   #
@@ -111,22 +111,43 @@ window:
 
 font:
   normal:
-    family: Iosevka
-    style: Medium
+    family: Courier New
+    style: Regular
 
-  # bold:
-  #   family: Iosevka
-  #   style: Bold
+  bold:
+    family: Courier New
+    style: Bold
 
-  # italic:
-  #   family: Iosevka
-  #   style: Italic
+  italic:
+    family: Courier New
+    style: Italic
 
-  # bold_italic:
-  #   family: Iosevka
-  #   style: Bold Italic
+  bold_italic:
+    family: Courier New
+    style: Bold Italic
 
-  size: 9.0
+  size: 7.0
+
+# font:
+#   normal:
+#     family: Cascadia Code
+#     style: Regular
+#
+#   bold:
+#     family: Cascadia Code
+#     style: Bold
+#
+#   italic:
+#     family: Cascadia Code
+#     style: Italic
+#
+#   bold_italic:
+#     family: Cascadia Code
+#     style: Bold Italic
+#
+#   size: 9.0
+
+
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -849,27 +870,27 @@ mouse:
 # BEGIN ACE
 colors:
   primary:
-    background: '#0c0a04'
-    foreground: '#e0e0ca'
+    background: '#181020'
+    foreground: '#c4c3c6'
   cursor:
-    text:       '#0c0a04'
-    cursor:     '#e0e0ca'
+    text:       '#181020'
+    cursor:     '#c4c3c6'
   normal:
-    black:      '#0c0a04'
-    red:        '#867744'
-    green:      '#7C8254'
-    yellow:     '#BDAE5A'
-    blue:       '#969967'
-    magenta:    '#919469'
-    cyan:       '#B2B389'
-    white:      '#e0e0ca'
+    black:      '#181020'
+    red:        '#296C8D'
+    green:      '#1079A3'
+    yellow:     '#56738E'
+    blue:       '#248D9E'
+    magenta:    '#128CA3'
+    cyan:       '#5F96A0'
+    white:      '#c4c3c6'
   bright:
-    black:      '#9c9c8d'
-    red:        '#867744'
-    green:      '#7C8254'
-    yellow:     '#BDAE5A'
-    blue:       '#969967'
-    magenta:    '#919469'
-    cyan:       '#B2B389'
-    white:      '#e0e0ca'
+    black:      '#89888a'
+    red:        '#296C8D'
+    green:      '#1079A3'
+    yellow:     '#56738E'
+    blue:       '#248D9E'
+    magenta:    '#128CA3'
+    cyan:       '#5F96A0'
+    white:      '#c4c3c6'
 # END ACE

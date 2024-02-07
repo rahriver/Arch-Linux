@@ -1,5 +1,5 @@
 # — SETTINGS — #
-background yes
+# background yes
 update_interval 1
 cpu_avg_samples 2
 net_avg_samples 2
@@ -24,11 +24,11 @@ border_outer_margin 0
 
 # — SIZE — #
 minimum_size 220 8
-maximum_width 580
+maximum_width 450
 
 # — ALIGNMENT — #
 alignment top_left
-gap_x 10
+gap_x 22
 gap_y 200
 
 # — GRAPHIC — #

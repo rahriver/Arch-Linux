@@ -18,7 +18,7 @@ SOCKDIR = os.environ.get("XDG_RUNTIME_DIR", "/var/tmp")
 SOCKFILE = os.path.join(SOCKDIR, "polypomo.sock")
 TOMATO = u"\U0001F345"  # Recommended font: Noto Emoji
 BREAK = u"\U0001F3D6"  # Recommended font: Noto Emoji
-PAUSE = u"\U000023F8"  # Recommended font: Siji
+PAUSE = ""  # Recommended font: Siji
 
 
 class Exit(Exception):
@@ -337,7 +337,7 @@ def parse_args():
     # Display - main loop showing status
     parser.add_argument("--worktime",
                         type=int,
-                        default=60 * 60,
+                        default=60 * 30,
                         help="Default work timer time in seconds")
     parser.add_argument("--breaktime",
                         type=int,

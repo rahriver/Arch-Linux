@@ -1,0 +1,8 @@
+#!/bin/sh
+
+read -p "Blog Title: " file_name
+
+cd /home/core/Documents/Repositories/rahriver/ && hugo new posts/"${file_name}.md"
+
+nvim /home/core/Documents/Repositories/rahriver/content/posts/"${file_name}.md"
+

@@ -9,39 +9,6 @@ set cleaner '~/.config/lf/cleaner'
 set previewer '~/.config/lf/scope'
 # set drawbox true
 
-# cmds/functions
-# cmd open ${{
-#     case $(file --mime-type "$(readlink -f $f)" -b) in
-# 	application/vnd.openxmlformats-officedocument.spreadsheetml.sheet) localc $fx ;;
-# 	image/vnd.djvu|application/pdf|application/octet-stream|application/postscript) setsid -f ~/.local/bin/zathura $fx >/dev/null 2>&1 ;;
-#         text/*|application/json|inode/x-empty) nvim $fx;;
-# 	image/x-xcf) setsid -f gimp $f >/dev/null 2>&1 ;;
-# 	image/svg+xml) display -- $f ;;
-# 	image/*) rotdir $f | grep -i "\.\(png\|jpg\|jpeg\|gif\|webp\|tif\|ico\)\(_large\)*$" |
-# 		setsid -f nsxiv -aio 2>/dev/null | while read -r file; do
-# 			[ -z "$file" ] && continue
-# 			lf -remote "send select \"$file\""
-# 			lf -remote "send toggle"
-# 		done &
-# 		;;
-# 	audio/*) mpv --audio-display=no $f ;;
-# 	video/*) setsid -f mpv $f -quiet >/dev/null 2>&1 ;;
-# 	application/pdf|application/vnd*|application/epub*) setsid -f ~/.local/bin/zathura $fx >/dev/null 2>&1 ;;
-# 	application/pgp-encrypted) nvim $fx ;;
-#         *) for f in $fx; do setsid -f $OPENER $f >/dev/null 2>&1; done;;
-#     esac
-# }}
-#
-
-cmd extract ${{
-	clear; tput cup $(($(tput lines)/3)); tput bold
-	set -f
-	printf "%s\n\t" "$fx"
-	printf "extract?[y/N]"
-	read ans
-	[ $ans = "y" ] && aunpack $fx
-}}
-
 cmd trash ${{
 	clear; tput cup $(($(tput lines)/3)); tput bold
 	set -f
@@ -51,15 +18,6 @@ cmd trash ${{
 	[ $ans = "y" ] && mv $fx /home/core/.local/share/Trash/files
 }}
 
-# cmd trash ${{
-#     mkdir -p /home/core/.local/share/Trash/files
-#     if [ -z "$fs" ]; then
-#         mv "$f" /home/core/.local/share/Trash/files
-#     else
-#         IFS="$(printf '\n\t')"; mv $fs /home/core/.local/share/Trash/files
-#     fi
-# }}
-
 cmd setwallpaper %cp "$f" ~/.config/wall.jpg && wal -i "$f"
 cmd bulkrename $vidir
 
@@ -67,7 +25,6 @@ cmd bulkrename $vidir
 map gh
 map g top
 map D trash
-map E extract
 map <c-l> push :mkdir<space>
 map <c-r> reload
 map <c-s> set hidden!

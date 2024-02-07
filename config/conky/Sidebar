@@ -1,8 +1,8 @@
 background yes
 use_xft yes
-xftfont Iosevka:size=10
+xftfont Ubuntu:size=10
 xftalpha 0.1
-update_interval 0.2
+update_interval 0.9
 total_run_times 0
 
 own_window yes
@@ -28,7 +28,7 @@ draw_graph_borders yes
 default_color gray
 default_shade_color magenta
 default_outline_color purple
-alignment top_left
+alignment top_right
 
 stippled_borders 3
 border_inner_margin 4

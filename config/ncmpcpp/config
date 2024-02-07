@@ -7,7 +7,7 @@ mpd_port 		  	= "6600"
 mpd_crossfade_time 	= "2"
 
 ### Script ###
-execute_on_song_change="~/.config/ncmpcpp/scripts/album-art"
+# execute_on_song_change="~/.config/ncmpcpp/scripts/album-art"
 
 ### Behaviour ###
 message_delay_time 				 = 1

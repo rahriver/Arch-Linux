@@ -1,13 +1,13 @@
 " <<--------- Plugins Config --------->>
 source ~/.config/nvim/plugins.vim
-source ~/.config/nvim/plugin-configs/coc.vim
+source ~/.config/nvim/plugin-configs/rainbow.vim
+source ~/.config/nvim/plugin-configs/vimwiki.vim
+source ~/.config/nvim/plugin-configs/ultisnips.vim
 source ~/.config/nvim/plugin-configs/fzf.vim
 source ~/.config/nvim/plugin-configs/dashboard.vim
 source ~/.config/nvim/plugin-configs/markpreview.vim
 source ~/.config/nvim/plugin-configs/codi.vim
-source ~/.config/nvim/plugin-configs/vimtex.vim
 source ~/.config/nvim/plugin-configs/embark.vim
-source ~/.config/nvim/plugin-configs/latexpr.vim
 source ~/.config/nvim/plugin-configs/airline.vim
 source ~/.config/nvim/plugin-configs/indent.vim
 source ~/.config/nvim/plugin-configs/limelight.vim
@@ -22,9 +22,8 @@ augroup litecorrect
 augroup END
 
 " <<--------- General Settings --------->>
-" colorscheme wal
-colorscheme tokyonight-night
-" colorscheme monokai_soda
+" au FileType python setlocal formatprg=autopep8\ -
+colorscheme gruvbox-material
 " Transparency
 " hi! Normal ctermbg=NONE guibg=NONE
 " hi! NonText ctermbg=NONE guibg=NONE
@@ -36,10 +35,10 @@ nnoremap <Up> gk
 nnoremap <Down> gj
 
 " Cursor color
-highlight Cursor guifg=white guibg=black
-highlight iCursor guifg=white guibg=steelblue
-set guicursor=n-v-c:block-Cursor
-set guicursor+=i:ver100-iCursor
+" highlight Cursor guifg=white guibg=black
+" highlight iCursor guifg=white guibg=steelblue
+" set guicursor=n-v-c:block-Cursor
+" set guicursor+=i:ver100-iCursor
 set guicursor+=n-v-c:blinkon0
 set guicursor+=i:blinkwait10
 
@@ -77,7 +76,7 @@ set termguicolors
 
 " <<--------- Bindings --------->>
 " Disable Plugins For File Formats
-autocmd FileType vimwiki,tex :Copilot disable
+" autocmd FileType vimwiki,tex :Copilot disable
 autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
 
@@ -86,9 +85,13 @@ autocmd FileType vimwiki :set spell
 autocmd FileType markdown :set spell
 
 let g:vimwiki_global_ext = 1
+let g:copilot_filetypes = {'markdown': v:true}
+
+let b:ale_linters = ['markdownlint', 'vale']
+let b:ale_fixers = ['prettier']
 
 " Workspaces
-map <leader>w :source ~/Documents/Projects/R/Workspace.R<CR>
+" map <leader>w :source ~/Documents/Projects/R/Workspace.R<CR>
 
 " Run Python Code
 autocmd FileType python map <buffer> <F9> :w<CR>:exec '!python' shellescape(@%, 1)<CR>
@@ -110,7 +113,7 @@ map <leader>2 :PlugClean<CR>
 map <C-h> :TagbarToggle<CR>
 map <leader>g :Goyo<CR>
 map <C-l> :NERDTreeToggle<CR>
-map <leader>p :LLPStartPreview<CR>
+" map <leader>p :LLPStartPreview<CR>
 nmap <leader>m <Plug>MarkdownPreview
 inoremap <C-f> <Esc><Esc>:BLines<CR>
 nmap <C-p> :Files<CR>

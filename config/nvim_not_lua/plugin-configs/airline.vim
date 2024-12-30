@@ -1,7 +1,8 @@
 let g:airline_powerline_fonts = 1
-" let g:airline_theme='kolor'
-" let g:airline_theme='badwolf'
-" let g:airline_theme='powerlineish'
+" let g:airline_theme='catppuccin'
+" let g:airline_theme='ayu_mirage'
+" let g:airline_theme='gruvbox-material'
+let g:airline_theme='powerlineish'
 
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}

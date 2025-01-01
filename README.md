@@ -34,3 +34,8 @@
   - Redshift (Night)
   - Conky Toggle
   - Glava Toggle
+
+# Support
+Please give this repo a star and possibly consider buying me a cup of coffee :)
+
+<a href="https://www.buymeacoffee.com/rahriver" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>

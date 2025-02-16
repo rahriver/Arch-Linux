@@ -1,0 +1,193 @@
+# <<--------- General Settings --------->>
+set $mod Mod4
+bindsym            XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym            XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym            XF86AudioMute        exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym            XF86AudioMicMute     exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
+font               pango:Ubuntu 12
+# set $menu dmenu_path | wmenu | xargs swaymsg exec --
+exec mako
+set $menu wofi --show drun
+default_border none
+default_floating_border none
+titlebar_padding 1
+titlebar_border_thickness 0
+floating_modifier $mod normal
+gaps inner 10px
+gaps outer 10px
+bindsym $mod+Shift+minus	  gaps inner current plus 5
+bindsym $mod+Shift+equal	  gaps inner current minus 5
+bindsym $mod+Shift+d		  gaps inner current set 10; gaps outer current set 10
+set $alt  --no-startup-id terminator
+set $term --no-startup-id kitty
+input 1452:591:Keychron_Keychron_C2 repeat_delay 300
+input 1452:591:Keychron_Keychron_C2 repeat_rate 30
+exec_always --no-startup-id autotiling
+# exec_always swww img Media/Wallpapers/3.png
+exec_always swaybg -i Media/Wallpapers/32.png
+
+# set $gnome-schema org.gnome.desktop.interface
+# exec_always {
+#     gsettings set $gnome-schema gtk-theme 'Tokyonight-Dark'
+#     gsettings set $gnome-schema icon-theme 'Dracula'
+#     gsettings set $gnome-schema cursor-theme 'Bibata-Original-Ice'
+# }
+
+bindsym     $mod+b exec /home/core/.config/scripts/lightup.sh
+bindsym     $mod+n exec /home/core/.config/scripts/lightdown.sh
+
+# <<--------- SwayFX Settings --------->>
+blur enable
+blur_passes 4
+blur_radius 5
+blur_noise 0.0
+blur_brightness 1.1
+blur_contrast 1.2
+blur_saturation 1.1
+
+corner_radius 20
+shadows enable
+shadow_color #0000007F
+shadow_offset 10 5
+shadow_blur_radius 40
+
+default_dim_inactive 0.5
+dim_inactive_colors.unfocused #000000FF
+dim_inactive_colors.urgent #900000FF
+
+# set $opacity 0.9
+# for_window [class=".*"] opacity $opacity
+# for_window [app_id=".*"] opacity $opacity
+
+  # input "identifier: 1267:12608:ELAN06FA:00_04F3:3140_Touchpad" {
+  #     dwt disabled
+  #     tap disabled
+  #     natural_scroll disabled
+  #     middle_emulation disabled
+  # }
+
+# <<--------- Startup Settings --------->>
+exec rclone --vfs-cache-mode writes mount OneDrive: /home/core/Temp/OneDrive &
+output DP-1 resolution 3440x1440 position 0,0
+# output eDP-1 resolution 1920x1080@60Hz position -3440,0
+output eDP-1 resolution 1920x1080@60Hz position 3440,0 disable
+exec wl-paste -t text --watch clipman store --no-persist
+exec_always swww-daemon
+
+# <<--------- Binding Settings --------->>
+bindsym $mod+Shift+ESCAPE exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+bindsym $mod+Return exec $term
+bindsym $mod+Shift+r reload
+bindsym $mod+r mode "resize"
+bindsym $mod+d exec $menu
+bindsym $mod+q kill
+bindsym $mod+w exec floorp
+bindsym $mod+o exec obsidian
+bindsym $mod+z exec zotero
+bindsym $mod+h exec spotify
+bindsym $mod+l exec thunar
+bindsym $mod+Shift+l exec kitty -e lf
+# bindsym $mod+g exec telegram-desktop -g 78x24+50+20
+bindsym $mod+g exec telegram-desktop -g 78x24+50+20
+# capture the specified screen area to clipboard    
+bindsym $mod+p exec grim -g "$(slurp -d)" - | wl-copy
+# full screen
+bindsym Print exec grim - | wl-copy    
+bindsym $mod+c exec $term -T "R Calculator" -e R --quiet
+
+# <<--------- Navigation Settings --------->>
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+bindsym $mod+Tab    workspace next
+
+# <<--------- Workspaces --------->>
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5" 
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+
+
+bindsym $mod+1 workspace number $ws1
+bindsym $mod+2 workspace number $ws2
+bindsym $mod+3 workspace number $ws3
+bindsym $mod+4 workspace number $ws4
+bindsym $mod+5 workspace number $ws5
+bindsym $mod+6 workspace number $ws6
+bindsym $mod+7 workspace number $ws7
+bindsym $mod+8 workspace number $ws8
+bindsym $mod+9 workspace number $ws9
+bindsym $mod+0 workspace number $ws10
+
+# Move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace number 1
+bindsym $mod+Shift+2 move container to workspace number 2
+bindsym $mod+Shift+3 move container to workspace number 3
+bindsym $mod+Shift+4 move container to workspace number 4
+bindsym $mod+Shift+5 move container to workspace number 5
+bindsym $mod+Shift+6 move container to workspace number 6
+bindsym $mod+Shift+7 move container to workspace number 7
+bindsym $mod+Shift+8 move container to workspace number 8
+bindsym $mod+Shift+9 move container to workspace number 9
+bindsym $mod+Shift+0 move container to workspace number 10
+
+# <<--------- Window Settings --------->>
+for_window [app_id="org.telegram.desktop"]	move position center
+for_window [app_id="org.telegram.desktop"]	floating enable
+for_window [app_id="org.telegram.desktop"]	resize set 1050 750
+# for_window [app_id="floorp"]	move to workspace $ws1
+for_window [title="R Calculator"]           floating enable
+for_window [title="R Calculator"]           move position center
+for_window [title="R Calculator"]           resize set 600 400
+for_window [class="Spotify"]	            move to workspace $ws8
+for_window [class="obsidian"]	            move to workspace $ws2
+for_window [app_id="Zotero"]	            move to workspace $ws3
+
+# Layout stuff:
+bindsym $mod+backslash splith
+bindsym $mod+slash splitv
+bindsym $mod+f fullscreen
+bindsym $mod+Shift+space floating toggle
+
+# bindsym $mod+s layout stacking
+# bindsym $mod+w layout tabbed
+# bindsym $mod+e layout toggle split
+# bindsym $mod+space focus mode_toggle
+bindsym $mod+Shift+s move scratchpad
+bindsym $mod+s scratchpad show
+
+# Resizing containers:
+mode "resize" {
+bindsym Left resize shrink width 10px
+bindsym Down resize grow height 10px
+bindsym Up resize shrink height 10px
+bindsym Right resize grow width 10px
+
+# Return to default mode
+bindsym Return mode "default"
+bindsym Escape mode "default"
+}
+
+input "1452:591:Keychron_Keychron_C2" {
+    xkb_layout us,ir
+    xkb_options grp:ctrl_shift_toggle
+}
+
+# <<--------- Waybar Settings --------->>
+
+bar {
+    swaybar_command waybar
+}
+
+include /etc/sway/config.d/*

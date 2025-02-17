@@ -23,7 +23,7 @@ augroup END
 
 " <<--------- General Settings --------->>
 " au FileType python setlocal formatprg=autopep8\ -
-colorscheme gruvbox-material
+colorscheme material-deep-ocean
 " Transparency
 " hi! Normal ctermbg=NONE guibg=NONE
 " hi! NonText ctermbg=NONE guibg=NONE
@@ -84,14 +84,28 @@ autocmd! User GoyoLeave Limelight!
 autocmd FileType vimwiki :set spell
 autocmd FileType markdown :set spell
 
+" Lazygit
+let g:lazygit_floating_window_winblend = 0 " transparency of floating window
+let g:lazygit_floating_window_scaling_factor = 0.9 " scaling factor for floating window
+let g:lazygit_floating_window_border_chars = ['╭','─', '╮', '│', '╯','─', '╰', '│'] " customize lazygit popup window border characters
+let g:lazygit_floating_window_use_plenary = 0 " use plenary.nvim to manage floating window if available
+let g:lazygit_use_neovim_remote = 1 " fallback to 0 if neovim-remote is not installed
+let g:lazygit_use_custom_config_file_path = 0 " config file path is evaluated if this value is 1
+let g:lazygit_config_file_path = '' " custom config file path
+
+nnoremap <leader>g :LazyGit<CR>
+nnoremap <leader>fc :LazyGitFilterCurrentFile<CR>
+nnoremap <leader>c :LazyGitFilter<CR>
+
 let g:vimwiki_global_ext = 1
 let g:copilot_filetypes = {'markdown': v:true}
 
 let b:ale_linters = ['markdownlint', 'vale']
 let b:ale_fixers = ['prettier']
 
-" Workspaces
-" map <leader>w :source ~/Documents/Projects/R/Workspace.R<CR>
+" LSP
+let g:lsp_diagnostics_enabled = 0         " disable diagnostics support
+nnoremap gd :LspDefinition<CR>
 
 " Run Python Code
 autocmd FileType python map <buffer> <F9> :w<CR>:exec '!python' shellescape(@%, 1)<CR>
@@ -111,27 +125,43 @@ autocmd Filetype html map <leader>b :!brave<space><C-r>%<CR>
 map <leader>1 :PlugInstall<CR>
 map <leader>2 :PlugClean<CR>
 map <C-h> :TagbarToggle<CR>
-map <leader>g :Goyo<CR>
+map <C-g> :Goyo<CR>
 map <C-l> :NERDTreeToggle<CR>
 " map <leader>p :LLPStartPreview<CR>
 nmap <leader>m <Plug>MarkdownPreview
 inoremap <C-f> <Esc><Esc>:BLines<CR>
-nmap <C-p> :Files<CR>
-nmap <C-g> :Buffers<CR>
+" nmap <C-p> :Files<CR>
+" nmap <C-g> :Buffers<CR>
 let g:tex_flavor = 'tex'
 let g:floaterm_keymap_toggle = '<C-t>'
 let g:vimwiki_key_mappings = { 'table_mappings': 0 }
 
+let g:netrw_scp_cmd = 'scp'
+
 " Navigation
-nnoremap <silent>  <leader>= :bNext<CR>
-nnoremap <leader>- :bd<CR>
-nnoremap <C-c> <Esc>
-nnoremap <C-LEFT> :wincmd h<CR>
-nnoremap <C-DOWN> :wincmd j<CR>
-nnoremap <C-UP> :wincmd k<CR>
-nnoremap <C-RIGHT> :wincmd l<CR>
+nnoremap <C-UP> :wincmd k<CR> " Move to Up Window
+nnoremap <C-DOWN> :wincmd j<CR> " Move to Down Window
+nnoremap <C-LEFT> :wincmd h<CR> " Move to Left Window
+nnoremap <C-RIGHT> :wincmd l<CR> " Move to Right Window
+nnoremap <C-c> <Esc> " Escape
+
+" Open additional files in a horizontal split, not the first one
+" autocmd BufReadPost * if !exists('g:loaded_first_file') | let g:loaded_first_file = 1 | else | vsplit | endif
+
+" Buffer Navigation
+nnoremap <C-=> :bNext<CR> " Next Buffer
+nnoremap <C--> :bprevious<CR> " Previous Buffer
+nnoremap <leader>- :bd<CR> " Close Buffer
+
+" Moving Lines
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
+
+" Find files using Telescope command-line sugar.
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 " Adding Line
 nnoremap <leader>o o<Esc>0"_D

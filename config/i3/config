@@ -1,40 +1,28 @@
 # <<--------- General Settings --------->>
 floating_modifier  $mod
-font               pango:Ubuntu 12
+set                $mod Mod4
+font               pango:Roboto Condensed 12
 set                $term --no-startup-id kitty
 set                $alt  --no-startup-id terminator
-set                $mod Mod4
-set                $screencast bash ~/.config/scripts/record_vid
 exec               --no-startup-id dex --autostart --environment i3
 exec               --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec               xrdb -merge ~/.Xresources
 exec               --no-startup-id nm-applet
+exec               --no-startup-id xrandr --output DP-1 --mode 3440x1440 --rate 144
 set                $refresh_i3status killall -SIGUSR1 i3status
 bindsym            XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
 bindsym            XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
 bindsym            XF86AudioMute        exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym            XF86AudioMicMute     exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
-# <<--------- Backlight --------->>
-set         $refresh_i3status       killall -SIGUSR1 i3status
-bindsym     XF86MonBrightnessUp     exec /home/core/.config/scripts/brightup
-bindsym     XF86MonBrightnessDown   exec /home/core/.config/scripts/brightdown
-
-# <<--------- Touchpad --------->>
-bindsym     $mod+shift+t exec /home/core/.config/scripts/touchpad_toggle
-exec        synclient TouchpadOff=1
+# <<--------- Syncing --------->>
+exec rclone --vfs-cache-mode writes mount OneDrive: /home/nexus/Temp/OneDrive &
 
 # <<--------- Media Control --------->>
 bindsym     XF86AudioNext exec --no-startup-id mpc next
 bindsym     XF86AudioPrev exec --no-startup-id mpc prev
 bindsym     XF86AudioStop exec --no-startup-id mpc stop
 bindsym     XF86AudioPlay exec --no-startup-id mpc toggle
-
-# <<--------- Playerctl --------->>
-# bindsym     XF86AudioNext exec playerctl --player mpd next
-# bindsym     XF86AudioPrev exec playerctl --player mpd previous
-# bindsym     XF86AudioStop exec playerctl --player mpd stop
-# bindsym     XF86AudioPlay exec playerctl --player mpd play-pause
 
 # <<--------- Focus Control --------->>
 bindsym $mod+Shift+space    floating toggle
@@ -76,26 +64,6 @@ bindsym $mod+0 workspace number $ws10
 bindsym $mod+Home	workspace $ws1
 bindsym $mod+End	workspace $ws10
 bindsym $mod+Tab	workspace next
-# bindsym $mod+Prior	workspace prev
-# bindsym $mod+Tab	workspace back_and_forth
-# bindsym $mod+mod2+KP_0
-# bindsym $mod+mod2+KP_1 
-# bindsym $mod+mod2+KP_2 
-# bindsym $mod+mod2+KP_3 
-# bindsym $mod+mod2+KP_4 
-# bindsym $mod+mod2+KP_5 
-# bindsym $mod+mod2+KP_6 
-# bindsym $mod+mod2+KP_7 
-# bindsym $mod+mod2+KP_8 
-# bindsym $mod+mod2+KP_9 
-# bindsym $mod+mod2+KP_Add
-# bindsym $mod+mod2+KP_Subtract
-# bindsym $mod+mod2+KP_Multiply
-# bindsym $mod+mod2+KP_Divide
-# bindsym $mod+mod2+KP_Enter
-# bindsym $mod+mod2+KP_Separator
-# bindsym $mod+s    layout stacking
-# bindsym $mod+t    layout tabbed
 
 # <<--------- Moving Containers --------->>
 bindsym $mod+Shift+1 move container to workspace number $ws1
@@ -109,136 +77,95 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
-# <<--------- Colors --------->>
-# set_from_resource $fg i3wm.color7 #f0f0f0
-# set_from_resource $bg i3wm.color2 #f0f0f0
-#
-# class                 border  backgr. text indicator child_border
-# client.focused          $bg     $bg     $fg  $bg       $bg
-# client.focused_inactive $bg     $bg     $fg  $bg       $bg
-# client.unfocused        $bg     $bg     $fg  $bg       $bg
-# client.urgent           $bg     $bg     $fg  $bg       $bg
-# client.placeholder      $bg     $bg     $fg  $bg       $bg
-#
-# client.background       $bg
-
 # <<--------- Assign Programs To Workspaces -------->>
-for_window [class="Brave-browser"]  		move to workspace $ws1
-for_window [class="Rhythmbox"]          move to workspace $ws8
-for_window [class="CPod"]               move to workspace $ws9
-for_window [class="Zotero"]             move to workspace $ws3
-for_window [class="TeXstudio"]          move to workspace $ws2
-for_window [class="obsidian"]          move to workspace $ws2
-for_window [class="Spotify"]            move to workspace $ws9
+for_window [class="Spotify"]                   move to workspace $ws9
+for_window [instance="ncmpcpp"]                move position center
+for_window [instance="ncmpcpp"]                floating enable
+for_window [instance="ncmpcpp"]                resize set 1000 800
+for_window [instance="ncmpcpp"]                move scratchpad
 
-for_window [instance="ncmpcpp"]         move position center
-for_window [instance="ncmpcpp"]         floating enable
-for_window [instance="ncmpcpp"]         resize set 1000 800
-for_window [instance="ncmpcpp"]         move scratchpad
+for_window [title="dropnews"]                  move position center
+for_window [title="dropnews"]                  floating enable
+for_window [title="dropnews"]                  resize set 800 600
 
-for_window [class="Ranger"]             move position center
-for_window [class="Ranger"]             floating enable
-for_window [class="Ranger"]             resize set 1000 800
+for_window [class="TelegramDesktop"]	       move position center
+for_window [class="TelegramDesktop"]	       floating enable
 
-for_window [title="dropnews"]             move position center
-for_window [title="dropnews"]             floating enable
-for_window [title="dropnews"]             resize set 800 600
+for_window [instance="dropcalc"]		       floating enable
+for_window [instance="dropcalc"]		       resize set 800 300
+for_window [instance="dropcalc"]		       move position center
 
-for_window [class="TelegramDesktop"]	move position center
-for_window [class="TelegramDesktop"]	floating enable
+for_window [title="Quick Format Citation"]     move position center
+for_window [title="Quick Format Citation"]     floating enable
 
-for_window [instance="dropcalc"]		floating enable
-for_window [instance="dropcalc"]		resize set 800 300
-for_window [instance="dropcalc"]		move position center
+# for_window [instance="dropterm"]		       floating enable
+# for_window [instance="dropterm"]               resize set 800 600
+# for_window [instance="dropterm"]               move position center
+# for_window [instance="dropterm"]		       move scratchpad
 
-for_window [instance="Kanban"]		    floating enable
-for_window [instance="Kanban"]	    	resize set 1300 650
-for_window [instance="Kanban"]	    	move position center
+# for_window [instance="dayplan"]	               floating enable
+# for_window [instance="dayplan"]                resize set 800 600
+# for_window [instance="dayplan"]                move position center
 
-for_window [instance="Noter"]		    floating enable
-for_window [instance="Noter"]	    	resize set 1000 850
-for_window [instance="Noter"]	    	move position center
+# for_window [instance="globaltask"]             floating enable
+# for_window [instance="globaltask"]             resize set 800 600
+# for_window [instance="globaltask"]             move position center
 
-for_window [title="dropideas"]          floating enable
-for_window [title="dropideas"]          resize set 800 600
-for_window [title="dropideas"]          move position center
-
-for_window [title="dropgpt"]          floating enable
-for_window [title="dropgpt"]          resize set 1300 700
-for_window [title="dropgpt"]          move position center
-
-for_window [title="Quick Format Citation"]          move position center
-for_window [title="Quick Format Citation"]          floating enable
-
-for_window [class="dropurl"]			floating enable
-for_window [class="dropurl"]			move position center
-for_window [class="dropurl"]			resize set 800 600
-
-for_window [instance="dropterm"]		floating enable
-for_window [instance="dropterm"]        resize set 800 600
-for_window [instance="dropterm"]        move position center
-for_window [instance="dropterm"]		move scratchpad
-
-for_window [instance="dayplan"]	       floating enable
-for_window [instance="dayplan"]        resize set 800 600
-for_window [instance="dayplan"]        move position center
+for_window [instance="lfmanager"]             floating enable
+for_window [instance="lfmanager"]             resize set 800 600
+for_window [instance="lfmanager"]             move position center
 
 # <<--------- Startup & Scripts --------->>
-# exec                --no-startup-id nvidia-settings --load-config-only
-# exec_always         --no-startup-id numlockx on
-# exec_always         feh --bg-fill ~/f.jpg
-# exec_always         xwallpaper --zoom ~/f.jpg
-# exec_always         /home/core/.config/scripts/layout && $refresh_i3status
-# exec_always           xborders --config /home/core/.config/xborders/conf.json
+exec                  i3-msg restart
+exec_always	          picom --animations -b
+exec_always           autotiling
 exec_always           "setxkbmap -model pc104 -layout us,ir -variant ,, -option grp:ctrl_shift_toggle"
-exec_always 		      picom
-# exec                  conky -c "/home/core/.config/conky/conkyrc-mpd"
-# exec                  conky -c "/home/core/.config/conky/conky.conf"
-exec                  conky
-exec                  /home/core/.config/scripts/dayplan
+exec_always           --no-startup-id /home/nexus/.config/polybar/launch.sh
+exec_always           --no-startup-id /usr/bin/dunst
+exec                  /home/nexus/.config/scripts/dayplan
 exec                  xset r rate 300 30
 exec                  mpd
-exec_always           --no-startup-id $HOME/.config/dunst/wal_dunst.sh
-exec_always           --no-startup-id /home/core/.config/polybar/launch.sh
-exec_always           --no-startup-id /usr/bin/dunst
-exec                  --no-startup-id $term --class ncmpcpp -e ncmpcpp
 exec                  --no-startup-id $term --class dropterm
+# exec                  --no-startup-id $term --class ncmpcpp -e ncmpcpp
+# exec_always           xwallpaper --zoom /home/nexus/Media/Wallpapers/29.png
+# exec_always           conky -c "/home/nexus/.config/conky/sidebar.conf"
+# exec_always           conky -c "/home/nexus/.config/conky/conky-spotify/conky-spotify"
+# exec_always           conky
 
 # <<--------- Bindings --------->>
-bindsym Print               exec --no-startup-id flameshot gui
-bindsym $mod+w			        exec --no-startup-id brave
-bindsym $mod+shift+w	      exec --no-startup-id qutebrowser
-bindsym $mod+l 			        exec --no-startup-id thunar
-bindsym $mod+o			        exec --no-startup-id obsidian; exec ~/.config/scripts/obs-pic
-bindsym $mod+g 			        exec --no-startup-id telegram-desktop -g 78x24+50+20
-bindsym $mod+z			        exec --no-startup-id zotero
-bindsym $mod+u              exec --no-startup-id $term --class "dropurl" -e nvim ~/.config/scripts/url.txt
-bindsym $mod+k			        exec $term --class "Kanban" -e taskell /home/core/Temp/MEGA/Obsidian/Broadest/10\ -\ Inbox/KanTodo.md
-bindsym $mod+F12		        exec i3-input -F 'exec goldendict %s' -P 'Word: '
-bindsym $mod+p 			        exec ls -v -r ~/Media/Pictures/Wallpapers/*.png | nsxiv -t -b -
-bindsym $mod+s			        [class="dropterm"] scratchpad show; move position center
-bindsym $mod+i              exec $term -T "dropideas" -e nvim ~/Temp/MEGA/Article/Wiki/Ideas.wiki
-bindsym $mod+t              exec $term --class dayplan -e nvim ~/Temp/MEGA/Notes/Dayplan/$(date +%Y-%m-%d).wiki
-bindsym $mod+c			        exec $term --class "dropcalc" -e R --quiet
-# bindsym $mod+c			        exec $term --class "dropcalc" -e python -q
-bindsym $mod+shift+c			  exec ~/.config/scripts/conf_selector
-bindsym $mod+m			        [class="ncmpcpp"] scratchpad show; move position center
-bindsym $mod+shift+l	      exec $term -e ~/.config/scripts/lfub
-bindsym $mod+n			        exec /home/core/.config/scripts/rofi-noter
-bindsym $mod+shift+s        exec $screencast
-# bindsym $mod+d              exec rofi -show drun -show-icons -theme spotlight-dark
-bindsym $mod+d              exec rofi -show drun -show-icons -theme launchpad
-bindsym $mod+j              exec /home/core/Temp/Programs/Rofi-Beats/rofi-beats
-bindsym $mod+shift+e        exec rofi -show emoji -modi emoji -theme rounded-pink-dark
-bindsym $mod+shift+x	      exec /home/core/.config/scripts/lock
+bindsym $mod+Prior		      [class="dropterm"] scratchpad show; move position center
+bindsym Print                 exec --no-startup-id flameshot gui
+bindsym $mod+w                exec --no-startup-id /home/nexus/.config/scripts/chromium_pywal.sh && chromium
+bindsym $mod+e                exec --no-startup-id wmfocus
+bindsym $mod+l 			      exec --no-startup-id thunar
+bindsym $mod+h 			      exec --no-startup-id spotify
+bindsym $mod+o			      exec --no-startup-id obsidian; exec ~/.config/scripts/obs-pic
+bindsym $mod+g 			      exec --no-startup-id telegram-desktop -g 78x24+50+20
+bindsym $mod+z			      exec --no-startup-id zotero
+bindsym $mod+p 			      exec ls -v -r ~/personal/media/walls/*.png | nsxiv -t -b -
+# bindsym $mod+t                exec $term --class dayplan -e nvim ~/Temp/MEGA/Notes/Dayplan/$(date +%Y-%m-%d).wiki
+# bindsym $mod+i                exec $term --class globaltask -e nvim ~/Temp/MEGA/Notes/global_tasks.wiki
+bindsym $mod+c			      exec $term --class "dropcalc" -e R --quiet
+bindsym $mod+Shift+c		  exec ~/.config/scripts/conf_selector
+bindsym $mod+Shift+l	      exec $term --class lfmanager -e ~/.config/scripts/lfub
+bindsym $mod+n			      exec /home/nexus/.config/scripts/rofi-noter
+bindsym $mod+d                exec rofi -show drun -show-icons
+bindsym $mod+Shift+e          exec rofi -show emoji -modi emoji
+bindsym $mod+Shift+x	      exec /home/nexus/.config/scripts/lock
 bindsym $mod+Return 	      exec $term
-bindsym $mod+Shift+Return   exec $alt
-bindsym $mod+semicolon	    layout toggle split
-bindsym $mod+backslash	    split h
-bindsym $mod+slash	        split v
-bindsym $mod+Shift+r        restart
+bindsym $mod+Shift+Return     exec $alt
+bindsym $mod+semicolon	      layout toggle split
 bindsym $mod+f		          fullscreen toggle
-bindsym $mod+q              kill
+bindsym $mod+backslash	      split h
+bindsym $mod+slash	          split v
+bindsym $mod+Shift+r          restart
+bindsym $mod+q                kill
+bindsym $mod+Next             exec xfce4-terminal --drop-down
+# bindsym $mod+F12		      exec i3-input -F 'exec goldendict %s' -P 'Word: '
+# bindsym $mod+j              exec /home/nexus/Temp/Programs/Rofi-Beats/rofi-beats
+# bindsym $mod+i              exec $term -T "dropideas" -e nvim ~/Temp/MEGA/Article/Wiki/Ideas.wiki
+# bindsym $mod+u              exec --no-startup-id $term --class "dropurl" -e nvim ~/.config/scripts/url.txt
+# bindsym $mod+k			  exec $term --class "Kanban" -e taskell /home/nexus/Temp/MEGA/Obsidian/Broadest/10\ -\ Inbox/KanTodo.md
 
 # <<--------- Window Resize --------->>
 bindsym $mod+r    mode "resize"
@@ -258,16 +185,19 @@ bindsym $mod+r    mode "default"
 }
 
 # <<--------- Gap & Appearance --------->>
+hide_edge_borders smart_no_gaps
+smart_borders on
+gaps inner 15
+gaps outer 15
+
+for_window [class="^.*"] border pixel 0
+for_window [title="^.*"] border pixel 0
+
+bindsym $mod+Shift+minus	gaps inner current plus 5
+bindsym $mod+Shift+plus		gaps inner current minus 5
+bindsym $mod+Shift+d	    gaps inner current set 10; gaps outer current set 10
+# bindsym $mod+Shift+d		gaps inner current set 0; gaps outer current set 0
 # smart_gaps on
-# smart_borders on
-# hide_edge_borders smart_no_gaps
-gaps inner 10
-gaps outer 10
-for_window [class="^.*"]    border pixel 0
-for_window [title="^.*"]    border pixel 0
-bindsym $mod+Shift+minus	  gaps inner current plus 5
-bindsym $mod+Shift+plus		  gaps inner current minus 5
-bindsym $mod+Shift+d		    gaps inner current set 0; gaps outer current set 0
 
 # <<--------- System Power Control --------->>
 set $mode_system System (e) logout, (r) reboot, (s) sleep, (Shift+s) shutdown
@@ -291,3 +221,48 @@ bindsym $mod+F1 mode "$mode_system"
 # 		-p root.path=/ time.format="%H:%M CW %V" date.format="%a, %b %d %Y" \
 # 		-t dracula-powerline
 # }
+
+# <<--------- Colors --------->>
+set_from_resource $fg i3wm.color7 #f0f0f0
+set_from_resource $bg i3wm.color2 #f0f0f0
+# set_from_resource $color0 i3wm.color0
+# set_from_resource $color1 i3wm.color1
+# set_from_resource $color2 i3wm.color2
+# set_from_resource $color3 i3wm.color3
+# set_from_resource $color4 i3wm.color4 
+
+ # class                 border  backgr. text indicator child_border
+ client.focused          $bg     $bg     $fg  $bg       $bg
+ client.focused_inactive $bg     $bg     $fg  $bg       $bg
+ client.unfocused        $bg     $bg     $fg  $bg       $bg
+ client.urgent           $bg     $bg     $fg  $bg       $bg
+ client.placeholder      $bg     $bg     $fg  $bg       $bg
+
+ client.background       $bg
+
+# bindsym $mod+Prior	workspace prev
+# bindsym $mod+Tab	workspace back_and_forth
+# bindsym $mod+mod2+KP_0
+# bindsym $mod+mod2+KP_1 
+# bindsym $mod+mod2+KP_2 
+# bindsym $mod+mod2+KP_3 
+# bindsym $mod+mod2+KP_4 
+# bindsym $mod+mod2+KP_5 
+# bindsym $mod+mod2+KP_6 
+# bindsym $mod+mod2+KP_7 
+# bindsym $mod+mod2+KP_8 
+# bindsym $mod+mod2+KP_9 
+# bindsym $mod+mod2+KP_Add
+# bindsym $mod+mod2+KP_Subtract
+# bindsym $mod+mod2+KP_Multiply
+# bindsym $mod+mod2+KP_Divide
+# bindsym $mod+mod2+KP_Enter
+# bindsym $mod+mod2+KP_Separator
+# bindsym $mod+s    layout stacking
+# bindsym $mod+t    layout tabbed
+
+# <<--------- Playerctl --------->>
+# bindsym     XF86AudioNext exec playerctl --player mpd next
+# bindsym     XF86AudioPrev exec playerctl --player mpd previous
+# bindsym     XF86AudioStop exec playerctl --player mpd stop
+# bindsym     XF86AudioPlay exec playerctl --player mpd play-pause

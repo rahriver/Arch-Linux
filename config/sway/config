@@ -1,30 +1,34 @@
 # <<--------- General Settings --------->>
+include "$HOME/.cache/wal/colors-sway"
+output DP-1 background $wallpaper fill
+client.focused $color0 $background $foreground $color7 $background
+
 set $mod Mod4
 bindsym            XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
 bindsym            XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
 bindsym            XF86AudioMute        exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
 bindsym            XF86AudioMicMute     exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
-font               pango:Ubuntu 12
-# set $menu dmenu_path | wmenu | xargs swaymsg exec --
+font               pango:Roboto 12
 exec mako
+exec swaykbdd
+exec_always autotiling -w 1 3 5 7 9
 set $menu wofi --show drun
 default_border none
 default_floating_border none
 titlebar_padding 1
 titlebar_border_thickness 0
 floating_modifier $mod normal
-gaps inner 10px
-gaps outer 10px
+gaps inner 15
+gaps outer 1
 bindsym $mod+Shift+minus	  gaps inner current plus 5
 bindsym $mod+Shift+equal	  gaps inner current minus 5
 bindsym $mod+Shift+d		  gaps inner current set 10; gaps outer current set 10
-set $alt  --no-startup-id terminator
+set $alt  --no-startup-id foot
 set $term --no-startup-id kitty
 input 1452:591:Keychron_Keychron_C2 repeat_delay 300
 input 1452:591:Keychron_Keychron_C2 repeat_rate 30
-exec_always --no-startup-id autotiling
-# exec_always swww img Media/Wallpapers/3.png
-exec_always swaybg -i Media/Wallpapers/32.png
+exec --no-startup-id autotiling
+# exec_always swww img --transition-type outer --transition-pos 0.854,0.977 --transition-step 90 /home/nexus/rect1.png
 
 # set $gnome-schema org.gnome.desktop.interface
 # exec_always {
@@ -33,67 +37,65 @@ exec_always swaybg -i Media/Wallpapers/32.png
 #     gsettings set $gnome-schema cursor-theme 'Bibata-Original-Ice'
 # }
 
-bindsym     $mod+b exec /home/core/.config/scripts/lightup.sh
-bindsym     $mod+n exec /home/core/.config/scripts/lightdown.sh
+# Hide the cursor after 3000 ms
+seat seat0 hide_cursor 3000
+seat seat0 xcursor_theme Bibata 25
 
 # <<--------- SwayFX Settings --------->>
 blur enable
+blur_xray disable
 blur_passes 4
-blur_radius 5
+blur_radius 4
 blur_noise 0.0
-blur_brightness 1.1
+blur_brightness 1.0
 blur_contrast 1.2
-blur_saturation 1.1
+blur_saturation 1.0
 
 corner_radius 20
 shadows enable
-shadow_color #0000007F
+shadow_color #000000D9
 shadow_offset 10 5
 shadow_blur_radius 40
+
+layer_effects "waybar" blur enable; shadows enable
 
 default_dim_inactive 0.5
 dim_inactive_colors.unfocused #000000FF
 dim_inactive_colors.urgent #900000FF
 
-# set $opacity 0.9
-# for_window [class=".*"] opacity $opacity
-# for_window [app_id=".*"] opacity $opacity
-
-  # input "identifier: 1267:12608:ELAN06FA:00_04F3:3140_Touchpad" {
-  #     dwt disabled
-  #     tap disabled
-  #     natural_scroll disabled
-  #     middle_emulation disabled
-  # }
+set $opacity 1.0
+for_window [class=".*"] opacity $opacity
+for_window [app_id=".*"] opacity $opacity
 
 # <<--------- Startup Settings --------->>
-exec rclone --vfs-cache-mode writes mount OneDrive: /home/core/Temp/OneDrive &
-output DP-1 resolution 3440x1440 position 0,0
-# output eDP-1 resolution 1920x1080@60Hz position -3440,0
-output eDP-1 resolution 1920x1080@60Hz position 3440,0 disable
+exec rclone --vfs-cache-mode writes mount OneDrive: /home/nexus/work/OneDrive &
+output DP-1 mode 3440x1440@144Hz
 exec wl-paste -t text --watch clipman store --no-persist
 exec_always swww-daemon
+# exec_always /home/nexus/personal/scripts/wall_rotate.sh
 
 # <<--------- Binding Settings --------->>
 bindsym $mod+Shift+ESCAPE exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 bindsym $mod+Return exec $term
+bindsym $mod+Shift+Return exec $alt
 bindsym $mod+Shift+r reload
 bindsym $mod+r mode "resize"
 bindsym $mod+d exec $menu
 bindsym $mod+q kill
-bindsym $mod+w exec floorp
+bindsym $mod+w exec /home/nexus/personal/scripts/chromium_pywal.sh && chromium
+bindsym $mod+Shift+w exec qutebrowser --qt-flag ignore-gpu-blacklist --qt-flag enable-gpu-rasterization --qt-flag enable-native-gpu-memory-buffers --qt-flag num-raster-threads=4
 bindsym $mod+o exec obsidian
 bindsym $mod+z exec zotero
 bindsym $mod+h exec spotify
 bindsym $mod+l exec thunar
 bindsym $mod+Shift+l exec kitty -e lf
-# bindsym $mod+g exec telegram-desktop -g 78x24+50+20
 bindsym $mod+g exec telegram-desktop -g 78x24+50+20
-# capture the specified screen area to clipboard    
-bindsym $mod+p exec grim -g "$(slurp -d)" - | wl-copy
-# full screen
-bindsym Print exec grim - | wl-copy    
+bindsym $mod+Shift+p exec grim - | wl-copy    
+bindsym $mod+p exec grim -g "$(slurp -d)" - | tee /home/nexus/personal/media/screenshots/-$(date +'%Y-%m-%d_%H-%M-%S').png | wl-copy
 bindsym $mod+c exec $term -T "R Calculator" -e R --quiet
+bindsym $mod+t exec swaync-client -t -sw
+bindsym $mod+m exec swayimg /home/nexus/personal/media/walls/* --gallery
+bindsym $mod+n exec /home/nexus/personal/scripts/rofi-noter
 
 # <<--------- Navigation Settings --------->>
 bindsym $mod+Left focus left
@@ -146,13 +148,11 @@ bindsym $mod+Shift+0 move container to workspace number 10
 for_window [app_id="org.telegram.desktop"]	move position center
 for_window [app_id="org.telegram.desktop"]	floating enable
 for_window [app_id="org.telegram.desktop"]	resize set 1050 750
-# for_window [app_id="floorp"]	move to workspace $ws1
+for_window [title="Zotero Settings"]	floating enable
 for_window [title="R Calculator"]           floating enable
 for_window [title="R Calculator"]           move position center
 for_window [title="R Calculator"]           resize set 600 400
 for_window [class="Spotify"]	            move to workspace $ws8
-for_window [class="obsidian"]	            move to workspace $ws2
-for_window [app_id="Zotero"]	            move to workspace $ws3
 
 # Layout stuff:
 bindsym $mod+backslash splith
@@ -191,3 +191,21 @@ bar {
 }
 
 include /etc/sway/config.d/*
+
+# <<--------- Power Button --------->>
+set $exit "exit: [s]leep, [p]oweroff, [r]eboot, [l]ogout, [w]indows"
+mode $exit {
+    bindsym --to-code {
+        s exec systemctl suspend, mode "default"
+        p exec systemctl poweroff
+        r exec systemctl reboot
+        l exec swaymsg exit
+        w exec reboot-to-windows-somehow-lol.sh
+    
+        Return mode "default"
+        Escape mode "default"
+        $mod+x mode "default"
+    }
+}
+
+bindsym --to-code $mod+Shift+x mode $exit
